@@ -228,77 +228,72 @@
   "privacy": {
     "eyebrow": "Juridisch",
     "title": "Privacybeleid",
-    "intro": "Dit privacybeleid regelt de verwerking van persoonsgegevens via de website van Moria Rodrig - Advocatenkantoor en Notariaat en het geïntegreerde online afsprakensysteem.",
+    "intro": "Dit beleid betreft deze website en vragen aan Moria Rodrig Law Office & Notary, de verantwoordelijke voor de persoonsgegevens. Online afspraken en het contactformulier zijn momenteel uitgeschakeld.",
     "sections": {
       "scope": {
-        "title": "1. Reikwijdte van de verwerking",
-        "body": "Dit beleid is uitsluitend van toepassing op gegevens die via deze website worden verzameld en verwerkt, waaronder boekingsverzoeken, technische gebruiksanalyses en bijbehorende communicatie."
+        "title": "Reikwijdte",
+        "body": "Dit beleid betreft deze website en vragen aan Moria Rodrig Law Office & Notary, de verantwoordelijke voor de persoonsgegevens. Online afspraken en het contactformulier zijn momenteel uitgeschakeld."
       },
       "data": {
-        "title": "2. Verzamelde persoonsgegevens",
-        "body": "Wanneer een afspraakaanvraag wordt ingediend, kan het systeem het volgende verwerken:",
-        "items": {
-          "name": "Volledige naam",
-          "email": "E-mailadres",
-          "phone": "Telefoonnummer (indien verstrekt)",
-          "service": "Gegevens van het aangevraagde diensttype",
-          "language": "Voorkeurstaal voor de afspraak",
-          "slot": "Gewenste datum, tijdslot en duur van de afspraak"
-        }
+        "title": "Verzamelde gegevens",
+        "body": "De hostingprovider en externe diensten ontvangen technische gegevens zoals IP-adres, browsergegevens en opgevraagde pagina’s. Wanneer u ons belt of e-mailt, ontvangen wij de contactgegevens en informatie die u verstrekt. Clarity ontvangt interactie- en apparaatgegevens alleen na toestemming voor analyse."
       },
       "purpose": {
-        "title": "3. Doeleinden van gebruik",
-        "items": {
-          "availability": "Beschikbaarheid van afspraken beoordelen en bevestigen.",
-          "appointments": "Bevestigde afspraken aanmaken en beheren.",
-          "communication": "Gebruikers contacteren over boekingsverzoeken.",
-          "records": "Rechtmatige interne servicedossiers bijhouden.",
-          "analytics": "Gebruiksvriendelijkheid en prestaties van de website monitoren en verbeteren."
-        }
+        "title": "Doeleinden",
+        "body": "Wij gebruiken gegevens om de website te tonen en te beveiligen, vragen te beantwoorden en gevraagde juridische diensten te leveren. Optionele Clarity-analyse helpt ons het websitegebruik te begrijpen en de bruikbaarheid te verbeteren."
       },
       "systems": {
-        "title": "4. Systemen en verwerkers in gebruik",
-        "items": {
-          "calendar": "Google Calendar API: gebruikt om beschikbaarheid te controleren en bevestigde afspraakgebeurtenissen aan te maken.",
-          "database": "PostgreSQL-database: gebruikt om afspraakgegevens op te slaan die via de boekingsflow zijn ingediend.",
-          "clarity": "Microsoft Clarity: gebruikt om website-analyses en interactie-inzichten te verzamelen ter verbetering van dienst en interface."
-        }
+        "title": "Diensten en ontvangers",
+        "body": "De hostingprovider levert de website. Mapbox levert de kantoorkaarten en Google Fonts de lettertypen; deze verzoeken delen technische gegevens, waaronder het IP-adres, met deze aanbieders. Microsoft ontvangt optionele Clarity-gegevens. Online boeken via Google Calendar en de bijbehorende databaseverwerking zijn momenteel niet beschikbaar voor bezoekers."
       },
       "cookies": {
-        "title": "5. Cookie- en analysemelding (Clarity)",
-        "body1": "Deze website gebruikt Microsoft Clarity en vergelijkbare analysetechnologieën, waaronder cookies en tracking-scripts, om gebruikersgedrag te begrijpen, gebruiksproblemen op te sporen en websiteprestaties te verbeteren.",
-        "body2": "Door deze website te blijven gebruiken, erkent u deze analytische verwerking. Via browserinstellingen kunnen cookies worden beperkt, met dien verstande dat bepaalde functies daardoor kunnen worden beïnvloed."
+        "title": "Cookies en uw keuze",
+        "body": "Optionele analyse staat standaard uit. U kunt analyse accepteren, optionele cookies weigeren of uw instellingen kiezen. Via Cookie-instellingen onderaan de site kunt u toestemming wijzigen of intrekken. Verder browsen is geen toestemming. Weigeren beperkt de navigatie niet. Uw keuze, versie en datum worden 180 dagen in lokale opslag bewaard; het wissen van browseropslag verwijdert ze. Bij geblokkeerde opslag wordt uw keuze mogelijk niet bewaard. Na toestemming gebruikt Clarity _clck (bezoeker en voorkeuren) en _clsk (sessiekoppeling); Microsoft documenteert cookies van derden. Advertentieopslag wordt geweigerd. Intrekken verwijdert toegankelijke Clarity-cookies op deze site en herlaadt de pagina om verzameling te stoppen. Cookies op Microsoft-domeinen beheert u via uw browser."
       },
       "legalBasis": {
-        "title": "6. Rechtsgrond",
-        "body": "Gegevensverwerking vindt plaats op toepasselijke rechtsgronden, waaronder door de betrokkene gevraagde precontractuele stappen, gerechtvaardigde belangen bij veilige website-exploitatie en naleving van wettelijke en professionele verplichtingen."
+        "title": "Vrijwillige verstrekking",
+        "body": "Contact opnemen en analyse toestaan zijn vrijwillig; er bestaat geen wettelijke verplichting. Zonder voldoende contactgegevens kunnen wij mogelijk niet reageren of de gevraagde dienst leveren. Zonder analysetoestemming wordt Clarity niet geladen. Kaarten en lettertypen vragen nog steeds de gegevens op die nodig zijn voor weergave."
       },
       "disclosure": {
-        "title": "7. Verstrekking en doorgifte aan derden",
-        "body": "Persoonsgegevens worden niet verkocht. Gegevens worden alleen verstrekt aan de hierboven genoemde operationele dienstverleners of wanneer dit wettelijk, bij rechterlijk bevel of door een bevoegde autoriteit is vereist."
+        "title": "Delen en internationale verwerking",
+        "body": "De genoemde aanbieders ontvangen gegevens voor de beschreven doeleinden en kunnen deze buiten Israël verwerken. Gegevens kunnen ook worden gedeeld wanneer de wet dit vereist of om uw gevraagde juridische dienst te behandelen. Externe links leiden naar diensten met een eigen privacybeleid."
       },
       "retention": {
-        "title": "8. Bewaartermijn",
-        "body": "Afsprakengerelateerde gegevens worden bewaard gedurende een redelijk noodzakelijke periode voor dienstadministratie, wettelijke verplichtingen en professioneel dossierbeheer."
+        "title": "Bewaartermijnen",
+        "body": "De privacyvoorkeur vervalt na 180 dagen. Vraag- en cliëntgegevens worden bewaard zolang nodig voor behandeling en toepasselijke wettelijke en professionele bewaarplichten. Aanbieders van hosting, kaarten, lettertypen en analyse hanteren eigen termijnen; zie hun beleid hieronder."
       },
       "security": {
-        "title": "9. Beveiliging",
-        "body": "Redelijke technische en organisatorische maatregelen worden toegepast om risico’s op ongeautoriseerde toegang, wijziging, verlies of misbruik van gegevens te beperken. Volledige beveiliging van online systemen kan echter niet worden gegarandeerd."
+        "title": "Beveiliging",
+        "body": "Technische maatregelen sluiten niet elk risico uit. Spreek met het kantoor een geschikt communicatiekanaal af voordat u gevoelige dossiergegevens per gewone e-mail verstuurt."
       },
       "rights": {
-        "title": "10. Rechten van betrokkenen",
-        "body": "Onder voorbehoud van toepasselijk recht kunnen gebruikers verzoeken om inzage, correctie of verwijdering van persoonsgegevens die via deze website worden verwerkt."
+        "title": "Uw rechten",
+        "body": "Volgens het Israëlische recht kunt u inzage vragen in uw persoonsgegevens op grond van artikel 13 van de wet ter bescherming van de privacy, en correctie of verwijdering vragen van onjuiste, onvolledige, onduidelijke of verouderde gegevens op grond van artikel 14. Neem hiervoor contact op met het kantoor hieronder. U kunt analysetoestemming altijd intrekken via Cookie-instellingen."
+      },
+      "revisions": {
+        "title": "Wijzigingen",
+        "body": "Bijgewerkt op 2 oktober 2026. Bij wezenlijke wijzigingen in optionele tracking wordt opnieuw om een keuze gevraagd. Deze kennisgeving vervangt niet de afspraken voor juridische dienstverlening."
       },
       "contact": {
-        "title": "11. Contact voor privacyzaken",
+        "title": "Contact voor privacyzaken",
         "phoneLabel": "Telefoon",
         "emailLabel": "E-mail",
         "addressLabel": "Adres"
-      },
-      "revisions": {
-        "title": "12. Wijzigingen van dit beleid",
-        "body": "Dit beleid kan van tijd tot tijd worden bijgewerkt om juridische, technologische of operationele wijzigingen te weerspiegelen. De op deze pagina gepubliceerde versie is de geldende versie."
       }
     }
+  },
+  "cookies": {
+    "title": "Cookies en privacy",
+    "description": "Met uw toestemming gebruikt Microsoft Clarity cookies en registreert het interacties, apparaat- en browsergegevens en het IP-adres om de site te verbeteren. Anders blijft het uit, zonder het browsen te beperken.",
+    "essential": "Noodzakelijke opslag",
+    "essentialBody": "Uw privacykeuze wordt 180 dagen op dit apparaat bewaard.",
+    "analytics": "Optionele analyse",
+    "analyticsBody": "Microsoft Clarity: gebruiksstatistieken, heatmaps en sessieopnamen. Advertentieopslag wordt geweigerd.",
+    "reject": "Optionele cookies weigeren",
+    "accept": "Analyse accepteren",
+    "customize": "Instellingen kiezen",
+    "save": "Mijn keuze opslaan",
+    "settings": "Cookie-instellingen",
+    "later": "Later beslissen"
   }
 }

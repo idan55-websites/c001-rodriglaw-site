@@ -1,9 +1,14 @@
-import { useEffect, useLayoutEffect } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 import { NavLink, Outlet, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { setupMobileMotion } from "../utils/mobileMotion";
 
+import CookieConsent from "../components/CookieConsent";
+import { initializeConsent, readConsent } from "../utils/cookieConsent";
+
 const Layout = () => {
+  const [cookiesOpen, setCookiesOpen] = useState(() => !readConsent());
+  useEffect(() => initializeConsent(), []);
   const { i18n, t } = useTranslation();
   const location = useLocation();
 
@@ -15,6 +20,20 @@ const Layout = () => {
   ];
 
   const baseLang = i18n.language.split("-")[0];
+
+  useLayoutEffect(() => {
+    const header = document.querySelector(".navbar");
+    const updateHeaderHeight = () => {
+      document.documentElement.style.setProperty("--mobile-header-height", `${header.getBoundingClientRect().height}px`);
+    };
+    updateHeaderHeight();
+    const observer = typeof ResizeObserver === "function" ? new ResizeObserver(updateHeaderHeight) : null;
+    observer?.observe(header);
+    return () => {
+      observer?.disconnect();
+      document.documentElement.style.removeProperty("--mobile-header-height");
+    };
+  }, []);
 
   useLayoutEffect(() => {
     if (location.hash) {
@@ -136,6 +155,10 @@ const Layout = () => {
                     className="logo-image"
                   />
                   <span className="logo-text">{t("brand.name")}</span>
+                  <span className="mobile-brand-copy">
+                    <span>{t("about.name")}</span>
+                    <small>{t("about.role")}</small>
+                  </span>
                 </div>
               </NavLink>
 
@@ -156,8 +179,12 @@ const Layout = () => {
 
               <div className="navbar-right">
                 <div className="navbar-contacts-wrapper">
-                  <a href="tel:+972546225654" className="icon-link-block">
-                    <span className="icon-phone" />
+                  <a href="tel:+972546225654" className="icon-link-block" aria-label={`${t("contact.phoneLabel")}: +972-54-622-5654`}>
+                    <span className="icon-phone" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" fill="none">
+                        <path d="M7 3 4 5c-1 1 0 5 4 9s8 5 9 4l3-3-5-3-2 2c-2-1-4-3-5-5l2-2-3-4Z" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                    </span>
                     <span className="icon-text phone-ltr">+972-54-622-5654</span>
                   </a>
                 </div>
@@ -207,6 +234,7 @@ const Layout = () => {
                       <NavLink to="/privacy-policy" className="footer-link">
                         {t("footer.privacy")}
                       </NavLink>
+                      <button type="button" className="footer-link cookie-settings-link" onClick={() => setCookiesOpen(true)}>{t("cookies.settings")}</button>
                     </div>
                   </div>
                   <div className="footer-contacts-wrapper">
@@ -264,6 +292,7 @@ const Layout = () => {
           </div>
         </footer>
       </div>
+      {cookiesOpen && <CookieConsent onClose={() => setCookiesOpen(false)} />}
     </div>
   );
 };

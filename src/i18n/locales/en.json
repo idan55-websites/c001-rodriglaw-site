@@ -228,77 +228,72 @@
   "privacy": {
     "eyebrow": "Legal",
     "title": "Privacy Policy",
-    "intro": "This Privacy Policy governs personal data processing carried out through the website of Moria Rodrig - Law Office and Notary and its integrated online appointment booking system.",
+    "intro": "This policy concerns this website and enquiries to Moria Rodrig Law Office & Notary, the controller of the personal information. Online booking and the contact form are currently disabled.",
     "sections": {
       "scope": {
-        "title": "1. Scope of processing",
-        "body": "This Policy applies only to data collected and processed via this website, including booking requests, technical usage analytics, and related communications."
+        "title": "Scope",
+        "body": "This policy concerns this website and enquiries to Moria Rodrig Law Office & Notary, the controller of the personal information. Online booking and the contact form are currently disabled."
       },
       "data": {
-        "title": "2. Personal data collected",
-        "body": "When a booking is submitted, the system processes:",
-        "items": {
-          "name": "Full name",
-          "email": "Email address",
-          "phone": "Phone number (where provided)",
-          "service": "Service request details",
-          "language": "Preferred meeting language",
-          "slot": "Requested date, time slot and meeting duration"
-        }
+        "title": "Information collected",
+        "body": "Hosting and external services receive technical data such as IP address, browser details and requested pages. If you contact us by email or phone, we receive the contact details and information you provide. Clarity receives interaction and device data only after analytics consent."
       },
       "purpose": {
-        "title": "3. Purposes of use",
-        "items": {
-          "availability": "Assess and confirm appointment availability.",
-          "appointments": "Create and administer confirmed appointments.",
-          "communication": "Contact users regarding booking requests.",
-          "records": "Maintain lawful internal service records.",
-          "analytics": "Monitor and improve website usability and performance."
-        }
+        "title": "Purposes",
+        "body": "We use information to deliver and secure the website, respond to enquiries and provide requested legal services. Optional Clarity analytics helps us understand website usage and improve usability."
       },
       "systems": {
-        "title": "4. Systems and processors in active use",
-        "items": {
-          "calendar": "Google Calendar API: used to check calendar availability and create confirmed appointment events.",
-          "database": "PostgreSQL database: used to store appointment records submitted through the booking flow.",
-          "clarity": "Microsoft Clarity: used to collect website analytics and interaction insights for service and interface improvement."
-        }
+        "title": "Services and recipients",
+        "body": "The hosting provider serves the site. Mapbox supplies the embedded office maps and Google Fonts supplies typefaces; these requests expose technical data including IP address to those providers. Microsoft receives optional Clarity analytics. Online Google Calendar booking and the associated database workflow are not currently available to visitors."
       },
       "cookies": {
-        "title": "5. Cookies and analytics notice (Clarity)",
-        "body1": "This website uses Microsoft Clarity and similar analytics technologies, including cookies and tracking scripts, to understand user behavior, troubleshoot usability issues and improve website performance.",
-        "body2": "By continuing to use this website, you acknowledge such analytics processing. Browser settings may be used to restrict cookies, noting that certain functions may be affected."
+        "title": "Cookies and your choice",
+        "body": "Optional analytics is off by default. Accept analytics, reject optional cookies or choose settings in the notice. You can withdraw or change your choice through Cookie settings in the footer. Continuing to browse is not consent. Rejection does not restrict browsing. Your versioned choice and its date are kept in local storage for 180 days; clearing browser storage removes it. If storage is blocked, your choice may not persist. When allowed, Clarity uses _clck (visitor/preferences) and _clsk (session association); Microsoft documents any third-party cookies. Advertising storage is denied. Withdrawal clears accessible Clarity cookies on this site and reloads the page to stop collection. Cookies on Microsoft domains can be managed through your browser."
       },
       "legalBasis": {
-        "title": "6. Legal basis",
-        "body": "Data processing is carried out on applicable legal grounds, including steps requested by the data subject prior to service engagement, legitimate interests in secure website operation, and legal or professional compliance duties."
+        "title": "Voluntary provision of information",
+        "body": "Contacting the office and allowing analytics are voluntary; there is no legal obligation to do either. Without enough contact information, we may be unable to respond or provide the service you request. Without analytics consent, Clarity does not load. Maps and fonts still request data needed to display those services."
       },
       "disclosure": {
-        "title": "7. Disclosure and third-party transfer",
-        "body": "Personal data is not sold. Data is disclosed only to the operational providers listed above, or where disclosure is required by law, judicial order or competent authority."
+        "title": "Disclosure and international processing",
+        "body": "Information is received by the service providers described above for the stated purposes and may be processed outside Israel. Information may also be disclosed when required by law or necessary to handle your requested legal service. External links lead to services governed by their own privacy policies."
       },
       "retention": {
-        "title": "8. Retention",
-        "body": "Appointment-related records are retained for a period reasonably required for service administration, legal obligations and professional record management."
+        "title": "Retention",
+        "body": "The privacy preference expires after 180 days. Enquiry and client information is retained as needed to handle the request and meet applicable legal and professional recordkeeping duties. Hosting, mapping, font and analytics providers apply their own retention periods; see their policies linked below."
       },
       "security": {
-        "title": "9. Security",
-        "body": "Reasonable technical and organizational safeguards are implemented to reduce risks of unauthorized access, alteration, loss or misuse of data. Absolute security in online systems cannot be guaranteed."
+        "title": "Security",
+        "body": "Technical controls cannot eliminate all risk. Please do not send sensitive case details through ordinary email before agreeing with the office on an appropriate communication channel."
       },
       "rights": {
-        "title": "10. Data subject rights",
-        "body": "Subject to applicable law, users may request access, correction or deletion of personal data processed through this website."
+        "title": "Your rights",
+        "body": "Subject to Israeli law, you may request access to personal information held about you under section 13 of the Protection of Privacy Law, and correction or deletion of information that is incorrect, incomplete, unclear or outdated under section 14. Contact the office below. You may withdraw analytics consent at any time through Cookie settings."
+      },
+      "revisions": {
+        "title": "Changes",
+        "body": "Updated 2 October 2026. Material changes to optional tracking require a new consent choice. This website notice does not replace the arrangements for a legal engagement."
       },
       "contact": {
-        "title": "11. Contact for privacy matters",
+        "title": "Contact for privacy matters",
         "phoneLabel": "Phone",
         "emailLabel": "Email",
         "addressLabel": "Address"
-      },
-      "revisions": {
-        "title": "12. Policy revisions",
-        "body": "This Policy may be updated from time to time to reflect legal, technological or operational changes. The current published version on this page is the governing version."
       }
     }
+  },
+  "cookies": {
+    "title": "Cookies & privacy",
+    "description": "With your permission, Microsoft Clarity uses cookies to record page interactions, device/browser data and IP address to improve this site. Otherwise it stays off, without limiting browsing.",
+    "essential": "Essential storage",
+    "essentialBody": "Your privacy choice is stored on this device for 180 days.",
+    "analytics": "Optional analytics",
+    "analyticsBody": "Microsoft Clarity: usage statistics, heatmaps and session recordings. Advertising storage is denied.",
+    "reject": "Reject optional",
+    "accept": "Accept analytics",
+    "customize": "Choose settings",
+    "save": "Save my choice",
+    "settings": "Cookie settings",
+    "later": "Decide later"
   }
 }

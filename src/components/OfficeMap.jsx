@@ -12,15 +12,23 @@ function OfficeMap({ lat, lng, label }) {
     if (!mapContainer.current) return undefined;
 
     mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_TOKEN;
+    const touchDevice = window.matchMedia("(hover: none) and (pointer: coarse)").matches;
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
     map.current = new mapboxgl.Map({
       container: mapContainer.current,
       style: "mapbox://styles/mapbox/streets-v12",
       center: [lng, lat],
       zoom: 17.4,
+      performanceMetricsCollection: false,
+      ...(touchDevice ? { cooperativeGestures: true } : {}),
     });
 
     map.current.addControl(new mapboxgl.NavigationControl(), "top-right");
+    const resizeObserver = touchDevice && typeof ResizeObserver === "function"
+      ? new ResizeObserver(() => map.current?.resize())
+      : null;
+    resizeObserver?.observe(mapContainer.current);
 
     markerRef.current = new mapboxgl.Marker({ color: "#c1121f" })
       .setLngLat([lng, lat])
@@ -35,11 +43,13 @@ function OfficeMap({ lat, lng, label }) {
       map.current.flyTo({
         center: [lng, lat],
         zoom: 17.6,
-        essential: true,
+        animate: !touchDevice && !reducedMotion,
+        essential: !touchDevice && !reducedMotion,
       });
     });
 
     return () => {
+      resizeObserver?.disconnect();
       markerRef.current?.remove();
       map.current?.remove();
       markerRef.current = null;
@@ -54,7 +64,8 @@ function OfficeMap({ lat, lng, label }) {
     map.current.flyTo({
       center: [lng, lat],
       zoom: 17.6,
-      essential: true,
+      animate: !window.matchMedia("(hover: none) and (pointer: coarse), (prefers-reduced-motion: reduce)").matches,
+      essential: !window.matchMedia("(hover: none) and (pointer: coarse), (prefers-reduced-motion: reduce)").matches,
     });
   }, [lat, lng]);
 

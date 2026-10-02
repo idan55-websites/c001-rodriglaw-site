@@ -40,11 +40,12 @@ export function setupMobileMotion(main) {
         let revealIndex = 0;
         entries.forEach(entry => {
           if (!entry.isIntersecting) return;
-          entry.target.style.setProperty("--mobile-reveal-delay", `${Math.min(revealIndex++, 3) * 70}ms`);
+          entry.target.style.setProperty("--mobile-reveal-delay", `${Math.min(revealIndex++, 2) * 45}ms`);
           entry.target.classList.add("mobile-reveal-enter");
           currentObserver.unobserve(entry.target);
         });
-      }, { threshold: 0.01, rootMargin: "0px 0px -48px 0px" })
+      // A small inset gives the reveal room without waiting for tall cards to fit.
+      }, { threshold: 0, rootMargin: "0px 0px -24px 0px" })
     : null;
   targets.forEach(element => observer?.observe(element));
 

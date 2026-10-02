@@ -228,77 +228,72 @@
   "privacy": {
     "eyebrow": "Juridique",
     "title": "Politique de confidentialité",
-    "intro": "Cette politique de confidentialité encadre le traitement des données personnelles effectué via le site de Moria Rodrig - Cabinet juridique et notariat et son système intégré de prise de rendez-vous en ligne.",
+    "intro": "Cette politique concerne ce site et les demandes adressées à Moria Rodrig Law Office & Notary, responsable du traitement des informations personnelles. La réservation en ligne et le formulaire de contact sont actuellement désactivés.",
     "sections": {
       "scope": {
-        "title": "1. Champ du traitement",
-        "body": "La présente politique s’applique uniquement aux données collectées et traitées via ce site, y compris les demandes de rendez-vous, les données techniques d’usage et les communications associées."
+        "title": "Champ d’application",
+        "body": "Cette politique concerne ce site et les demandes adressées à Moria Rodrig Law Office & Notary, responsable du traitement des informations personnelles. La réservation en ligne et le formulaire de contact sont actuellement désactivés."
       },
       "data": {
-        "title": "2. Données personnelles collectées",
-        "body": "Lorsqu’une demande de rendez-vous est soumise, le système peut traiter :",
-        "items": {
-          "name": "Nom complet",
-          "email": "Adresse e-mail",
-          "phone": "Numéro de téléphone (le cas échéant)",
-          "service": "Détails du service demandé",
-          "language": "Langue de rendez-vous préférée",
-          "slot": "Date, créneau horaire et durée demandés"
-        }
+        "title": "Informations recueillies",
+        "body": "L’hébergeur et les services externes reçoivent des données techniques, notamment l’adresse IP, des informations sur le navigateur et les pages demandées. Si vous contactez le cabinet par téléphone ou par courriel, nous recevons les coordonnées et informations que vous fournissez. Clarity reçoit les données d’interaction et d’appareil uniquement après votre accord à l’analyse."
       },
       "purpose": {
-        "title": "3. Finalités de traitement",
-        "items": {
-          "availability": "Évaluer et confirmer la disponibilité des rendez-vous.",
-          "appointments": "Créer et administrer les rendez-vous confirmés.",
-          "communication": "Contacter les utilisateurs au sujet de leurs demandes.",
-          "records": "Tenir des registres internes conformes aux obligations légales.",
-          "analytics": "Contrôler et améliorer l’ergonomie et les performances du site."
-        }
+        "title": "Finalités",
+        "body": "Les informations servent à afficher et sécuriser le site, répondre aux demandes et fournir les services juridiques sollicités. L’analyse facultative Clarity nous aide à comprendre l’utilisation du site et à améliorer sa navigation."
       },
       "systems": {
-        "title": "4. Systèmes et sous-traitants utilisés",
-        "items": {
-          "calendar": "API Google Calendar : utilisée pour vérifier la disponibilité et créer les événements de rendez-vous confirmés.",
-          "database": "Base de données PostgreSQL : utilisée pour stocker les enregistrements de rendez-vous soumis via le parcours de réservation.",
-          "clarity": "Microsoft Clarity : utilisé pour collecter des analyses d’usage et des interactions afin d’améliorer le service et l’interface."
-        }
+        "title": "Services et destinataires",
+        "body": "L’hébergeur fournit le site. Mapbox fournit les cartes du cabinet et Google Fonts les polices ; ces requêtes transmettent des données techniques, dont l’adresse IP, à ces fournisseurs. Microsoft reçoit les données facultatives Clarity. La réservation Google Calendar et le traitement associé dans la base de données ne sont actuellement pas accessibles aux visiteurs."
       },
       "cookies": {
-        "title": "5. Information cookies et analytique (Clarity)",
-        "body1": "Ce site utilise Microsoft Clarity et des technologies analytiques similaires, y compris des cookies et scripts de suivi, afin de comprendre les comportements utilisateurs, détecter les difficultés d’usage et améliorer les performances du site.",
-        "body2": "En poursuivant votre navigation, vous reconnaissez ce traitement analytique. Les paramètres du navigateur peuvent limiter les cookies, sous réserve d’une possible altération de certaines fonctionnalités."
+        "title": "Cookies et votre choix",
+        "body": "L’analyse facultative est désactivée par défaut. Vous pouvez l’accepter, refuser les cookies facultatifs ou personnaliser votre choix. Vous pouvez modifier ou retirer votre accord via Paramètres des cookies en bas du site. Continuer à naviguer ne vaut pas consentement. Refuser ne limite pas la navigation. Votre choix, sa version et sa date sont conservés dans le stockage local pendant 180 jours ; effacer ce stockage les supprime. Si le stockage est bloqué, le choix peut ne pas être conservé. Avec votre accord, Clarity utilise _clck (visiteur et préférences) et _clsk (association de session) ; Microsoft documente les cookies tiers. Le stockage publicitaire est refusé. Le retrait supprime les cookies Clarity accessibles sur ce site et recharge la page pour arrêter la collecte. Les cookies des domaines Microsoft se gèrent dans votre navigateur."
       },
       "legalBasis": {
-        "title": "6. Base juridique",
-        "body": "Le traitement est effectué sur des fondements juridiques applicables, incluant les mesures précontractuelles demandées par la personne concernée, l’intérêt légitime à l’exploitation sécurisée du site et le respect des obligations légales et professionnelles."
+        "title": "Informations fournies volontairement",
+        "body": "Contacter le cabinet et autoriser l’analyse sont facultatifs, sans obligation légale. Sans coordonnées suffisantes, nous pourrions ne pas pouvoir répondre ou fournir le service demandé. Sans consentement à l’analyse, Clarity ne se charge pas. Les cartes et polices demandent toujours les données nécessaires à leur affichage."
       },
       "disclosure": {
-        "title": "7. Divulgation et transfert à des tiers",
-        "body": "Les données personnelles ne sont pas vendues. Elles ne sont communiquées qu’aux prestataires opérationnels mentionnés ci-dessus, ou lorsque la loi, une décision judiciaire ou une autorité compétente l’exige."
+        "title": "Communication et traitement international",
+        "body": "Les prestataires décrits reçoivent les informations aux fins indiquées et peuvent les traiter hors d’Israël. Des informations peuvent aussi être communiquées si la loi l’exige ou pour traiter le service juridique demandé. Les liens externes renvoient à des services soumis à leurs propres politiques de confidentialité."
       },
       "retention": {
-        "title": "8. Durée de conservation",
-        "body": "Les enregistrements liés aux rendez-vous sont conservés pendant la durée raisonnablement nécessaire à l’administration du service, au respect des obligations légales et à la gestion des dossiers professionnels."
+        "title": "Conservation",
+        "body": "La préférence de confidentialité expire après 180 jours. Les informations relatives aux demandes et aux clients sont conservées selon les besoins du traitement et les obligations légales et professionnelles d’archivage. Les fournisseurs d’hébergement, de cartes, de polices et d’analyse appliquent leurs propres durées ; consultez leurs politiques ci-dessous."
       },
       "security": {
-        "title": "9. Sécurité",
-        "body": "Des mesures techniques et organisationnelles raisonnables sont appliquées afin de réduire les risques d’accès non autorisé, d’altération, de perte ou d’usage abusif des données. Une sécurité absolue des systèmes en ligne ne peut toutefois être garantie."
+        "title": "Sécurité",
+        "body": "Les mesures techniques ne suppriment pas tous les risques. Veuillez convenir avec le cabinet d’un canal adapté avant de transmettre par courriel ordinaire des informations sensibles concernant un dossier."
       },
       "rights": {
-        "title": "10. Droits des personnes concernées",
-        "body": "Sous réserve du droit applicable, les utilisateurs peuvent demander l’accès, la rectification ou l’effacement des données personnelles traitées via ce site."
+        "title": "Vos droits",
+        "body": "Sous réserve du droit israélien, vous pouvez demander l’accès à vos informations personnelles selon l’article 13 de la loi sur la protection de la vie privée, et la correction ou suppression d’informations incorrectes, incomplètes, peu claires ou périmées selon l’article 14. Contactez le cabinet ci-dessous. Vous pouvez retirer votre accord à l’analyse à tout moment via les paramètres des cookies."
+      },
+      "revisions": {
+        "title": "Modifications",
+        "body": "Mise à jour le 2 octobre 2026. Une modification importante du suivi facultatif nécessitera un nouveau choix de consentement. Cette notice ne remplace pas les dispositions applicables à une mission juridique."
       },
       "contact": {
-        "title": "11. Contact pour les questions de confidentialité",
+        "title": "Contact pour les questions de confidentialité",
         "phoneLabel": "Téléphone",
         "emailLabel": "E-mail",
         "addressLabel": "Adresse"
-      },
-      "revisions": {
-        "title": "12. Révisions de la politique",
-        "body": "La présente politique peut être mise à jour périodiquement pour refléter des évolutions juridiques, technologiques ou opérationnelles. La version publiée sur cette page constitue la version en vigueur."
       }
     }
+  },
+  "cookies": {
+    "title": "Cookies et confidentialité",
+    "description": "Avec votre accord, Microsoft Clarity utilise des cookies et enregistre les interactions, les données de l’appareil et du navigateur et l’adresse IP pour améliorer le site. Sans accord, il reste désactivé, sans limiter la navigation.",
+    "essential": "Stockage nécessaire",
+    "essentialBody": "Votre choix est conservé sur cet appareil pendant 180 jours.",
+    "analytics": "Analyse facultative",
+    "analyticsBody": "Microsoft Clarity : statistiques, cartes de chaleur et enregistrements de sessions. Le stockage publicitaire est refusé.",
+    "reject": "Refuser les cookies facultatifs",
+    "accept": "Accepter l’analyse",
+    "customize": "Personnaliser",
+    "save": "Enregistrer mon choix",
+    "settings": "Paramètres des cookies",
+    "later": "Décider plus tard"
   }
 }
