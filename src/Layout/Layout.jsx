@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useLayoutEffect } from "react";
 import { NavLink, Outlet, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { setupMobileMotion } from "../utils/mobileMotion";
@@ -16,19 +16,25 @@ const Layout = () => {
 
   const baseLang = i18n.language.split("-")[0];
 
+  useLayoutEffect(() => {
+    if (location.hash) {
+      const target = document.getElementById(location.hash.slice(1));
+      target?.scrollIntoView({
+        behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth",
+        block: "start",
+      });
+    } else {
+      window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+    }
+  }, [location.pathname, location.hash, location.key]);
+
   useEffect(() => {
     const main = document.querySelector(".page-main");
     if (!main) return;
 
-    if (window.matchMedia("(max-width: 640px) and (hover: none) and (pointer: coarse)").matches) {
+    if (window.matchMedia("(max-width: 640px), (hover: none) and (pointer: coarse)").matches) {
       return setupMobileMotion(main);
     }
-
-    // Subtle page transition on route changes.
-    main.classList.remove("page-main-enter");
-    const raf = window.requestAnimationFrame(() => {
-      main.classList.add("page-main-enter");
-    });
 
     const prefersReducedMotion = window.matchMedia(
       "(prefers-reduced-motion: reduce)"
@@ -69,7 +75,6 @@ const Layout = () => {
 
     const uniqueTargets = Array.from(new Set(targets));
     if (uniqueTargets.length === 0) {
-      window.cancelAnimationFrame(raf);
       return;
     }
 
@@ -81,7 +86,6 @@ const Layout = () => {
     if (lowPowerMode) {
       document.body.classList.add("motion-lite");
       uniqueTargets.forEach((element) => element.classList.add("is-visible"));
-      window.cancelAnimationFrame(raf);
       return;
     }
     document.body.classList.remove("motion-lite");
@@ -104,7 +108,6 @@ const Layout = () => {
     uniqueTargets.forEach((element) => observer.observe(element));
 
     return () => {
-      window.cancelAnimationFrame(raf);
       observer.disconnect();
     };
   }, [location.pathname]);
@@ -177,7 +180,7 @@ const Layout = () => {
           </div>
         </header>
 
-        <main className="page-main">
+        <main key={location.pathname} className="page-main page-navigation-enter">
           <Outlet />
         </main>
 

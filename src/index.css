@@ -19,6 +19,14 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+[id] {
+  scroll-margin-top: 1.5rem;
+}
+
 html,
 body,
 #root {
@@ -658,18 +666,16 @@ a {
   min-height: 1px;
 }
 
-.page-main.page-main-enter {
-  animation: page-enter 520ms cubic-bezier(0.22, 1, 0.36, 1);
+.page-main.page-navigation-enter {
+  animation: page-enter 320ms ease-out;
 }
 
 @keyframes page-enter {
   from {
-    opacity: 0.01;
-    transform: translate3d(0, 8px, 0);
+    opacity: 0.25;
   }
   to {
     opacity: 1;
-    transform: translate3d(0, 0, 0);
   }
 }
 
@@ -818,7 +824,11 @@ body.motion-lite .lang-select:hover {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .page-main.page-main-enter {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .page-main.page-navigation-enter {
     animation: none;
   }
 
@@ -2075,9 +2085,8 @@ body.motion-lite .lang-select:hover {
   }
 }
 
-/* Phone-only motion: short, one-time effects and lightweight tap feedback. */
-@media (max-width: 640px) and (hover: none) and (pointer: coarse) {
-  .page-main.page-main-enter,
+/* Small screens and touch devices use one-time reveals and tap feedback. */
+@media (max-width: 640px), (hover: none) and (pointer: coarse) {
   .mapbox-zoom-in {
     animation: none;
   }
@@ -2092,9 +2101,9 @@ body.motion-lite .lang-select:hover {
   }
 }
 
-@media (max-width: 640px) and (hover: none) and (pointer: coarse) and (prefers-reduced-motion: no-preference) {
+@media (prefers-reduced-motion: no-preference) {
   .mobile-motion-enabled .mobile-reveal-enter {
-    animation: mobile-reveal 320ms cubic-bezier(0.22, 1, 0.36, 1);
+    animation: mobile-reveal 600ms cubic-bezier(0.22, 1, 0.36, 1) var(--mobile-reveal-delay, 0ms) backwards;
   }
 
   .mobile-motion-enabled :is(.button-main, .cta-button, .ghost-button, .map-link-button, .tab-button, .contact-action-link) {
@@ -2102,15 +2111,15 @@ body.motion-lite .lang-select:hover {
   }
 
   .mobile-motion-enabled :is(.button-main, .cta-button, .ghost-button, .map-link-button, .tab-button, .contact-action-link):active {
-    transform: scale(0.985);
+    transform: scale(0.97);
     opacity: 0.85;
   }
 }
 
 @keyframes mobile-reveal {
   from {
-    opacity: 0.55;
-    transform: translateY(8px);
+    opacity: 0.12;
+    transform: translateY(26px);
   }
   to {
     opacity: 1;

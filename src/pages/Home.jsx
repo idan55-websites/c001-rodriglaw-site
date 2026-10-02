@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import OfficeMap from "../components/OfficeMap";
 
 const Home = () => {
@@ -187,9 +188,9 @@ const Home = () => {
                     </p>
                   </div>
                   <div className="space-large" />
-                  <a href="/#contacts" className="button-main">
+                  <Link to="/#contacts" className="button-main">
                     <span>{t("home.heroCta")}</span>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -476,9 +477,9 @@ const Home = () => {
       </section>
 
       <div className="contact-button">
-        <a href="/#contacts" className="floating-button-home">
+        <Link to="/#contacts" className="floating-button-home">
           {t("home.heroCta")}
-        </a>
+        </Link>
       </div>
     </>
   );

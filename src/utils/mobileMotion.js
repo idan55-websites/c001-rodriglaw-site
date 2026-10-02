@@ -2,10 +2,7 @@
 export function setupMobileMotion(main) {
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
   const connection = navigator.connection || navigator.mozConnection;
-  const lowMemory =
-    typeof navigator.deviceMemory === "number" && navigator.deviceMemory <= 4;
-
-  if (reducedMotion.matches || connection?.saveData || lowMemory) return;
+  if (reducedMotion.matches || connection?.saveData) return;
 
   main.classList.add("mobile-motion-enabled");
   const candidates = Array.from(main.querySelectorAll([
@@ -40,27 +37,35 @@ export function setupMobileMotion(main) {
 
   const observer = typeof IntersectionObserver === "function"
     ? new IntersectionObserver((entries, currentObserver) => {
+        let revealIndex = 0;
         entries.forEach(entry => {
           if (!entry.isIntersecting) return;
+          entry.target.style.setProperty("--mobile-reveal-delay", `${Math.min(revealIndex++, 3) * 70}ms`);
           entry.target.classList.add("mobile-reveal-enter");
           currentObserver.unobserve(entry.target);
         });
-      }, { threshold: 0.01, rootMargin: "0px 0px -24px 0px" })
+      }, { threshold: 0.01, rootMargin: "0px 0px -48px 0px" })
     : null;
   targets.forEach(element => observer?.observe(element));
 
   const stop = () => {
     observer?.disconnect();
     main.classList.remove("mobile-motion-enabled");
-    targets.forEach(element => element.classList.remove("mobile-reveal-enter"));
+    targets.forEach(element => {
+      element.classList.remove("mobile-reveal-enter");
+      element.style.removeProperty("--mobile-reveal-delay");
+    });
   };
-  reducedMotion.addEventListener("change", stop);
-  connection?.addEventListener?.("change", stop);
+  const onPreferenceChange = () => {
+    if (reducedMotion.matches || connection?.saveData) stop();
+  };
+  reducedMotion.addEventListener("change", onPreferenceChange);
+  connection?.addEventListener?.("change", onPreferenceChange);
 
   return () => {
     stop();
     main.removeEventListener("animationend", finish);
-    reducedMotion.removeEventListener("change", stop);
-    connection?.removeEventListener?.("change", stop);
+    reducedMotion.removeEventListener("change", onPreferenceChange);
+    connection?.removeEventListener?.("change", onPreferenceChange);
   };
 }
