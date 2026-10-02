@@ -2109,7 +2109,7 @@ body.motion-lite .lang-select:hover {
 
 @media (prefers-reduced-motion: no-preference) {
   .mobile-motion-enabled .mobile-reveal-enter {
-    animation: mobile-reveal 440ms cubic-bezier(0.22, 1, 0.36, 1) var(--mobile-reveal-delay, 0ms) backwards;
+    animation: mobile-reveal 720ms cubic-bezier(0.25, 0.1, 0.25, 1) var(--mobile-reveal-delay, 0ms) backwards;
   }
 
   .mobile-motion-enabled :is(.button-main, .cta-button, .ghost-button, .map-link-button, .tab-button, .contact-action-link) {
@@ -2124,12 +2124,18 @@ body.motion-lite .lang-select:hover {
 
 @keyframes mobile-reveal {
   from {
-    opacity: 0.3;
-    transform: translateY(14px);
+    opacity: 0.08;
+    transform: translate3d(0, 24px, 0);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@media (max-width: 640px), (hover: none) and (pointer: coarse) {
+  .page-main.page-navigation-enter {
+    animation-duration: 520ms;
   }
 }
 
