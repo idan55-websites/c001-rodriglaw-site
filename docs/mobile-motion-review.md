@@ -1,34 +1,26 @@
-# Mobile motion follow-up — 2 October 2026
+# Mobile layout and Nisim-style effects — 2 October 2026
 
-The previous phone reveals started only 24px above the bottom of the viewport and finished in 440ms. They could finish before the visitor looked at the content. Reused service-card nodes were not observed again after changing category.
+The mobile motion now follows the Nisim reference at `/Users/idanhadad/Desktop/websites/nisim-website`: transitions for reading blocks, a slow ambient hero glow, animated heading accents and touch feedback. Desktop layout remains unchanged.
 
 ## Changes
 
-- Trigger reveals 18% of the viewport height inside the screen, bounded to 90–150px; do not require tall blocks to fit completely.
-- Fade and move individual reading blocks over 720ms with a 24px movement. Use only opacity and transform, without blur, scroll event handlers or continuous rendering loops.
-- Register added content and updated service cards through a MutationObserver. Disconnect both observers when the route changes.
-- Restore effects when the visitor turns reduced motion off; remove effects immediately when it is enabled. A connection data-saving flag no longer suppresses these lightweight local CSS effects.
-- Extend touch/small-screen route fades to 520ms. Desktop layout and motion settings are unchanged.
-- Keep content visible by default, including when IntersectionObserver is unavailable. The existing dedicated mobile layout, safe-area spacing, svh/dvh sizing, touch targets and tap feedback remain in place.
+- Replace temporary animation classes with pending/visible reveal states. Establish initial styles before observing the first screen, then fade and lift content 14px over 550ms, staggering simultaneous entries by 70ms (maximum 140ms).
+- Trigger 32px inside the viewport, following Nisim’s phone spacing. Include previously scrolled content in the observer area so fast swipes cannot leave skipped cards hidden. Tall content does not have to fit entirely in the viewport.
+- Use opacity and transform; avoid blur, scroll handlers and continuous JavaScript rendering. Pause the seven-second hero glow when the hero leaves the screen.
+- Animate short gold heading accents and retain tap feedback. Remove the whole-page phone fade so it does not compete with individual entrances.
+- Keep compact mobile navigation, a single-column reading order, touch targets, safe-area spacing, svh/dvh sizing and reduced-motion support. Tighten large spacers and size/crop the home portrait specifically for phones.
+- Observe added/updated service cards; disconnect observers and pending animation frames on cleanup. Content stays visible when reduced motion is enabled or IntersectionObserver is unavailable.
+- Simplify the cookie notice in all four languages to a question with Accept all, Reject optional and Learn more. Detailed explanations remain in the linked privacy-policy section. Consent behavior is unchanged.
 
 ## Verification
 
-Production build and ESLint passed. Playwright used WebKit and installed Chrome; these are browser emulation checks, not a physical iPhone assessment.
+- Production build and ESLint passed; the existing bundle-size advisory remains.
+- WebKit full-page captures of home, about, services, contact, privacy policy and accessibility were visually inspected at 390×844, 393×852, 430×932 and 375×667 (24 complete-page captures). No horizontal overflow, overlapping content, unintended clipping, hidden reveal targets or excessive empty gaps were found.
+- WebKit and installed Chrome verified reveal start/completion at the four sizes, service-category changes and live reduced-motion toggles. Intermediate transition frames were sampled in both engines at every size.
+- Reduced-motion loading has no active animations. Desktop geometry, typography and colors match the preceding build at 1024px and 1440px across all six routes.
+- Dutch home-page fast-scroll captures at all four sizes also have no hidden reveal targets.
+- Cookie acceptance, rejection, withdrawal and the details anchor checked in WebKit at the four sizes in English, Hebrew, French and Dutch. Optional analytics remains off before consent and after rejection.
 
-| Viewport | Full-page visual review (six routes) | WebKit touch interactions | Visible fade frames (WebKit + Chrome) |
-| --- | --- | --- | --- |
-| 390×844 | Passed | Passed | Passed |
-| 393×852 | Passed | Passed | Passed |
-| 430×932 | Passed | Passed | Passed |
-| 375×667 | Passed | Passed | Passed |
+Full-page captures/review strips: `/private/tmp/moria-nisim-mobile/`. Motion captures: `/private/tmp/moria-nisim-effects/`. Cookie captures: `/private/tmp/moria-nisim-cookies/`.
 
-- Visually inspected all 24 complete-page captures: home, about, services, contact, privacy policy and accessibility. No overflow, overlap, unintended clipping or excessive empty gaps were found. Document width matched viewport width, with no out-of-bounds main/header/footer elements or hidden reveal content.
-- Sampled visible service-card opacity and transform during the reveal, then after completion: opacity changed from 0.08–0.14 to 1 and movement returned to none. Screenshots of those frames were also inspected.
-- Verified service-category updates animate, live reduced-motion toggles work both ways, and initial reduced-motion browsing has no active animations.
-- Verified touch navigation, smooth scrolling to the contact anchor with header clearance, route scroll reset, page fade, seven notary cards and 44px navigation/category controls at all four sizes.
-- Checked Hebrew RTL, French and Dutch across the five primary/privacy routes at 375×667 with no horizontal overflow.
-- Compared desktop element geometry, typography and colors against the preceding commit at 1024px and 1440px across all six routes; unchanged.
-
-Local captures and review strips: `/private/tmp/moria-mobile-motion-v2/`. Animation frame captures: `/private/tmp/moria-motion-visible/`.
-
-The live production URL and the visitor's phone/browser have not been supplied, so production deployment and the reported physical-phone behavior remain unverified.
+These checks use browser emulation, not a physical iPhone. Production deployment is not covered by the local checks.

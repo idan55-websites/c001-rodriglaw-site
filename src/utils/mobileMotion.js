@@ -1,29 +1,31 @@
-// Animate individual reading blocks once they are visibly inside the phone viewport.
-// Content remains readable if observers or motion are unavailable.
+// Safari-friendly opacity/transform transitions, with content visible if motion is unavailable.
 export function setupMobileMotion(main) {
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
   const selector = [
     ".uui-heroheader01_image-wrapper", ".uui-heroheader01_content",
-    ".header-medium", ".header-small", ".section-title", ".section-copy",
+    ".header-medium", ".header-small", ".section-title", ".section-copy", ".eyebrow",
     ".about-richtext > *", ".about-image-wrapper", ".about-portrait-card",
     ".service-cell", ".feature-cell", ".content-card", ".services-hero-media",
     ".press-feature-card", ".press-link-card", ".contact-list",
-    ".contact-action-link", ".privacy-card",
+    ".contact-action-link", ".privacy-card", ".contact-map-wrapper",
   ].join(",");
   const targets = new Set();
   let observer;
+  let heroObserver;
   let mutations;
+  let firstFrame;
+  let secondFrame;
 
   const register = (changed = []) => {
     const candidates = Array.from(main.querySelectorAll(selector));
     candidates.filter(element =>
       !candidates.some(parent => parent !== element && parent.contains(element))
     ).forEach(element => {
-      // React can reuse the same service-card nodes when a category changes.
       const updated = changed.some(node => element.contains(node));
       if (targets.has(element) && !updated) return;
       targets.add(element);
-      if (updated) element.classList.remove("mobile-reveal-enter");
+      element.classList.add("mobile-reveal");
+      element.classList.remove("mobile-visible");
       observer.observe(element);
     });
     targets.forEach(element => {
@@ -34,11 +36,14 @@ export function setupMobileMotion(main) {
     });
   };
   const stop = () => {
+    cancelAnimationFrame(firstFrame);
+    cancelAnimationFrame(secondFrame);
     observer?.disconnect();
+    heroObserver?.disconnect();
     mutations?.disconnect();
-    main.classList.remove("mobile-motion-enabled");
+    main.classList.remove("mobile-motion-enabled", "mobile-hero-in-view");
     targets.forEach(element => {
-      element.classList.remove("mobile-reveal-enter");
+      element.classList.remove("mobile-reveal", "mobile-visible");
       element.style.removeProperty("--mobile-reveal-delay");
     });
     targets.clear();
@@ -47,32 +52,46 @@ export function setupMobileMotion(main) {
     stop();
     if (reducedMotion.matches || typeof IntersectionObserver !== "function") return;
     main.classList.add("mobile-motion-enabled");
-    // Pixel margins use viewport height explicitly (IO percentage margins use width).
-    const inset = Math.round(Math.min(150, Math.max(90, window.innerHeight * 0.18)));
     observer = new IntersectionObserver(entries => {
       let revealIndex = 0;
       entries.forEach(entry => {
         if (!entry.isIntersecting) return;
-        entry.target.style.setProperty("--mobile-reveal-delay", `${Math.min(revealIndex++, 2) * 65}ms`);
-        entry.target.classList.add("mobile-reveal-enter");
+        entry.target.style.setProperty("--mobile-reveal-delay", `${Math.min(revealIndex++, 2) * 70}ms`);
+        entry.target.classList.add("mobile-visible");
         observer.unobserve(entry.target);
       });
-    }, { threshold: 0, rootMargin: `0px 0px -${inset}px 0px` });
-    register();
-    mutations = new MutationObserver(records => register(records.map(record => record.target)));
-    mutations.observe(main, { childList: true, characterData: true, subtree: true });
-  };
-  const finish = event => {
-    if (event.animationName === "mobile-reveal") {
-      event.target.classList.remove("mobile-reveal-enter");
+    }, {
+      threshold: 0,
+      // Include the page above the viewport so a fast swipe cannot skip a reveal.
+      rootMargin: `${main.scrollHeight + window.innerHeight}px 0px -32px 0px`,
+    });
+    // Establish the starting styles before observing the first screen.
+    const candidates = main.querySelectorAll(selector);
+    candidates.forEach(element => {
+      if (![...candidates].some(parent => parent !== element && parent.contains(element))) {
+        targets.add(element);
+        element.classList.add("mobile-reveal");
+      }
+    });
+    firstFrame = requestAnimationFrame(() => {
+      secondFrame = requestAnimationFrame(() => {
+        targets.forEach(element => observer.observe(element));
+        mutations = new MutationObserver(records => register(records.map(record => record.target)));
+        mutations.observe(main, { childList: true, characterData: true, subtree: true });
+      });
+    });
+    const hero = main.querySelector(".section_hero");
+    if (hero) {
+      heroObserver = new IntersectionObserver(([entry]) => {
+        main.classList.toggle("mobile-hero-in-view", entry.isIntersecting);
+      });
+      heroObserver.observe(hero);
     }
   };
-  main.addEventListener("animationend", finish);
   reducedMotion.addEventListener("change", start);
   start();
   return () => {
     stop();
-    main.removeEventListener("animationend", finish);
     reducedMotion.removeEventListener("change", start);
   };
 }

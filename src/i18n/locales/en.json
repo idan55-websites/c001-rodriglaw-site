@@ -283,16 +283,16 @@
     }
   },
   "cookies": {
-    "title": "Cookies & privacy",
-    "description": "With your permission, Microsoft Clarity uses cookies to record page interactions, device/browser data and IP address to improve this site. Otherwise it stays off, without limiting browsing.",
+    "title": "Cookies",
+    "description": "Do you accept all cookies? You can learn more before choosing.",
     "essential": "Essential storage",
     "essentialBody": "Your privacy choice is stored on this device for 180 days.",
     "analytics": "Optional analytics",
     "analyticsBody": "Microsoft Clarity: usage statistics, heatmaps and session recordings. Advertising storage is denied.",
     "reject": "Reject optional",
-    "accept": "Accept analytics",
+    "accept": "Accept all",
     "settings": "Cookie settings",
-    "details": "Cookie details"
+    "details": "Learn more"
   },
   "accessibility": {
     "title": "Accessibility statement",

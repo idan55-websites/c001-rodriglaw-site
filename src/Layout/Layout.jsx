@@ -57,7 +57,7 @@ const Layout = () => {
     }
   }, [location.pathname, location.hash, location.key]);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const main = document.querySelector(".page-main");
     if (!main) return;
 

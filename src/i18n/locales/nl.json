@@ -283,16 +283,16 @@
     }
   },
   "cookies": {
-    "title": "Cookies en privacy",
-    "description": "Met uw toestemming gebruikt Microsoft Clarity cookies en registreert het interacties, apparaat- en browsergegevens en het IP-adres om de site te verbeteren. Anders blijft het uit, zonder het browsen te beperken.",
+    "title": "Cookies",
+    "description": "Accepteert u alle cookies? U kunt meer lezen voordat u kiest.",
     "essential": "Noodzakelijke opslag",
     "essentialBody": "Uw privacykeuze wordt 180 dagen op dit apparaat bewaard.",
     "analytics": "Optionele analyse",
     "analyticsBody": "Microsoft Clarity: gebruiksstatistieken, heatmaps en sessieopnamen. Advertentieopslag wordt geweigerd.",
     "reject": "Optionele cookies weigeren",
-    "accept": "Analyse accepteren",
+    "accept": "Alles accepteren",
     "settings": "Cookie-instellingen",
-    "details": "Meer over cookies"
+    "details": "Meer informatie"
   },
   "accessibility": {
     "title": "Toegankelijkheids­verklaring",
