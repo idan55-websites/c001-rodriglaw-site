@@ -248,7 +248,7 @@
       },
       "cookies": {
         "title": "Cookies en uw keuze",
-        "body": "Optionele analyse staat standaard uit. U kunt analyse accepteren, optionele cookies weigeren of uw instellingen kiezen. Via Cookie-instellingen onderaan de site kunt u toestemming wijzigen of intrekken. Verder browsen is geen toestemming. Weigeren beperkt de navigatie niet. Uw keuze, versie en datum worden 180 dagen in lokale opslag bewaard; het wissen van browseropslag verwijdert ze. Bij geblokkeerde opslag wordt uw keuze mogelijk niet bewaard. Na toestemming gebruikt Clarity _clck (bezoeker en voorkeuren) en _clsk (sessiekoppeling); Microsoft documenteert cookies van derden. Advertentieopslag wordt geweigerd. Intrekken verwijdert toegankelijke Clarity-cookies op deze site en herlaadt de pagina om verzameling te stoppen. Cookies op Microsoft-domeinen beheert u via uw browser."
+        "body": "Optionele analyse staat standaard uit. U kunt analyse accepteren of optionele cookies weigeren; de link met details opent deze cookiesectie. Via Cookie-instellingen onderaan de site kunt u toestemming wijzigen of intrekken. Verder browsen is geen toestemming. Weigeren beperkt de navigatie niet. Uw keuze, versie en datum worden 180 dagen in lokale opslag bewaard; het wissen van browseropslag verwijdert ze. Bij geblokkeerde opslag wordt uw keuze mogelijk niet bewaard. Na toestemming gebruikt Clarity _clck (bezoeker en voorkeuren) en _clsk (sessiekoppeling); Microsoft documenteert cookies van derden. Advertentieopslag wordt geweigerd. Intrekken verwijdert toegankelijke Clarity-cookies op deze site en herlaadt de pagina om verzameling te stoppen. Cookies op Microsoft-domeinen beheert u via uw browser."
       },
       "legalBasis": {
         "title": "Vrijwillige verstrekking",
@@ -291,9 +291,30 @@
     "analyticsBody": "Microsoft Clarity: gebruiksstatistieken, heatmaps en sessieopnamen. Advertentieopslag wordt geweigerd.",
     "reject": "Optionele cookies weigeren",
     "accept": "Analyse accepteren",
-    "customize": "Instellingen kiezen",
-    "save": "Mijn keuze opslaan",
     "settings": "Cookie-instellingen",
-    "later": "Later beslissen"
+    "details": "Meer over cookies"
+  },
+  "accessibility": {
+    "title": "Toegankelijkheids­verklaring",
+    "skip": "Ga naar de hoofdinhoud",
+    "navigation": "Hoofdnavigatie",
+    "intro": "Wij werken eraan deze website bruikbaar te maken voor mensen met een beperking. Deze verklaring beschrijft de aanpassingen en de huidige beperkingen.",
+    "featuresTitle": "De website gebruiken",
+    "features": [
+      "Links, knoppen en de taalkeuze zijn met het toetsenbord te bedienen. De springlink brengt u direct naar de pagina-inhoud.",
+      "Toetsenbordfocus is zichtbaar. Bij het openen van cookiebediening gaat de focus naar de melding; sluiten brengt de focus terug naar de knop waarmee deze werd geopend.",
+      "Pagina’s hebben koppen en herkenbare inhoudsgebieden. Dienstcategorieknoppen geven de gekozen categorie aan en afbeeldingen hebben alternatieve tekst.",
+      "De indeling past zich aan smalle schermen en browserzoom aan. Hebreeuws heeft een leesrichting van rechts naar links.",
+      "De website respecteert de instelling voor minder beweging op uw apparaat. Browsen blijft mogelijk wanneer optionele analyse wordt geweigerd."
+    ],
+    "limitationsTitle": "Bekende beperkingen",
+    "limitations": "De ingebouwde Mapbox-kaart en externe publicaties zijn inhoud van derden waarvan wij volledige toegankelijkheid niet kunnen garanderen. Het kantooradres en de contactgegevens staan ook als tekst op de site, met links naar Google Maps en Waze als alternatieven. Een volledige handmatige beoordeling met ondersteunende technologieën is nog niet afgerond.",
+    "helpTitle": "Hulp en feedback over toegankelijkheid",
+    "help": "Neem bij een toegankelijkheidsprobleem telefonisch of per e-mail contact op met het kantoor. Vermeld indien mogelijk de pagina, het probleem en de gebruikte browser of ondersteunende technologie. U kunt via deze kanalen ook om informatie of dienstverlening vragen.",
+    "office": "Neem vóór uw bezoek contact op met het kantoor voor gecontroleerde informatie over toegang tot het gebouw, parkeren, liften of andere voorzieningen.",
+    "reviewTitle": "Status van de beoordeling",
+    "review": "Bijgewerkt op 2 oktober 2026. Automatische controles en controles van toetsenbordbediening, focus, contrast, mobiele indeling en zoom zijn uitgevoerd. Ons doel is niveau AA van de Israëlische norm 5568. Deze controles stellen geen volledige conformiteit vast; verdere handmatige beoordeling met ondersteunende technologieën is nodig.",
+    "newsweekAlt": "Newsweek-cover met Moria Rodrig",
+    "deskAlt": "Moria Rodrig aan haar bureau"
   }
 }

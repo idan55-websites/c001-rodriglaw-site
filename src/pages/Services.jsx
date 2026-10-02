@@ -55,7 +55,7 @@ const Services = () => {
               <article className="services-hero-media">
                 <img
                   src="/media/desk.jpeg"
-                  alt="Moria Rodrig at her office desk"
+                  alt={t("accessibility.deskAlt")}
                   className="services-hero-media-image"
                   onError={(event) => {
                     event.currentTarget.src = "/media/moria-desk-office.jpg";

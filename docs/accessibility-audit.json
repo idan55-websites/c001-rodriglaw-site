@@ -1,0 +1,478 @@
+[
+  {
+    "lang": "en",
+    "width": 375,
+    "route": "/",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": 2
+      }
+    ]
+  },
+  {
+    "lang": "en",
+    "width": 375,
+    "route": "/about",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": 2
+      }
+    ]
+  },
+  {
+    "lang": "en",
+    "width": 375,
+    "route": "/services",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": 1
+      }
+    ]
+  },
+  {
+    "lang": "en",
+    "width": 375,
+    "route": "/contact",
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "lang": "en",
+    "width": 375,
+    "route": "/privacy-policy",
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "lang": "en",
+    "width": 375,
+    "route": "/accessibility",
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "lang": "en",
+    "width": 1440,
+    "route": "/",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": 5
+      }
+    ]
+  },
+  {
+    "lang": "en",
+    "width": 1440,
+    "route": "/about",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": 2
+      }
+    ]
+  },
+  {
+    "lang": "en",
+    "width": 1440,
+    "route": "/services",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": 1
+      }
+    ]
+  },
+  {
+    "lang": "en",
+    "width": 1440,
+    "route": "/contact",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": 3
+      }
+    ]
+  },
+  {
+    "lang": "en",
+    "width": 1440,
+    "route": "/privacy-policy",
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "lang": "en",
+    "width": 1440,
+    "route": "/accessibility",
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "lang": "he",
+    "width": 375,
+    "route": "/",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": 2
+      }
+    ]
+  },
+  {
+    "lang": "he",
+    "width": 375,
+    "route": "/about",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": 2
+      }
+    ]
+  },
+  {
+    "lang": "he",
+    "width": 375,
+    "route": "/services",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": 1
+      }
+    ]
+  },
+  {
+    "lang": "he",
+    "width": 375,
+    "route": "/contact",
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "lang": "he",
+    "width": 375,
+    "route": "/privacy-policy",
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "lang": "he",
+    "width": 375,
+    "route": "/accessibility",
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "lang": "he",
+    "width": 1440,
+    "route": "/",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": 5
+      }
+    ]
+  },
+  {
+    "lang": "he",
+    "width": 1440,
+    "route": "/about",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": 2
+      }
+    ]
+  },
+  {
+    "lang": "he",
+    "width": 1440,
+    "route": "/services",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": 1
+      }
+    ]
+  },
+  {
+    "lang": "he",
+    "width": 1440,
+    "route": "/contact",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": 3
+      }
+    ]
+  },
+  {
+    "lang": "he",
+    "width": 1440,
+    "route": "/privacy-policy",
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "lang": "he",
+    "width": 1440,
+    "route": "/accessibility",
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "lang": "fr",
+    "width": 375,
+    "route": "/",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": 2
+      }
+    ]
+  },
+  {
+    "lang": "fr",
+    "width": 375,
+    "route": "/about",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": 2
+      }
+    ]
+  },
+  {
+    "lang": "fr",
+    "width": 375,
+    "route": "/services",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": 1
+      }
+    ]
+  },
+  {
+    "lang": "fr",
+    "width": 375,
+    "route": "/contact",
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "lang": "fr",
+    "width": 375,
+    "route": "/privacy-policy",
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "lang": "fr",
+    "width": 375,
+    "route": "/accessibility",
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "lang": "fr",
+    "width": 1440,
+    "route": "/",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": 5
+      }
+    ]
+  },
+  {
+    "lang": "fr",
+    "width": 1440,
+    "route": "/about",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": 2
+      }
+    ]
+  },
+  {
+    "lang": "fr",
+    "width": 1440,
+    "route": "/services",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": 1
+      }
+    ]
+  },
+  {
+    "lang": "fr",
+    "width": 1440,
+    "route": "/contact",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": 3
+      }
+    ]
+  },
+  {
+    "lang": "fr",
+    "width": 1440,
+    "route": "/privacy-policy",
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "lang": "fr",
+    "width": 1440,
+    "route": "/accessibility",
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "lang": "nl",
+    "width": 375,
+    "route": "/",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": 2
+      }
+    ]
+  },
+  {
+    "lang": "nl",
+    "width": 375,
+    "route": "/about",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": 2
+      }
+    ]
+  },
+  {
+    "lang": "nl",
+    "width": 375,
+    "route": "/services",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": 1
+      }
+    ]
+  },
+  {
+    "lang": "nl",
+    "width": 375,
+    "route": "/contact",
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "lang": "nl",
+    "width": 375,
+    "route": "/privacy-policy",
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "lang": "nl",
+    "width": 375,
+    "route": "/accessibility",
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "lang": "nl",
+    "width": 1440,
+    "route": "/",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": 5
+      }
+    ]
+  },
+  {
+    "lang": "nl",
+    "width": 1440,
+    "route": "/about",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": 2
+      }
+    ]
+  },
+  {
+    "lang": "nl",
+    "width": 1440,
+    "route": "/services",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": 1
+      }
+    ]
+  },
+  {
+    "lang": "nl",
+    "width": 1440,
+    "route": "/contact",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": 3
+      }
+    ]
+  },
+  {
+    "lang": "nl",
+    "width": 1440,
+    "route": "/privacy-policy",
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "lang": "nl",
+    "width": 1440,
+    "route": "/accessibility",
+    "violations": [],
+    "incomplete": []
+  }
+]

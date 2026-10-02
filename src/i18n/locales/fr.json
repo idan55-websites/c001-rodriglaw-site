@@ -248,7 +248,7 @@
       },
       "cookies": {
         "title": "Cookies et votre choix",
-        "body": "L’analyse facultative est désactivée par défaut. Vous pouvez l’accepter, refuser les cookies facultatifs ou personnaliser votre choix. Vous pouvez modifier ou retirer votre accord via Paramètres des cookies en bas du site. Continuer à naviguer ne vaut pas consentement. Refuser ne limite pas la navigation. Votre choix, sa version et sa date sont conservés dans le stockage local pendant 180 jours ; effacer ce stockage les supprime. Si le stockage est bloqué, le choix peut ne pas être conservé. Avec votre accord, Clarity utilise _clck (visiteur et préférences) et _clsk (association de session) ; Microsoft documente les cookies tiers. Le stockage publicitaire est refusé. Le retrait supprime les cookies Clarity accessibles sur ce site et recharge la page pour arrêter la collecte. Les cookies des domaines Microsoft se gèrent dans votre navigateur."
+        "body": "L’analyse facultative est désactivée par défaut. Vous pouvez accepter l’analyse ou refuser les cookies facultatifs ; le lien de détails ouvre cette section. Vous pouvez modifier ou retirer votre accord via Paramètres des cookies en bas du site. Continuer à naviguer ne vaut pas consentement. Refuser ne limite pas la navigation. Votre choix, sa version et sa date sont conservés dans le stockage local pendant 180 jours ; effacer ce stockage les supprime. Si le stockage est bloqué, le choix peut ne pas être conservé. Avec votre accord, Clarity utilise _clck (visiteur et préférences) et _clsk (association de session) ; Microsoft documente les cookies tiers. Le stockage publicitaire est refusé. Le retrait supprime les cookies Clarity accessibles sur ce site et recharge la page pour arrêter la collecte. Les cookies des domaines Microsoft se gèrent dans votre navigateur."
       },
       "legalBasis": {
         "title": "Informations fournies volontairement",
@@ -291,9 +291,30 @@
     "analyticsBody": "Microsoft Clarity : statistiques, cartes de chaleur et enregistrements de sessions. Le stockage publicitaire est refusé.",
     "reject": "Refuser les cookies facultatifs",
     "accept": "Accepter l’analyse",
-    "customize": "Personnaliser",
-    "save": "Enregistrer mon choix",
     "settings": "Paramètres des cookies",
-    "later": "Décider plus tard"
+    "details": "Détails sur les cookies"
+  },
+  "accessibility": {
+    "title": "Déclaration d’accessibilité",
+    "skip": "Aller au contenu principal",
+    "navigation": "Navigation principale",
+    "intro": "Nous travaillons à rendre ce site utilisable par les personnes en situation de handicap. Cette déclaration décrit les adaptations réalisées et les limites actuelles.",
+    "featuresTitle": "Utiliser le site",
+    "features": [
+      "Les liens, boutons et le sélecteur de langue sont utilisables au clavier. Le lien d’évitement permet d’accéder directement au contenu.",
+      "Le focus clavier est visible. Les commandes de cookies reçoivent le focus à leur ouverture ; leur fermeture le rend au bouton utilisé pour les ouvrir.",
+      "Les pages comportent des titres et des repères. Les boutons de catégories de services indiquent la sélection, et les images ont un texte alternatif.",
+      "La présentation s’adapte aux écrans étroits et au zoom du navigateur. L’hébreu se lit de droite à gauche.",
+      "Le site respecte le réglage de réduction des animations de votre appareil. La navigation reste disponible si vous refusez l’analyse facultative."
+    ],
+    "limitationsTitle": "Limites connues",
+    "limitations": "La carte Mapbox intégrée et les publications externes sont des contenus tiers dont nous ne pouvons garantir l’accessibilité complète. L’adresse et les coordonnées du cabinet sont également affichées en texte, avec des liens vers Google Maps et Waze comme alternatives. Une évaluation manuelle complète avec des technologies d’assistance reste à réaliser.",
+    "helpTitle": "Assistance et retours sur l’accessibilité",
+    "help": "Si vous rencontrez un obstacle, contactez le cabinet par téléphone ou courriel. Si possible, précisez la page, le problème et le navigateur ou la technologie d’assistance utilisés. Vous pouvez aussi demander les informations ou le service par ces canaux.",
+    "office": "Pour des informations vérifiées sur l’accès aux locaux, le stationnement, les ascenseurs ou d’autres aménagements, contactez le cabinet avant votre visite.",
+    "reviewTitle": "État de la vérification",
+    "review": "Mise à jour le 2 octobre 2026. Des vérifications automatiques et des contrôles du clavier, du focus, des contrastes, de la présentation mobile et du zoom ont été réalisés. Nous visons le niveau AA de la norme israélienne 5568. Ces contrôles n’établissent pas une conformité complète ; une évaluation manuelle supplémentaire avec des technologies d’assistance reste nécessaire.",
+    "newsweekAlt": "Couverture de Newsweek avec Moria Rodrig",
+    "deskAlt": "Moria Rodrig à son bureau"
   }
 }

@@ -14,8 +14,12 @@ export default function PrivacyPolicy() {
     <p className="eyebrow">{t('privacy.eyebrow')}</p>
     <h1 className="section-title">{t('privacy.title')}</h1>
     <p className="section-copy">{t('privacy.intro')}</p>
-    {sections.map(key => <article key={key} className="content-card privacy-card">
-      <h2 className="card-title">{t(`privacy.sections.${key}.title`)}</h2>
+    {sections.map(key => <article key={key} id={key === 'cookies' ? 'cookies' : undefined} tabIndex={key === 'cookies' ? -1 : undefined} aria-labelledby={`privacy-${key}-title`} className="content-card privacy-card">
+      <h2 id={`privacy-${key}-title`} className="card-title">{t(`privacy.sections.${key}.title`)}</h2>
+      {key === 'cookies' && <dl className="cookie-categories">
+        <dt>{t('cookies.essential')}</dt><dd>{t('cookies.essentialBody')}</dd>
+        <dt>{t('cookies.analytics')}</dt><dd>{t('cookies.analyticsBody')}</dd>
+      </dl>}
       <p className="card-copy">{t(`privacy.sections.${key}.body`)}</p>
       {key === 'systems' && <ul className="privacy-list">{providerLinks.map(([name, url]) => <li key={name}><a href={url}>{name}</a></li>)}</ul>}
     </article>)}

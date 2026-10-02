@@ -21,6 +21,14 @@ const Layout = () => {
 
   const baseLang = i18n.language.split("-")[0];
 
+  useEffect(() => {
+    const titleKey = {
+      "/": "nav.home", "/about": "nav.about", "/services": "nav.services",
+      "/contact": "nav.contact", "/privacy-policy": "privacy.title", "/accessibility": "accessibility.title",
+    }[location.pathname] || "brand.name";
+    document.title = `${t(titleKey)} | ${t("brand.name")}`;
+  }, [location.pathname, t]);
+
   useLayoutEffect(() => {
     const header = document.querySelector(".navbar");
     const updateHeaderHeight = () => {
@@ -38,12 +46,14 @@ const Layout = () => {
   useLayoutEffect(() => {
     if (location.hash) {
       const target = document.getElementById(location.hash.slice(1));
+      if (target?.hasAttribute("tabindex")) target.focus({ preventScroll: true });
       target?.scrollIntoView({
         behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth",
         block: "start",
       });
     } else {
       window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+      document.querySelector(".page-main")?.focus({ preventScroll: true });
     }
   }, [location.pathname, location.hash, location.key]);
 
@@ -143,6 +153,7 @@ const Layout = () => {
 
   return (
     <div className="body">
+      <a href="#main-content" className="skip-link">{t("accessibility.skip")}</a>
       <div className="main-wrapper">
         <header className="navbar">
           <div className="container-large">
@@ -162,7 +173,7 @@ const Layout = () => {
                 </div>
               </NavLink>
 
-              <nav className="navbar-menu">
+              <nav className="navbar-menu" aria-label={t("accessibility.navigation")}>
                 {navItems.map((item) => (
                   <NavLink
                     key={item.to}
@@ -207,7 +218,7 @@ const Layout = () => {
           </div>
         </header>
 
-        <main key={location.pathname} className="page-main page-navigation-enter">
+        <main id="main-content" tabIndex={-1} key={location.pathname} className="page-main page-navigation-enter">
           <Outlet />
         </main>
 
@@ -234,6 +245,7 @@ const Layout = () => {
                       <NavLink to="/privacy-policy" className="footer-link">
                         {t("footer.privacy")}
                       </NavLink>
+                      <NavLink to="/accessibility" className="footer-link">{t("accessibility.title")}</NavLink>
                       <button type="button" className="footer-link cookie-settings-link" onClick={() => setCookiesOpen(true)}>{t("cookies.settings")}</button>
                     </div>
                   </div>

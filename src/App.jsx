@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import Accessibility from "./pages/Accessibility";
 import About from "./pages/About";
 // import Book from "./pages/Book";
 // import Connected from "./pages/Connected";
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
+          <Route path="accessibility" element={<Accessibility />} />
           <Route path="about" element={<About />} />
           {/* Google Calendar booking flow is temporarily disabled. */}
           {/* <Route path="book" element={<Book />} /> */}

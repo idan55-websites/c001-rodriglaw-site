@@ -248,7 +248,7 @@
       },
       "cookies": {
         "title": "Cookies and your choice",
-        "body": "Optional analytics is off by default. Accept analytics, reject optional cookies or choose settings in the notice. You can withdraw or change your choice through Cookie settings in the footer. Continuing to browse is not consent. Rejection does not restrict browsing. Your versioned choice and its date are kept in local storage for 180 days; clearing browser storage removes it. If storage is blocked, your choice may not persist. When allowed, Clarity uses _clck (visitor/preferences) and _clsk (session association); Microsoft documents any third-party cookies. Advertising storage is denied. Withdrawal clears accessible Clarity cookies on this site and reloads the page to stop collection. Cookies on Microsoft domains can be managed through your browser."
+        "body": "Optional analytics is off by default. Accept analytics or reject optional cookies in the notice; the details link opens this cookies section. You can withdraw or change your choice through Cookie settings in the footer. Continuing to browse is not consent. Rejection does not restrict browsing. Your versioned choice and its date are kept in local storage for 180 days; clearing browser storage removes it. If storage is blocked, your choice may not persist. When allowed, Clarity uses _clck (visitor/preferences) and _clsk (session association); Microsoft documents any third-party cookies. Advertising storage is denied. Withdrawal clears accessible Clarity cookies on this site and reloads the page to stop collection. Cookies on Microsoft domains can be managed through your browser."
       },
       "legalBasis": {
         "title": "Voluntary provision of information",
@@ -291,9 +291,30 @@
     "analyticsBody": "Microsoft Clarity: usage statistics, heatmaps and session recordings. Advertising storage is denied.",
     "reject": "Reject optional",
     "accept": "Accept analytics",
-    "customize": "Choose settings",
-    "save": "Save my choice",
     "settings": "Cookie settings",
-    "later": "Decide later"
+    "details": "Cookie details"
+  },
+  "accessibility": {
+    "title": "Accessibility statement",
+    "skip": "Skip to main content",
+    "navigation": "Main navigation",
+    "intro": "We work to make this website usable for people with disabilities. This statement describes the accessibility adjustments made and the current limitations.",
+    "featuresTitle": "Using the website",
+    "features": [
+      "Navigate links, buttons and the language selector with the keyboard. Use the skip link to go directly to the page content.",
+      "Keyboard focus is visible. Opening cookie controls moves focus to the notice; closing them returns focus to the control that opened them.",
+      "Pages use headings and landmarks. Service category buttons announce which category is selected, and images have alternative text.",
+      "The layout adapts to narrow screens and browser zoom. Hebrew uses right-to-left reading direction.",
+      "The site respects your device’s reduced-motion setting. Essential browsing works when optional analytics is rejected."
+    ],
+    "limitationsTitle": "Known limitations",
+    "limitations": "The embedded Mapbox map and external publications are third-party content. We cannot guarantee their full accessibility. The office address and contact details are provided as text, with links to Google Maps and Waze as alternatives. A complete manual assessment with assistive technologies has not yet been completed.",
+    "helpTitle": "Accessibility assistance and feedback",
+    "help": "If you encounter a barrier, contact the office by phone or email. Please describe the page, the problem and the browser or assistive technology used, if possible. You can also request the information or service through these channels.",
+    "office": "For verified information about access to the physical office, parking, lifts or other accommodations, please contact the office before visiting.",
+    "reviewTitle": "Review status",
+    "review": "Updated 2 October 2026. Automated accessibility checks and keyboard, focus, contrast, mobile layout and zoom checks were performed. Our accessibility target is Israeli Standard 5568 at level AA. These checks do not establish complete conformity; further manual assistive-technology review is still needed.",
+    "newsweekAlt": "Newsweek cover featuring Moria Rodrig",
+    "deskAlt": "Moria Rodrig at her office desk"
   }
 }

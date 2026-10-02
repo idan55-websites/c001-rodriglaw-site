@@ -46,7 +46,7 @@ const About = () => {
                 <div className="about-portrait-frame">
                   <img
                     src="/moria-portrait.jpeg"
-                    alt="Portrait of Adv. Moria Rodrig"
+                    alt={t("home.heroImageAlt")}
                     className="about-portrait-image"
                   />
                 </div>
@@ -71,14 +71,14 @@ const About = () => {
                 <div className="press-feature-cover">
                   <img
                     src="/media/newsweek-cover.jpeg"
-                    alt="Newsweek cover featuring Moria Rodrig"
+                    alt={t("accessibility.newsweekAlt")}
                     className="press-feature-image"
                     onError={(event) => {
                       event.currentTarget.src = "/moria-portrait.jpeg";
                     }}
                   />
                 </div>
-                <div className="press-feature-copy">
+                <div className="press-feature-copy" lang="en">
                   <span className="press-feature-kicker">Newsweek / Times of Israel</span>
                   <h3 className="press-feature-title">
                     Multiculturalism Is Dead. Anti-Semitism Is Alive.

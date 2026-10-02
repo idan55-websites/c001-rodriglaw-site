@@ -11,7 +11,7 @@ Scope: public visitor pages, optional Microsoft Clarity and consent UI (English,
 
 ## Implementation
 
-Equal accept/reject controls, optional analytics checkbox, no implied consent from browsing, footer settings, versioned 180-day local preference (an implementation choice, not a statutory Israeli deadline). Corrupt, expired or unavailable saved preferences default to off. Cross-tab changes and expiry are checked. Accessible first-party _clck/_clsk cookies are cleared on denial; Microsoft-domain cookies require browser controls. Maps/fonts remain operational external requests and are disclosed separately. Existing historical tracking cannot be undone by this change.
+Equal accept/reject controls and a details link to the cookies section, no implied consent from browsing, footer settings, versioned 180-day local preference (an implementation choice, not a statutory Israeli deadline). Corrupt, expired or unavailable saved preferences default to off. Cross-tab changes and expiry are checked. Accessible first-party _clck/_clsk cookies are cleared on denial; Microsoft-domain cookies require browser controls. Maps/fonts remain operational external requests and are disclosed separately. Existing historical tracking cannot be undone by this change.
 
 ## Office/account checks outside repository scope
 
@@ -22,3 +22,8 @@ The office should verify controller details and its actual enquiry/client retent
 Production build and full ESLint pass; git diff whitespace check passes. The build retains the existing large-bundle advisory. WebKit browser emulation (not physical iPhone testing) covered 390×844, 393×852, 430×932 and 375×667. Complete screenshots of all five public routes were inspected at each size; no horizontal overflow or runtime errors were recorded. Hebrew/French/Dutch route layouts were additionally checked at 375×667. Scroll anchors clear the header, route navigation resets to the top with a fade, tabs work by touch, and reduced motion disables animations.
 
 Consent acceptance, rejection, saved preferences, reopening and withdrawal passed in all four languages at all four mobile sizes and at desktop 1440×900. Vendor requests were intercepted with a deterministic mock for these consent tests: zero Clarity requests before consent or after rejection; acceptance queues analytics granted/ads denied before loading; withdrawal removes first-party mock cookies and stops loading on the new page. Corrupt, expired, future-dated, older-version and blocked-storage cases defaulted to off. Withdrawal in a second tab stopped the first tab too. Notice/settings screenshots were inspected, including the smallest French/Dutch views after fixing their cramped layout. Actual Clarity project settings and physical-device Safari remain unverified.
+
+
+## Notice simplification
+
+The notice now presents accept/reject and a link to /privacy-policy#cookies. Categories and the full processing explanation are listed at that destination. Footer Cookie settings reopens the same binary choice; no consent behavior changed. The cookie region and linked destination receive keyboard focus.

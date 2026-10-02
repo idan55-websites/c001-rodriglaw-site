@@ -165,6 +165,8 @@ const Home = () => {
                     className={`tab-button ${
                       activeTab === "lawyer" ? "tab-button-active" : ""
                     }`}
+                    aria-pressed={activeTab === "lawyer"}
+                    aria-controls="service-category-content"
                     onClick={() => setActiveTab("lawyer")}
                   >
                     {t("home.lawyerTab")}
@@ -174,12 +176,14 @@ const Home = () => {
                     className={`tab-button ${
                       activeTab === "notary" ? "tab-button-active" : ""
                     }`}
+                    aria-pressed={activeTab === "notary"}
+                    aria-controls="service-category-content"
                     onClick={() => setActiveTab("notary")}
                   >
                     {t("home.notaryTab")}
                   </button>
                 </div>
-                <div className="tabs-content">
+                <div id="service-category-content" className="tabs-content">
                   {activeTab === "lawyer" ? (
                     <div className="services-grid">
                       {lawyerServices.map((item) => (
