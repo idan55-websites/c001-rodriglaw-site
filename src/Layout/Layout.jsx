@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { NavLink, Outlet, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { setupMobileMotion } from "../utils/mobileMotion";
 
 const Layout = () => {
   const { i18n, t } = useTranslation();
@@ -18,6 +19,10 @@ const Layout = () => {
   useEffect(() => {
     const main = document.querySelector(".page-main");
     if (!main) return;
+
+    if (window.matchMedia("(max-width: 640px) and (hover: none) and (pointer: coarse)").matches) {
+      return setupMobileMotion(main);
+    }
 
     // Subtle page transition on route changes.
     main.classList.remove("page-main-enter");
