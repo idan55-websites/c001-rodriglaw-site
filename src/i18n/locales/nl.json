@@ -148,7 +148,8 @@
     "p3": "Moria Rodrig, advocate en notaris, beschikt over ruime professionele ervaring in het vastgoedrecht en het civiel-commercieel recht. In de loop der jaren heeft zij een sterke praktijkexpertise opgebouwd in de begeleiding van complexe vastgoedtransacties, met nauwkeurige juridische oplossingen die worden afgestemd op de behoeften van iedere cliënt.\n\nHaar kantoor biedt volledige juridische begeleiding bij vastgoedtransacties: van de voorbereidende controles, via onderhandelingen en contractopmaak, tot en met de definitieve registratie bij het kadaster.\n\nMoria heeft bijzondere expertise in de begeleiding van buitenlandse cliënten en staat doorlopend cliënten uit Israël en het buitenland bij in vastgoedzaken, notariële documentatie en grensoverschrijdende procedures, met dienstverlening in meerdere talen en efficiënte, zorgvuldige behandeling, ook op afstand waar nodig.\n\nDaarnaast is het kantoor gespecialiseerd in testamenten, levenstestamenten (duurzame volmachten), commerciële overeenkomsten en notariële dienstverlening conform de geldende regelgeving, met voortdurende nadruk op professionaliteit, bereikbaarheid en persoonlijke begeleiding.\n\nNaast haar professionele werkzaamheden is Moria ook maatschappelijk actief. Zij is voorzitter van de Vereniging van Belgische immigranten in Israël en fungeert tevens als gemeentelijk vertegenwoordiger in het forum van echtgenotes van reservisten, vanuit een sterke betrokkenheid bij de gemeenschap en sociale veerkracht.\n\nMoria gelooft in de combinatie van juridische precisie, strategisch denken en persoonlijke service, en begeleidt haar cliënten met vertrouwen en transparantie tot het best haalbare resultaat is bereikt.",
     "name": "adv. Moria Rodrig",
     "role": "Advocate en notaris",
-    "pressTitle": "Uit de pers"
+    "pressTitle": "Uit de pers",
+    "nameReference": "Moria Rodrig, advocaat en notaris, is ook bekend als Moria Hadad, Moria Rodrig Hadad en Moria Hadad Rodrig. Deze namen verwijzen naar dezelfde advocaat en notaris en haar kantoor in Petah Tikva."
   },
   "book": {
     "eyebrow": "Boeken",
@@ -192,7 +193,7 @@
     "eyebrow": "Diensten",
     "title": "Juridische en notariële praktijkgebieden",
     "legalTitle": "Juridische diensten",
-    "notaryTitle": "Notariële diensten",
+    "notaryTitle": "Notaris in Petah Tikva",
     "note": "Volledige vertegenwoordiging, strategisch advies en notariële certificering op maat voor particuliere en zakelijke cliënten.",
     "legalItems": {
       "consulting": "Civiel- en handelsrechtelijk juridisch advies",
@@ -205,7 +206,8 @@
       "affidavits": "Notariële verklaringen en volmachten",
       "copies": "Gecertificeerde kopieën van officiële documenten",
       "confirmations": "Notariële verklaringen voor lokaal en grensoverschrijdend gebruik"
-    }
+    },
+    "intro": "Moria Rodrig, advocaat en notaris in Petah Tikva, verzorgt notariële vertalingen en verklaringen in het Hebreeuws, Engels, Frans en Nederlands, en begeleidt vastgoedtransacties, testamenten en duurzame volmachten."
   },
   "contact": {
     "eyebrow": "Contact",
@@ -333,6 +335,24 @@
       "grayscale": "Grijstinten",
       "reset": "Alle instellingen herstellen",
       "saved": "Voorkeuren worden in deze browser opgeslagen wanneer opslag beschikbaar is."
+    }
+  },
+  "seo": {
+    "home": {
+      "title": "Moria Rodrig | Advocaat en notaris in Petah Tikva",
+      "description": "Moria Rodrig, advocaat en notaris in Petah Tikva, Israël. Vastgoed, testamenten, duurzame volmachten en notariële vertalingen in Hebreeuws, Engels, Frans en Nederlands."
+    },
+    "about": {
+      "title": "Over Moria Rodrig | Advocaat en notaris",
+      "description": "Moria Rodrig, ook bekend als Moria Hadad, Moria Rodrig Hadad en Moria Hadad Rodrig. Advocaat en notaris in Petah Tikva met meertalige juridische dienstverlening."
+    },
+    "services": {
+      "title": "Notariële en juridische diensten in Petah Tikva | Moria Rodrig",
+      "description": "Notariële vertalingen, volmachten en gewaarmerkte kopieën in Petah Tikva. Moria Rodrig begeleidt ook vastgoedtransacties, testamenten en duurzame volmachten."
+    },
+    "contact": {
+      "title": "Contact met Moria Rodrig | Advocaat en notaris in Petah Tikva",
+      "description": "Kantoor Moria Rodrig, Hasivim 49, Petah Tikva, Israël. Bel +972-54-622-5654 of neem contact op via e-mail of WhatsApp om een afspraak te maken."
     }
   }
 }

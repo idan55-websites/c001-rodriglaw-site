@@ -2689,3 +2689,6 @@ body.motion-lite .lang-select:hover {
 .mapboxgl-ctrl-attrib { background: #fff; }
 
 .map-address-placeholder { display: grid; place-items: center; background: #eef3fa; color: #14243f; padding: 24px; text-align: center; }
+
+.name-reference .section-copy { margin-top: .75rem; }
+.name-reference-alternates { font-size: .9rem; line-height: 1.75; }

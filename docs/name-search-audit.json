@@ -1,0 +1,281 @@
+{
+  "errors": [],
+  "results": [
+    {
+      "width": 1440,
+      "lang": "he",
+      "path": "/",
+      "overflow": false,
+      "invalidKeys": false,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "lang": "he",
+      "path": "/about",
+      "overflow": false,
+      "invalidKeys": false,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "lang": "he",
+      "path": "/services",
+      "overflow": false,
+      "invalidKeys": false,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "lang": "en",
+      "path": "/",
+      "overflow": false,
+      "invalidKeys": false,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "lang": "en",
+      "path": "/about",
+      "overflow": false,
+      "invalidKeys": false,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "lang": "en",
+      "path": "/services",
+      "overflow": false,
+      "invalidKeys": false,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "lang": "fr",
+      "path": "/",
+      "overflow": false,
+      "invalidKeys": false,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "lang": "fr",
+      "path": "/about",
+      "overflow": false,
+      "invalidKeys": false,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "lang": "fr",
+      "path": "/services",
+      "overflow": false,
+      "invalidKeys": false,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "lang": "nl",
+      "path": "/",
+      "overflow": false,
+      "invalidKeys": false,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "lang": "nl",
+      "path": "/about",
+      "overflow": false,
+      "invalidKeys": false,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "lang": "nl",
+      "path": "/services",
+      "overflow": false,
+      "invalidKeys": false,
+      "violations": []
+    },
+    {
+      "width": 375,
+      "lang": "he",
+      "path": "/",
+      "overflow": false,
+      "invalidKeys": false,
+      "violations": []
+    },
+    {
+      "width": 375,
+      "lang": "he",
+      "path": "/about",
+      "overflow": false,
+      "invalidKeys": false,
+      "violations": []
+    },
+    {
+      "width": 375,
+      "lang": "he",
+      "path": "/services",
+      "overflow": false,
+      "invalidKeys": false,
+      "violations": []
+    },
+    {
+      "width": 375,
+      "lang": "en",
+      "path": "/",
+      "overflow": false,
+      "invalidKeys": false,
+      "violations": []
+    },
+    {
+      "width": 375,
+      "lang": "en",
+      "path": "/about",
+      "overflow": false,
+      "invalidKeys": false,
+      "violations": []
+    },
+    {
+      "width": 375,
+      "lang": "en",
+      "path": "/services",
+      "overflow": false,
+      "invalidKeys": false,
+      "violations": []
+    },
+    {
+      "width": 375,
+      "lang": "fr",
+      "path": "/",
+      "overflow": false,
+      "invalidKeys": false,
+      "violations": []
+    },
+    {
+      "width": 375,
+      "lang": "fr",
+      "path": "/about",
+      "overflow": false,
+      "invalidKeys": false,
+      "violations": []
+    },
+    {
+      "width": 375,
+      "lang": "fr",
+      "path": "/services",
+      "overflow": false,
+      "invalidKeys": false,
+      "violations": []
+    },
+    {
+      "width": 375,
+      "lang": "nl",
+      "path": "/",
+      "overflow": false,
+      "invalidKeys": false,
+      "violations": []
+    },
+    {
+      "width": 375,
+      "lang": "nl",
+      "path": "/about",
+      "overflow": false,
+      "invalidKeys": false,
+      "violations": []
+    },
+    {
+      "width": 375,
+      "lang": "nl",
+      "path": "/services",
+      "overflow": false,
+      "invalidKeys": false,
+      "violations": []
+    },
+    {
+      "width": 320,
+      "lang": "he",
+      "path": "/",
+      "textSize": 200,
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "lang": "he",
+      "path": "/about",
+      "textSize": 200,
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "lang": "he",
+      "path": "/services",
+      "textSize": 200,
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "lang": "en",
+      "path": "/",
+      "textSize": 200,
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "lang": "en",
+      "path": "/about",
+      "textSize": 200,
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "lang": "en",
+      "path": "/services",
+      "textSize": 200,
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "lang": "fr",
+      "path": "/",
+      "textSize": 200,
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "lang": "fr",
+      "path": "/about",
+      "textSize": 200,
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "lang": "fr",
+      "path": "/services",
+      "textSize": 200,
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "lang": "nl",
+      "path": "/",
+      "textSize": 200,
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "lang": "nl",
+      "path": "/about",
+      "textSize": 200,
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "lang": "nl",
+      "path": "/services",
+      "textSize": 200,
+      "overflow": false
+    }
+  ]
+}

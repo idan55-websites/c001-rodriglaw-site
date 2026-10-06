@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import OfficeMap from "../components/DeferredOfficeMap";
+import NameReference from "../components/NameReference";
 
 const Home = () => {
   const { t } = useTranslation();
@@ -125,6 +126,7 @@ const Home = () => {
                 <div className="about-wrapper-flex">
                   <div className="about-richtext">
                     <p>{t("home.aboutSection.p1")}</p>
+                    <NameReference />
                     <p>{t("home.aboutSection.p2")}</p>
                     <p>{t("home.aboutSection.p3")}</p>
                     <div className="about-language-cert">

@@ -68,3 +68,10 @@ The statement includes the office's contact details and known limitations.
 An assistive-technology review and verified physical-office accessibility
 arrangements remain necessary before claiming full compliance with Israeli
 accessibility requirements. See `docs/seo-accessibility-update.md` for evidence.
+
+Name variants are maintained in `src/utils/businessIdentity.js`: Moria Rodrig,
+Moria Hadad, Moria Rodrig Hadad and Moria Hadad Rodrig, with their Hebrew forms.
+They are associated with the same person/office in structured data and explained
+in visible Home/About copy. Localized metadata lives under `seo` in each locale.
+The Services page uses its visible service list as the source of the structured
+service catalog. Update names and services only with accurate owner-supplied data.
