@@ -1,4 +1,5 @@
-export const SITE_URL = 'https://rodriglaw.com';
+// The production apex domain redirects to www; all indexing signals use that host.
+export const SITE_URL = 'https://www.rodriglaw.com';
 export const publicRoutes = ['/', '/about', '/services', '/contact', '/privacy-policy', '/accessibility'];
 const pageKeys = {
   '/': ['home.heroTitle', 'home.heroIntro'],

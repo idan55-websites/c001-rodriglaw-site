@@ -44,7 +44,10 @@ in `server/`.
 
 ## SEO and accessibility
 
-The canonical domain is `https://rodriglaw.com`, configured in `src/utils/seo.js`.
+The canonical domain is `https://www.rodriglaw.com`, configured in `src/utils/seo.js`,
+matching the live redirect from `rodriglaw.com`. The home-page HTML references the
+square 192px MR favicon directly on that host. `/favicon.ico` remains available
+for browser fallback.
 Hebrew is the default public language; a visitor's chosen language is saved locally.
 The build generates a complete HTML document for each public route so crawlers can
 read the content without JavaScript. `vercel.json` routes clean URLs to those
@@ -52,7 +55,7 @@ HTML files; the preview server mirrors these rewrites. Deploy the entire `dist/`
 directory with these rewrites, rather than only `dist/index.html`.
 
 After publishing, verify `rodriglaw.com` in Google Search Console, submit
-`https://rodriglaw.com/sitemap.xml`, and request indexing of the main pages.
+`https://www.rodriglaw.com/sitemap.xml`, and request indexing of the main pages.
 Check the live canonical URLs and robots.txt after deployment. Google decides
 whether, when and where to index/rank pages; neither rapid indexing nor a first
 position can be guaranteed. A verified Google Business Profile with consistent
