@@ -2,9 +2,10 @@ import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { applyAccessibilityPreferences, defaultPreferences, readAccessibilityPreferences, ACCESSIBILITY_KEY } from '../utils/accessibilityPreferences';
+import { localizePath } from '../utils/siteRoutes';
 
 export default function AccessibilityMenu() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const dialog = useRef(null);
   const trigger = useRef(null);
   const followingStatement = useRef(false);
@@ -56,7 +57,7 @@ export default function AccessibilityMenu() {
           <span>{t(`accessibility.menu.${key}`)}</span><span aria-hidden="true">{preferences[key] ? '✓' : '+'}</span>
         </button>)}</div>
       <button type="button" className="accessibility-reset" onClick={() => setPreferences({ ...defaultPreferences })}>{t('accessibility.menu.reset')}</button>
-      <Link className="accessibility-statement-link" to="/accessibility" onClick={() => { followingStatement.current = true; close(); }}>{t('accessibility.title')}</Link>
+      <Link className="accessibility-statement-link" to={localizePath('/accessibility', i18n.language)} onClick={() => { followingStatement.current = true; close(); }}>{t('accessibility.title')}</Link>
       <p className="accessibility-menu-note">{t('accessibility.menu.saved')}</p>
     </dialog>
   </>;

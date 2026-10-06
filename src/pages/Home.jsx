@@ -3,9 +3,10 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import OfficeMap from "../components/DeferredOfficeMap";
 import NameReference from "../components/NameReference";
+import { localizePath } from "../utils/siteRoutes";
 
 const Home = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [activeTab, setActiveTab] = useState("lawyer");
   const lat = 32.0831515;
   const lng = 34.8567889;
@@ -107,7 +108,7 @@ const Home = () => {
                     </p>
                   </div>
                   <div className="space-large" />
-                  <Link to="/#contacts" className="button-main">
+                  <Link to={localizePath('/#contacts', i18n.language)} className="button-main">
                     <span>{t("home.heroCta")}</span>
                   </Link>
                 </div>
@@ -126,7 +127,7 @@ const Home = () => {
                 <div className="about-wrapper-flex">
                   <div className="about-richtext">
                     <p>{t("home.aboutSection.p1")}</p>
-                    <NameReference />
+                    <NameReference bilingual />
                     <p>{t("home.aboutSection.p2")}</p>
                     <p>{t("home.aboutSection.p3")}</p>
                     <div className="about-language-cert">
@@ -328,7 +329,7 @@ const Home = () => {
       </section>
 
       <div className="contact-button">
-        <Link to="/#contacts" className="floating-button-home">
+        <Link to={localizePath('/#contacts', i18n.language)} className="floating-button-home">
           {t("home.heroCta")}
         </Link>
       </div>

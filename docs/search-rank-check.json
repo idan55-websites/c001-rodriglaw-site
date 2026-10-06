@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-06",
+  "scope": "Public, non-personalized Google search; hl=en, gl=il, pws=0",
+  "attempted": [
+    {
+      "term": "moria rodrig law and notary",
+      "blocked": true
+    }
+  ],
+  "notAttempted": [
+    "moria hadad la notary",
+    "moria rodrig hadad law and notary",
+    "moria hadad rodrig law and notary",
+    "מוריה רודריג עו\"ד ונוטריון",
+    "מוריה חדד עו\"ד ונוטריון",
+    "מוריה רודריג חדד עו\"ד ונוריון",
+    "מוריה חדד רודריג עו\"ד ונוטריון",
+    "נוטריון"
+  ],
+  "reason": "Google served an automated-traffic challenge on the first query. Stopped without bypassing. No ranking or indexing success is claimed for any query."
+}

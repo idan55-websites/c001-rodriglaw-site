@@ -35,9 +35,10 @@ npm --prefix server run dev
 
 ## Commands
 
-- `npm run build` — build the frontend and prerender all six public pages in Hebrew, including SEO metadata, structured data, robots.txt and sitemap.xml.
+- `npm run build` — build the frontend and prerender all 24 public pages across Hebrew, English, French and Dutch, including SEO metadata, structured data, robots.txt and sitemap.xml.
 - `npm run preview` — preview the production build locally.
 - `npm run lint` — check frontend code with ESLint.
+- `npm run check:seo` — verify the built HTML, name variants, language annotations, sitemap and production route mappings (run after build).
 
 Frontend code lives in `src/`; backend routes and database migrations live
 in `server/`.
@@ -48,7 +49,11 @@ The canonical domain is `https://www.rodriglaw.com`, configured in `src/utils/se
 matching the live redirect from `rodriglaw.com`. The home-page HTML references the
 square 192px MR favicon directly on that host. `/favicon.ico` remains available
 for browser fallback.
-Hebrew is the default public language; a visitor's chosen language is saved locally.
+Hebrew uses the existing root URLs; English, French and Dutch use `/en`, `/fr`
+and `/nl`. A page's URL determines its language for both crawlers and visitors.
+The language selector and footer language links navigate to the equivalent
+translated URL. Each page has a self-canonical URL and reciprocal `hreflang`
+links, and all 24 URLs are included in the sitemap.
 The build generates a complete HTML document for each public route so crawlers can
 read the content without JavaScript. `vercel.json` routes clean URLs to those
 HTML files; the preview server mirrors these rewrites. Deploy the entire `dist/`

@@ -2692,3 +2692,6 @@ body.motion-lite .lang-select:hover {
 
 .name-reference .section-copy { margin-top: .75rem; }
 .name-reference-alternates { font-size: .9rem; line-height: 1.75; }
+
+.footer-language-links { display: flex; flex-wrap: wrap; gap: .35rem 1rem; margin-top: 1rem; }
+.footer-language-links a { display: inline-flex; align-items: center; min-height: 44px; color: #d6e8ff; text-decoration: underline; }

@@ -22,6 +22,78 @@
       "destination": "/accessibility/index.html"
     },
     {
+      "source": "/en",
+      "destination": "/en/index.html"
+    },
+    {
+      "source": "/en/about",
+      "destination": "/en/about/index.html"
+    },
+    {
+      "source": "/en/services",
+      "destination": "/en/services/index.html"
+    },
+    {
+      "source": "/en/contact",
+      "destination": "/en/contact/index.html"
+    },
+    {
+      "source": "/en/privacy-policy",
+      "destination": "/en/privacy-policy/index.html"
+    },
+    {
+      "source": "/en/accessibility",
+      "destination": "/en/accessibility/index.html"
+    },
+    {
+      "source": "/fr",
+      "destination": "/fr/index.html"
+    },
+    {
+      "source": "/fr/about",
+      "destination": "/fr/about/index.html"
+    },
+    {
+      "source": "/fr/services",
+      "destination": "/fr/services/index.html"
+    },
+    {
+      "source": "/fr/contact",
+      "destination": "/fr/contact/index.html"
+    },
+    {
+      "source": "/fr/privacy-policy",
+      "destination": "/fr/privacy-policy/index.html"
+    },
+    {
+      "source": "/fr/accessibility",
+      "destination": "/fr/accessibility/index.html"
+    },
+    {
+      "source": "/nl",
+      "destination": "/nl/index.html"
+    },
+    {
+      "source": "/nl/about",
+      "destination": "/nl/about/index.html"
+    },
+    {
+      "source": "/nl/services",
+      "destination": "/nl/services/index.html"
+    },
+    {
+      "source": "/nl/contact",
+      "destination": "/nl/contact/index.html"
+    },
+    {
+      "source": "/nl/privacy-policy",
+      "destination": "/nl/privacy-policy/index.html"
+    },
+    {
+      "source": "/nl/accessibility",
+      "destination": "/nl/accessibility/index.html"
+    },
+    {
       "source": "/(.*)",
       "destination": "/index.html"
     }

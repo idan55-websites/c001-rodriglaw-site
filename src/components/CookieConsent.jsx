@@ -2,9 +2,10 @@ import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { saveConsent } from '../utils/cookieConsent';
+import { localizePath } from '../utils/siteRoutes';
 
 export default function CookieConsent({ onClose }) {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const panel = useRef(null);
   const followDetails = useRef(false);
   useEffect(() => {
@@ -25,7 +26,7 @@ export default function CookieConsent({ onClose }) {
         <button type="button" onClick={() => choose(false)}>{t('cookies.reject')}</button>
         <button type="button" onClick={() => choose(true)}>{t('cookies.accept')}</button>
       </div>
-      <div className="cookie-links"><Link to="/privacy-policy#cookies" onClick={() => { followDetails.current = true; onClose(); }}>{t('cookies.details')}</Link></div>
+      <div className="cookie-links"><Link to={localizePath('/privacy-policy#cookies', i18n.language)} onClick={() => { followDetails.current = true; onClose(); }}>{t('cookies.details')}</Link></div>
     </section>
   );
 }

@@ -1,8 +1,9 @@
 import { businessNames, personNames } from './businessIdentity.js';
+import { getRouteInfo, languages, localizePath } from './siteRoutes.js';
+export { publicRoutes } from './siteRoutes.js';
 
 // The production apex domain redirects to www; all indexing signals use that host.
 export const SITE_URL = 'https://www.rodriglaw.com';
-export const publicRoutes = ['/', '/about', '/services', '/contact', '/privacy-policy', '/accessibility'];
 const pageKeys = {
   '/': ['home.heroTitle', 'home.heroIntro'],
   '/about': ['about.title', 'about.p1'],
@@ -25,14 +26,14 @@ function getServiceCatalog(t) {
   };
 }
 
-export function getSeo(pathname, language, t) {
-  const path = pathname === '/' ? '/' : pathname.replace(/\/+$/, '');
-  const lang = language.split('-')[0];
+export function getSeo(pathname, t) {
+  const { basePath: path, language: lang } = getRouteInfo(pathname);
   const keys = pageKeys[path];
   const seoKey = seoKeys[path];
   const title = seoKey ? t(`seo.${seoKey}.title`) : `${t(keys?.[0] || 'brand.name')} | ${t('brand.name')}`;
   const description = seoKey ? t(`seo.${seoKey}.description`) : `${t(keys?.[1] || 'home.heroIntro')} ${t('brand.name')}`;
-  const url = `${SITE_URL}${path}`;
+  const url = `${SITE_URL}${localizePath(path, lang)}`;
+  const alternates = languages.map(language => ({ language, url: `${SITE_URL}${localizePath(path, language)}` }));
   const name = 'מוריה רודריג – משרד עורכי דין ונוטריון';
   const schema = {
     '@context': 'https://schema.org',
@@ -48,7 +49,7 @@ export function getSeo(pathname, language, t) {
         ...(path === '/services' ? { hasOfferCatalog: getServiceCatalog(t) } : {}),
       },
       { '@type': 'Person', '@id': `${SITE_URL}/#moria`, name: 'מוריה רודריג', alternateName: personNames.filter(name => name !== 'מוריה רודריג'),
-        jobTitle: 'עורכת דין ונוטריון', worksFor: { '@id': `${SITE_URL}/#office` }, url: `${SITE_URL}/about`, image: `${SITE_URL}/moria-portrait.jpeg`, knowsLanguage: ['he', 'en', 'fr', 'nl'] },
+        jobTitle: t('about.role'), worksFor: { '@id': `${SITE_URL}/#office` }, url: `${SITE_URL}${localizePath('/about', lang)}`, image: `${SITE_URL}/moria-portrait.jpeg`, knowsLanguage: ['he', 'en', 'fr', 'nl'] },
       { '@type': 'WebSite', '@id': `${SITE_URL}/#website`, url: `${SITE_URL}/`, name,
         alternateName: personNames, publisher: { '@id': `${SITE_URL}/#office` }, inLanguage: ['he', 'en', 'fr', 'nl'] },
       { '@type': path === '/about' ? 'ProfilePage' : 'WebPage', '@id': `${url}#webpage`, url, name: title, description,
@@ -57,7 +58,7 @@ export function getSeo(pathname, language, t) {
       },
     ],
   };
-  return { title, description, url, lang, schema, indexable: Boolean(keys) };
+  return { title, description, url, lang, schema, alternates, indexable: Boolean(keys) };
 }
 
 const escapeHtml = value => value.replace(/[&<>"']/g, character => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[character]);
@@ -67,6 +68,8 @@ export function renderSeoHead(seo) {
     <meta name="description" content="${escapeHtml(seo.description)}" />
     <meta name="robots" content="${seo.indexable ? 'index, follow, max-image-preview:large' : 'noindex, follow'}" />
     <link rel="canonical" href="${escapeHtml(seo.url)}" />
+    ${seo.indexable ? seo.alternates.map(alternate => `<link rel="alternate" hreflang="${alternate.language}" href="${escapeHtml(alternate.url)}" />`).join('\n    ') : ''}
+    ${seo.indexable ? `<link rel="alternate" hreflang="x-default" href="${escapeHtml(seo.alternates.find(alternate => alternate.language === 'he').url)}" />` : ''}
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="מוריה רודריג – משרד עורכי דין ונוטריון" />
     <meta property="og:title" content="${escapeHtml(seo.title)}" />

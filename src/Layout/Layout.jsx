@@ -1,11 +1,12 @@
 import { useEffect, useLayoutEffect, useState } from "react";
-import { NavLink, Outlet, useLocation } from "react-router-dom";
+import { NavLink, Outlet, useLocation, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { setupMobileMotion } from "../utils/mobileMotion";
 
 import AccessibilityMenu from "../components/AccessibilityMenu";
 import Seo from "../components/Seo";
 import { motionDisabled } from "../utils/accessibilityPreferences";
+import { getRouteInfo, languages, localizePath } from "../utils/siteRoutes";
 
 import CookieConsent from "../components/CookieConsent";
 import { initializeConsent, readConsent } from "../utils/cookieConsent";
@@ -15,6 +16,12 @@ const Layout = () => {
   useEffect(() => initializeConsent(), []);
   const { i18n, t } = useTranslation();
   const location = useLocation();
+  const navigate = useNavigate();
+  const { language: baseLang } = getRouteInfo(location.pathname);
+
+  useLayoutEffect(() => {
+    if (i18n.language !== baseLang) i18n.changeLanguage(baseLang);
+  }, [baseLang, i18n]);
 
   const navItems = [
     { to: "/", label: t("nav.home") },
@@ -22,8 +29,6 @@ const Layout = () => {
     { to: "/services", label: t("nav.services") },
     { to: "/contact", label: t("nav.contact") },
   ];
-
-  const baseLang = i18n.language.split("-")[0];
 
   useLayoutEffect(() => {
     const header = document.querySelector(".navbar");
@@ -155,7 +160,7 @@ const Layout = () => {
         <header className="navbar">
           <div className="container-large">
             <div className="navbar-wrapper">
-              <NavLink to="/" className="navbar-brand">
+              <NavLink to={localizePath('/', baseLang)} className="navbar-brand">
                 <div className="logo-component">
                   <img
                     src="/WhatsApp Image 2026-02-26 at 11.13.13_199x120.jpeg"
@@ -174,7 +179,7 @@ const Layout = () => {
                 {navItems.map((item) => (
                   <NavLink
                     key={item.to}
-                    to={item.to}
+                    to={localizePath(item.to, baseLang)}
                     end={item.to === "/"}
                     className={({ isActive }) =>
                       `navbar-link ${isActive ? "navbar-link-active" : ""}`
@@ -200,7 +205,11 @@ const Layout = () => {
                   <select
                     className="lang-select"
                     value={baseLang}
-                    onChange={(e) => i18n.changeLanguage(e.target.value)}
+                    onChange={(e) => {
+                      const language = e.target.value;
+                      i18n.changeLanguage(language);
+                      navigate(localizePath(`${location.pathname}${location.search}${location.hash}`, language));
+                    }}
                     aria-label={t("nav.language")}
                   >
                     <option value="en">EN</option>
@@ -233,18 +242,23 @@ const Layout = () => {
                   </div>
                   <div>
                     <div className="footer-menu-grid">
-                      <NavLink to="/" className="footer-link">
+                      <NavLink to={localizePath('/', baseLang)} className="footer-link">
                         {t("nav.home")}
                       </NavLink>
-                      <NavLink to="/about" className="footer-link">
+                      <NavLink to={localizePath('/about', baseLang)} className="footer-link">
                         {t("nav.about")}
                       </NavLink>
-                      <NavLink to="/privacy-policy" className="footer-link">
+                      <NavLink to={localizePath('/privacy-policy', baseLang)} className="footer-link">
                         {t("footer.privacy")}
                       </NavLink>
-                      <NavLink to="/accessibility" className="footer-link">{t("accessibility.title")}</NavLink>
+                      <NavLink to={localizePath('/accessibility', baseLang)} className="footer-link">{t("accessibility.title")}</NavLink>
                       <button type="button" className="footer-link cookie-settings-link" onClick={() => setCookiesOpen(true)}>{t("cookies.settings")}</button>
                     </div>
+                    <nav className="footer-language-links" aria-label={t('nav.language')}>
+                      {languages.map(language => <NavLink key={language} to={localizePath(location.pathname, language)} aria-current={baseLang === language ? 'true' : undefined}>
+                        {{ he: 'עברית', en: 'English', fr: 'Français', nl: 'Nederlands' }[language]}
+                      </NavLink>)}
+                    </nav>
                   </div>
                   <div className="footer-contacts-wrapper">
                     <a href="tel:+972546225654" className="footer-contact-link">

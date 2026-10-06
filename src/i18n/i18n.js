@@ -5,17 +5,11 @@ import en from "./locales/en.json";
 import fr from "./locales/fr.json";
 import he from "./locales/he.json";
 import nl from "./locales/nl.json";
-
-// only these are supported
-const supported = ["en", "fr", "he", "nl"];
+import { getRouteInfo } from "../utils/siteRoutes";
 
 function detectLang() {
-  // Hebrew is the public/indexable default; a visitor's explicit choice persists.
-  try {
-    const saved = localStorage.getItem("moria-language");
-    if (supported.includes(saved)) return saved;
-  } catch { /* SSR and storage-blocked browsers use Hebrew. */ }
-  return "he";
+  // The URL is authoritative, giving crawlers and visitors the same page language.
+  return typeof window === 'undefined' ? 'he' : getRouteInfo(window.location.pathname).language;
 }
 
 const initialLang = detectLang();
