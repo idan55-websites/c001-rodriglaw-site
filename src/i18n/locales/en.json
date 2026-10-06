@@ -305,7 +305,8 @@
       "Keyboard focus is visible. Opening cookie controls moves focus to the notice; closing them returns focus to the control that opened them.",
       "Pages use headings and landmarks. Service category buttons announce which category is selected, and images have alternative text.",
       "The layout adapts to narrow screens and browser zoom. Hebrew uses right-to-left reading direction.",
-      "The site respects your device’s reduced-motion setting. Essential browsing works when optional analytics is rejected."
+      "The site respects your device’s reduced-motion setting. Essential browsing works when optional analytics is rejected.",
+      "The accessibility menu offers text enlargement up to 200%, high contrast, stopping animations, underlined links, a readable font, text spacing and grayscale. Preferences are saved in your browser. Escape closes the dialog."
     ],
     "limitationsTitle": "Known limitations",
     "limitations": "The embedded Mapbox map and external publications are third-party content. We cannot guarantee their full accessibility. The office address and contact details are provided as text, with links to Google Maps and Waze as alternatives. A complete manual assessment with assistive technologies has not yet been completed.",
@@ -313,8 +314,25 @@
     "help": "If you encounter a barrier, contact the office by phone or email. Please describe the page, the problem and the browser or assistive technology used, if possible. You can also request the information or service through these channels.",
     "office": "For verified information about access to the physical office, parking, lifts or other accommodations, please contact the office before visiting.",
     "reviewTitle": "Review status",
-    "review": "Updated 2 October 2026. Automated accessibility checks and keyboard, focus, contrast, mobile layout and zoom checks were performed. Our accessibility target is Israeli Standard 5568 at level AA. These checks do not establish complete conformity; further manual assistive-technology review is still needed.",
+    "review": "Updated 6 October 2026. Automated accessibility checks and keyboard, focus, contrast, mobile layout and zoom checks were performed. Our accessibility target is Israeli Standard 5568 at level AA. These checks do not establish complete conformity; further manual assistive-technology review is still needed.",
     "newsweekAlt": "Newsweek cover featuring Moria Rodrig",
-    "deskAlt": "Moria Rodrig at her office desk"
+    "deskAlt": "Moria Rodrig at her office desk",
+    "menu": {
+      "open": "Open accessibility menu",
+      "title": "Accessibility settings",
+      "close": "Close accessibility menu",
+      "intro": "Adjust the display for your comfort. Use the keyboard to navigate and Escape to close.",
+      "textSize": "Text size",
+      "increase": "Increase text size",
+      "decrease": "Decrease text size",
+      "contrast": "High contrast",
+      "reduceMotion": "Stop animations",
+      "underlineLinks": "Underline links",
+      "readableFont": "Readable font",
+      "textSpacing": "Text spacing",
+      "grayscale": "Grayscale",
+      "reset": "Reset all settings",
+      "saved": "Preferences are saved in this browser when storage is available."
+    }
   }
 }

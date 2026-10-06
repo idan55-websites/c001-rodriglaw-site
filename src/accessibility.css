@@ -1,0 +1,73 @@
+/* Native dialog provides modal focus containment, Escape and an inert background. */
+html { font-size: var(--a11y-text-size, 100%); }
+.accessibility-trigger {
+  position: fixed; left: max(16px, env(safe-area-inset-left)); bottom: max(20px, env(safe-area-inset-bottom));
+  z-index: 1001; width: 52px; height: 52px; display: grid; place-items: center;
+  background: #143f75; color: #fff; border: 2px solid #fff; border-radius: 50%;
+  box-shadow: 0 4px 18px #14243f40; cursor: pointer;
+}
+.accessibility-trigger svg { width: 30px; height: 30px; }
+.accessibility-dialog {
+  width: min(440px, calc(100% - 32px)); max-height: calc(100dvh - 32px); overflow-y: auto;
+  padding: 24px; background: #fff; color: #14243f; border: 1px solid #d7e0ec;
+  border-radius: 20px; box-shadow: 0 20px 70px #14243f55; text-align: start; font-size: 1rem; overflow-wrap: anywhere;
+}
+.accessibility-dialog::backdrop { background: #07142899; }
+.accessibility-menu-header { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.accessibility-menu-header h2 { margin: 0; min-width: 0; font-size: 1.4rem; line-height: 1.4; }
+.accessibility-dialog button { font: inherit; min-width: 44px; min-height: 44px; cursor: pointer; }
+.accessibility-close { flex-shrink: 0; border: 1px solid #d7e0ec; border-radius: 8px; background: #fff; color: #14243f; font-size: 1.5rem !important; }
+.accessibility-menu-intro, .accessibility-menu-note { line-height: 1.6; color: #43546e; }
+.accessibility-text-size { min-width: 0; margin: 20px 0; padding: 12px; border: 1px solid #bccadd; border-radius: 12px; display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.accessibility-text-size legend { font-weight: 700; padding-inline: 6px; }
+.accessibility-text-size button { border: 1px solid #bccadd; border-radius: 8px; background: #f4f7fc; color: #14243f; }
+.accessibility-text-size button:disabled { opacity: .5; cursor: default; }
+.accessibility-options { display: grid; gap: 8px; }
+.accessibility-options button { display: flex; justify-content: space-between; gap: 12px; align-items: center; text-align: start; padding: 12px; background: #f4f7fc; color: #14243f; border: 1px solid #bccadd; border-radius: 10px; }
+.accessibility-options button[aria-pressed="true"] { background: #143f75; border-color: #143f75; color: #fff; }
+.accessibility-reset { width: 100%; margin-top: 16px; border: 1px solid #143f75; border-radius: 10px; background: #fff; color: #143f75; padding: 10px; }
+.accessibility-statement-link { display: flex; justify-content: center; align-items: center; min-height: 44px; text-decoration: underline; margin-top: 8px; }
+.accessibility-menu-note { margin-bottom: 0; font-size: .85rem; }
+/* Leave room for the accessibility control alongside consent and contact actions. */
+.cookie-panel { width: min(720px, calc(100% - 160px)); }
+@media (max-width: 640px) {
+  .cookie-panel { width: calc(100% - 24px); bottom: max(84px, calc(env(safe-area-inset-bottom) + 72px)); max-height: calc(100dvh - 112px); }
+  .accessibility-dialog { padding: 18px; }
+}
+html[data-a11y-readable-font] .body :not(svg, svg *) { font-family: Arial, "Segoe UI", sans-serif !important; }
+html[data-a11y-underline-links] .body a { text-decoration: underline !important; text-underline-offset: .2em; }
+html[data-a11y-text-spacing] .body :is(p, li, h1, h2, h3, a, button, legend, output, .text-block, .feature-cell) {
+  line-height: 1.8 !important; letter-spacing: .12em !important; word-spacing: .16em !important;
+}
+html[data-a11y-text-spacing] .body p { margin-bottom: 2em !important; }
+html[data-a11y-grayscale] :is(.navbar, .page-main > section, .footer, .page-main > .contact-button) { filter: grayscale(1); }
+/* Replace backgrounds and text, rather than filtering entire pages or reducing image visibility. */
+html[data-a11y-contrast] .body,
+html[data-a11y-contrast] .main-wrapper :not(img, svg, svg *, canvas, .mapboxgl-map, .mapboxgl-map *) {
+  background: #000 !important; color: #fff !important; border-color: #fff !important;
+  text-shadow: none !important; box-shadow: none !important;
+}
+html[data-a11y-contrast] .main-wrapper a { color: #ffec7a !important; text-decoration: underline !important; }
+html[data-a11y-contrast] .main-wrapper :is(button, select, .button-main, .navbar-link-active) { border: 2px solid #fff !important; }
+html[data-a11y-contrast] :focus-visible { outline: 3px solid #ffec7a !important; outline-offset: 3px; }
+html[data-a11y-contrast] .accessibility-dialog :focus-visible,
+html[data-a11y-contrast] .cookie-panel :focus-visible { outline-color: #143f75 !important; }
+html[data-a11y-reduce-motion] *, html[data-a11y-reduce-motion] *::before, html[data-a11y-reduce-motion] *::after {
+  animation: none !important; transition: none !important; scroll-behavior: auto !important;
+}
+html[data-a11y-reduce-motion] :is(.reveal, .mobile-reveal, .page-navigation-enter) { opacity: 1 !important; transform: none !important; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+  :is(.reveal, .mobile-reveal, .page-navigation-enter) { opacity: 1 !important; transform: none !important; }
+}
+html[style*="--a11y-text-size"] .cookie-panel { font-size: .875rem; }
+html[style*="--a11y-text-size"] .cookie-panel h2 { font-size: 1.25rem; }
+html[style*="--a11y-text-size"] .lang-select { font-size: 1rem; }
+/* Allow enlarged, widely spaced text to reflow inside flex/grid items. */
+.accessibility-options button > span { min-width: 0; }
+.body { overflow-wrap: anywhere; }
+.navbar-wrapper { flex-wrap: wrap; }
+.feature-cell, .feature-cell > div, .footer-grid > *, .footer-contacts-wrapper { min-width: 0; max-width: 100%; }
+.footer-link, .footer-contact-link { max-width: 100%; }
+.footer-contact-icon { flex-shrink: 0; }
+.footer-contact-link :is(.icon-text, .footer-meta) { min-width: 0; white-space: normal; overflow-wrap: anywhere; }

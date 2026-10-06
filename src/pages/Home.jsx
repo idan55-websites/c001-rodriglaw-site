@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import OfficeMap from "../components/OfficeMap";
+import OfficeMap from "../components/DeferredOfficeMap";
 
 const Home = () => {
   const { t } = useTranslation();

@@ -3,6 +3,10 @@ import { NavLink, Outlet, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { setupMobileMotion } from "../utils/mobileMotion";
 
+import AccessibilityMenu from "../components/AccessibilityMenu";
+import Seo from "../components/Seo";
+import { motionDisabled } from "../utils/accessibilityPreferences";
+
 import CookieConsent from "../components/CookieConsent";
 import { initializeConsent, readConsent } from "../utils/cookieConsent";
 
@@ -20,14 +24,6 @@ const Layout = () => {
   ];
 
   const baseLang = i18n.language.split("-")[0];
-
-  useEffect(() => {
-    const titleKey = {
-      "/": "nav.home", "/about": "nav.about", "/services": "nav.services",
-      "/contact": "nav.contact", "/privacy-policy": "privacy.title", "/accessibility": "accessibility.title",
-    }[location.pathname] || "brand.name";
-    document.title = `${t(titleKey)} | ${t("brand.name")}`;
-  }, [location.pathname, t]);
 
   useLayoutEffect(() => {
     const header = document.querySelector(".navbar");
@@ -48,7 +44,7 @@ const Layout = () => {
       const target = document.getElementById(location.hash.slice(1));
       if (target?.hasAttribute("tabindex")) target.focus({ preventScroll: true });
       target?.scrollIntoView({
-        behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth",
+        behavior: motionDisabled() ? "instant" : "smooth",
         block: "start",
       });
     } else {
@@ -153,6 +149,7 @@ const Layout = () => {
 
   return (
     <div className="body">
+      <Seo />
       <a href="#main-content" className="skip-link">{t("accessibility.skip")}</a>
       <div className="main-wrapper">
         <header className="navbar">
@@ -304,6 +301,7 @@ const Layout = () => {
           </div>
         </footer>
       </div>
+      <AccessibilityMenu />
       {cookiesOpen && <CookieConsent onClose={() => setCookiesOpen(false)} />}
     </div>
   );

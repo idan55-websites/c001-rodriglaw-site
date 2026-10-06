@@ -1,6 +1,6 @@
 # Moria Website
 
-Multilingual law firm website with contact forms and appointment booking.
+Multilingual law firm website for Moria Rodrig. Online contact forms and appointment booking are currently disabled; visitors can contact the office by phone, email or WhatsApp.
 Built with React, Vite, and Tailwind CSS, with an Express backend,
 PostgreSQL, and Google Calendar integration.
 
@@ -35,9 +35,33 @@ npm --prefix server run dev
 
 ## Commands
 
-- `npm run build` — build the frontend for production.
+- `npm run build` — build the frontend and prerender all six public pages in Hebrew, including SEO metadata, structured data, robots.txt and sitemap.xml.
 - `npm run preview` — preview the production build locally.
 - `npm run lint` — check frontend code with ESLint.
 
 Frontend code lives in `src/`; backend routes and database migrations live
 in `server/`.
+
+## SEO and accessibility
+
+The canonical domain is `https://rodriglaw.com`, configured in `src/utils/seo.js`.
+Hebrew is the default public language; a visitor's chosen language is saved locally.
+The build generates a complete HTML document for each public route so crawlers can
+read the content without JavaScript. `vercel.json` routes clean URLs to those
+HTML files; the preview server mirrors these rewrites. Deploy the entire `dist/`
+directory with these rewrites, rather than only `dist/index.html`.
+
+After publishing, verify `rodriglaw.com` in Google Search Console, submit
+`https://rodriglaw.com/sitemap.xml`, and request indexing of the main pages.
+Check the live canonical URLs and robots.txt after deployment. Google decides
+whether, when and where to index/rank pages; neither rapid indexing nor a first
+position can be guaranteed. A verified Google Business Profile with consistent
+office name, address and phone can complement the website's local visibility.
+
+The accessibility dialog supports keyboard navigation, high contrast, text
+sizes from 100–200%, reduced motion, link underlining, a readable font, text
+spacing and grayscale. Preferences are stored locally when storage is available.
+The statement includes the office's contact details and known limitations.
+An assistive-technology review and verified physical-office accessibility
+arrangements remain necessary before claiming full compliance with Israeli
+accessibility requirements. See `docs/seo-accessibility-update.md` for evidence.

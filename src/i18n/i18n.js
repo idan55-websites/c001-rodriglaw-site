@@ -10,9 +10,12 @@ import nl from "./locales/nl.json";
 const supported = ["en", "fr", "he", "nl"];
 
 function detectLang() {
-  const nav = navigator.language?.toLowerCase() || "en"; // e.g. "en-US"
-  const base = nav.split("-")[0]; // "en"
-  return supported.includes(base) ? base : "en";
+  // Hebrew is the public/indexable default; a visitor's explicit choice persists.
+  try {
+    const saved = localStorage.getItem("moria-language");
+    if (supported.includes(saved)) return saved;
+  } catch { /* SSR and storage-blocked browsers use Hebrew. */ }
+  return "he";
 }
 
 const initialLang = detectLang();
@@ -31,6 +34,7 @@ i18n.use(initReactI18next).init({
 
 // set <html lang=""> and dir
 function applyHtmlAttrs(lang) {
+  if (typeof document === "undefined") return;
   document.documentElement.lang = lang;
   document.documentElement.dir = lang === "he" ? "rtl" : "ltr";
 }
@@ -39,6 +43,7 @@ applyHtmlAttrs(initialLang);
 
 i18n.on("languageChanged", (lng) => {
   applyHtmlAttrs(lng);
+  try { localStorage.setItem("moria-language", lng); } catch { /* Storage is optional. */ }
 });
 
 export default i18n;

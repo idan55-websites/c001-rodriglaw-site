@@ -305,7 +305,8 @@
       "Le focus clavier est visible. Les commandes de cookies reçoivent le focus à leur ouverture ; leur fermeture le rend au bouton utilisé pour les ouvrir.",
       "Les pages comportent des titres et des repères. Les boutons de catégories de services indiquent la sélection, et les images ont un texte alternatif.",
       "La présentation s’adapte aux écrans étroits et au zoom du navigateur. L’hébreu se lit de droite à gauche.",
-      "Le site respecte le réglage de réduction des animations de votre appareil. La navigation reste disponible si vous refusez l’analyse facultative."
+      "Le site respecte le réglage de réduction des animations de votre appareil. La navigation reste disponible si vous refusez l’analyse facultative.",
+      "Le menu d’accessibilité permet d’agrandir le texte jusqu’à 200 %, d’activer le contraste élevé, d’arrêter les animations, de souligner les liens et de choisir une police lisible, l’espacement du texte ou les niveaux de gris. Les préférences sont enregistrées dans le navigateur. Échap ferme la fenêtre."
     ],
     "limitationsTitle": "Limites connues",
     "limitations": "La carte Mapbox intégrée et les publications externes sont des contenus tiers dont nous ne pouvons garantir l’accessibilité complète. L’adresse et les coordonnées du cabinet sont également affichées en texte, avec des liens vers Google Maps et Waze comme alternatives. Une évaluation manuelle complète avec des technologies d’assistance reste à réaliser.",
@@ -313,8 +314,25 @@
     "help": "Si vous rencontrez un obstacle, contactez le cabinet par téléphone ou courriel. Si possible, précisez la page, le problème et le navigateur ou la technologie d’assistance utilisés. Vous pouvez aussi demander les informations ou le service par ces canaux.",
     "office": "Pour des informations vérifiées sur l’accès aux locaux, le stationnement, les ascenseurs ou d’autres aménagements, contactez le cabinet avant votre visite.",
     "reviewTitle": "État de la vérification",
-    "review": "Mise à jour le 2 octobre 2026. Des vérifications automatiques et des contrôles du clavier, du focus, des contrastes, de la présentation mobile et du zoom ont été réalisés. Nous visons le niveau AA de la norme israélienne 5568. Ces contrôles n’établissent pas une conformité complète ; une évaluation manuelle supplémentaire avec des technologies d’assistance reste nécessaire.",
+    "review": "Mise à jour le 6 octobre 2026. Des vérifications automatiques et des contrôles du clavier, du focus, des contrastes, de la présentation mobile et du zoom ont été réalisés. Nous visons le niveau AA de la norme israélienne 5568. Ces contrôles n’établissent pas une conformité complète ; une évaluation manuelle supplémentaire avec des technologies d’assistance reste nécessaire.",
     "newsweekAlt": "Couverture de Newsweek avec Moria Rodrig",
-    "deskAlt": "Moria Rodrig à son bureau"
+    "deskAlt": "Moria Rodrig à son bureau",
+    "menu": {
+      "open": "Ouvrir le menu d’accessibilité",
+      "title": "Réglages d’accessibilité",
+      "close": "Fermer le menu d’accessibilité",
+      "intro": "Adaptez l’affichage à vos besoins. Naviguez au clavier et fermez avec Échap.",
+      "textSize": "Taille du texte",
+      "increase": "Agrandir le texte",
+      "decrease": "Réduire le texte",
+      "contrast": "Contraste élevé",
+      "reduceMotion": "Arrêter les animations",
+      "underlineLinks": "Souligner les liens",
+      "readableFont": "Police lisible",
+      "textSpacing": "Espacement du texte",
+      "grayscale": "Niveaux de gris",
+      "reset": "Réinitialiser les réglages",
+      "saved": "Les préférences sont enregistrées dans ce navigateur si le stockage est disponible."
+    }
   }
 }

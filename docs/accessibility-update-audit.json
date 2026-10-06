@@ -1,0 +1,491 @@
+{
+  "date": "2026-10-06",
+  "baselineAudit": {
+    "errors": [],
+    "enlargedOverflow": false,
+    "results": [
+      {
+        "width": 1440,
+        "lang": "he",
+        "path": "/",
+        "overflow": false,
+        "violations": []
+      },
+      {
+        "width": 1440,
+        "lang": "he",
+        "path": "/about",
+        "overflow": false,
+        "violations": []
+      },
+      {
+        "width": 1440,
+        "lang": "he",
+        "path": "/services",
+        "overflow": false,
+        "violations": []
+      },
+      {
+        "width": 1440,
+        "lang": "he",
+        "path": "/contact",
+        "overflow": false,
+        "violations": []
+      },
+      {
+        "width": 1440,
+        "lang": "he",
+        "path": "/privacy-policy",
+        "overflow": false,
+        "violations": []
+      },
+      {
+        "width": 1440,
+        "lang": "he",
+        "path": "/accessibility",
+        "overflow": false,
+        "violations": []
+      },
+      {
+        "width": 1440,
+        "lang": "he",
+        "dialog": true,
+        "violations": []
+      },
+      {
+        "width": 1440,
+        "lang": "en",
+        "path": "/",
+        "overflow": false,
+        "violations": []
+      },
+      {
+        "width": 1440,
+        "lang": "en",
+        "path": "/about",
+        "overflow": false,
+        "violations": []
+      },
+      {
+        "width": 1440,
+        "lang": "en",
+        "path": "/services",
+        "overflow": false,
+        "violations": []
+      },
+      {
+        "width": 1440,
+        "lang": "en",
+        "path": "/contact",
+        "overflow": false,
+        "violations": []
+      },
+      {
+        "width": 1440,
+        "lang": "en",
+        "path": "/privacy-policy",
+        "overflow": false,
+        "violations": []
+      },
+      {
+        "width": 1440,
+        "lang": "en",
+        "path": "/accessibility",
+        "overflow": false,
+        "violations": []
+      },
+      {
+        "width": 1440,
+        "lang": "en",
+        "dialog": true,
+        "violations": []
+      },
+      {
+        "width": 1440,
+        "lang": "fr",
+        "path": "/",
+        "overflow": false,
+        "violations": []
+      },
+      {
+        "width": 1440,
+        "lang": "fr",
+        "path": "/about",
+        "overflow": false,
+        "violations": []
+      },
+      {
+        "width": 1440,
+        "lang": "fr",
+        "path": "/services",
+        "overflow": false,
+        "violations": []
+      },
+      {
+        "width": 1440,
+        "lang": "fr",
+        "path": "/contact",
+        "overflow": false,
+        "violations": []
+      },
+      {
+        "width": 1440,
+        "lang": "fr",
+        "path": "/privacy-policy",
+        "overflow": false,
+        "violations": []
+      },
+      {
+        "width": 1440,
+        "lang": "fr",
+        "path": "/accessibility",
+        "overflow": false,
+        "violations": []
+      },
+      {
+        "width": 1440,
+        "lang": "fr",
+        "dialog": true,
+        "violations": []
+      },
+      {
+        "width": 1440,
+        "lang": "nl",
+        "path": "/",
+        "overflow": false,
+        "violations": []
+      },
+      {
+        "width": 1440,
+        "lang": "nl",
+        "path": "/about",
+        "overflow": false,
+        "violations": []
+      },
+      {
+        "width": 1440,
+        "lang": "nl",
+        "path": "/services",
+        "overflow": false,
+        "violations": []
+      },
+      {
+        "width": 1440,
+        "lang": "nl",
+        "path": "/contact",
+        "overflow": false,
+        "violations": []
+      },
+      {
+        "width": 1440,
+        "lang": "nl",
+        "path": "/privacy-policy",
+        "overflow": false,
+        "violations": []
+      },
+      {
+        "width": 1440,
+        "lang": "nl",
+        "path": "/accessibility",
+        "overflow": false,
+        "violations": []
+      },
+      {
+        "width": 1440,
+        "lang": "nl",
+        "dialog": true,
+        "violations": []
+      },
+      {
+        "width": 375,
+        "lang": "he",
+        "path": "/",
+        "overflow": false,
+        "violations": []
+      },
+      {
+        "width": 375,
+        "lang": "he",
+        "path": "/about",
+        "overflow": false,
+        "violations": []
+      },
+      {
+        "width": 375,
+        "lang": "he",
+        "path": "/services",
+        "overflow": false,
+        "violations": []
+      },
+      {
+        "width": 375,
+        "lang": "he",
+        "path": "/contact",
+        "overflow": false,
+        "violations": []
+      },
+      {
+        "width": 375,
+        "lang": "he",
+        "path": "/privacy-policy",
+        "overflow": false,
+        "violations": []
+      },
+      {
+        "width": 375,
+        "lang": "he",
+        "path": "/accessibility",
+        "overflow": false,
+        "violations": []
+      },
+      {
+        "width": 375,
+        "lang": "he",
+        "dialog": true,
+        "violations": []
+      },
+      {
+        "width": 375,
+        "lang": "en",
+        "path": "/",
+        "overflow": false,
+        "violations": []
+      },
+      {
+        "width": 375,
+        "lang": "en",
+        "path": "/about",
+        "overflow": false,
+        "violations": []
+      },
+      {
+        "width": 375,
+        "lang": "en",
+        "path": "/services",
+        "overflow": false,
+        "violations": []
+      },
+      {
+        "width": 375,
+        "lang": "en",
+        "path": "/contact",
+        "overflow": false,
+        "violations": []
+      },
+      {
+        "width": 375,
+        "lang": "en",
+        "path": "/privacy-policy",
+        "overflow": false,
+        "violations": []
+      },
+      {
+        "width": 375,
+        "lang": "en",
+        "path": "/accessibility",
+        "overflow": false,
+        "violations": []
+      },
+      {
+        "width": 375,
+        "lang": "en",
+        "dialog": true,
+        "violations": []
+      },
+      {
+        "width": 375,
+        "lang": "fr",
+        "path": "/",
+        "overflow": false,
+        "violations": []
+      },
+      {
+        "width": 375,
+        "lang": "fr",
+        "path": "/about",
+        "overflow": false,
+        "violations": []
+      },
+      {
+        "width": 375,
+        "lang": "fr",
+        "path": "/services",
+        "overflow": false,
+        "violations": []
+      },
+      {
+        "width": 375,
+        "lang": "fr",
+        "path": "/contact",
+        "overflow": false,
+        "violations": []
+      },
+      {
+        "width": 375,
+        "lang": "fr",
+        "path": "/privacy-policy",
+        "overflow": false,
+        "violations": []
+      },
+      {
+        "width": 375,
+        "lang": "fr",
+        "path": "/accessibility",
+        "overflow": false,
+        "violations": []
+      },
+      {
+        "width": 375,
+        "lang": "fr",
+        "dialog": true,
+        "violations": []
+      },
+      {
+        "width": 375,
+        "lang": "nl",
+        "path": "/",
+        "overflow": false,
+        "violations": []
+      },
+      {
+        "width": 375,
+        "lang": "nl",
+        "path": "/about",
+        "overflow": false,
+        "violations": []
+      },
+      {
+        "width": 375,
+        "lang": "nl",
+        "path": "/services",
+        "overflow": false,
+        "violations": []
+      },
+      {
+        "width": 375,
+        "lang": "nl",
+        "path": "/contact",
+        "overflow": false,
+        "violations": []
+      },
+      {
+        "width": 375,
+        "lang": "nl",
+        "path": "/privacy-policy",
+        "overflow": false,
+        "violations": []
+      },
+      {
+        "width": 375,
+        "lang": "nl",
+        "path": "/accessibility",
+        "overflow": false,
+        "violations": []
+      },
+      {
+        "width": 375,
+        "lang": "nl",
+        "dialog": true,
+        "violations": []
+      }
+    ]
+  },
+  "combinedSettingsAudit": [
+    {
+      "width": 1440,
+      "lang": "he",
+      "overflow": false,
+      "nodes": [],
+      "dialogViolations": [],
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "lang": "en",
+      "overflow": false,
+      "nodes": [],
+      "dialogViolations": [],
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "lang": "fr",
+      "overflow": false,
+      "nodes": [],
+      "dialogViolations": [],
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "lang": "nl",
+      "overflow": false,
+      "nodes": [],
+      "dialogViolations": [],
+      "violations": []
+    },
+    {
+      "width": 375,
+      "lang": "he",
+      "overflow": false,
+      "nodes": [],
+      "dialogViolations": [],
+      "violations": []
+    },
+    {
+      "width": 375,
+      "lang": "en",
+      "overflow": false,
+      "nodes": [],
+      "dialogViolations": [],
+      "violations": []
+    },
+    {
+      "width": 375,
+      "lang": "fr",
+      "overflow": false,
+      "nodes": [],
+      "dialogViolations": [],
+      "violations": []
+    },
+    {
+      "width": 375,
+      "lang": "nl",
+      "overflow": false,
+      "nodes": [],
+      "dialogViolations": [],
+      "violations": []
+    },
+    {
+      "width": 320,
+      "lang": "he",
+      "overflow": false,
+      "nodes": [],
+      "dialogViolations": [],
+      "violations": []
+    },
+    {
+      "width": 320,
+      "lang": "en",
+      "overflow": false,
+      "nodes": [],
+      "dialogViolations": [],
+      "violations": []
+    },
+    {
+      "width": 320,
+      "lang": "fr",
+      "overflow": false,
+      "nodes": [],
+      "dialogViolations": [],
+      "violations": []
+    },
+    {
+      "width": 320,
+      "lang": "nl",
+      "overflow": false,
+      "nodes": [],
+      "dialogViolations": [],
+      "violations": []
+    }
+  ]
+}

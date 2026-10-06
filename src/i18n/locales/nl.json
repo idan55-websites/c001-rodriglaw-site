@@ -305,7 +305,8 @@
       "Toetsenbordfocus is zichtbaar. Bij het openen van cookiebediening gaat de focus naar de melding; sluiten brengt de focus terug naar de knop waarmee deze werd geopend.",
       "Pagina’s hebben koppen en herkenbare inhoudsgebieden. Dienstcategorieknoppen geven de gekozen categorie aan en afbeeldingen hebben alternatieve tekst.",
       "De indeling past zich aan smalle schermen en browserzoom aan. Hebreeuws heeft een leesrichting van rechts naar links.",
-      "De website respecteert de instelling voor minder beweging op uw apparaat. Browsen blijft mogelijk wanneer optionele analyse wordt geweigerd."
+      "De website respecteert de instelling voor minder beweging op uw apparaat. Browsen blijft mogelijk wanneer optionele analyse wordt geweigerd.",
+      "Het toegankelijkheidsmenu biedt tekstvergroting tot 200%, hoog contrast, het stoppen van animaties, onderstreepte links, een leesbaar lettertype, tekstafstand en grijstinten. Voorkeuren worden opgeslagen in de browser. Escape sluit het venster."
     ],
     "limitationsTitle": "Bekende beperkingen",
     "limitations": "De ingebouwde Mapbox-kaart en externe publicaties zijn inhoud van derden waarvan wij volledige toegankelijkheid niet kunnen garanderen. Het kantooradres en de contactgegevens staan ook als tekst op de site, met links naar Google Maps en Waze als alternatieven. Een volledige handmatige beoordeling met ondersteunende technologieën is nog niet afgerond.",
@@ -313,8 +314,25 @@
     "help": "Neem bij een toegankelijkheidsprobleem telefonisch of per e-mail contact op met het kantoor. Vermeld indien mogelijk de pagina, het probleem en de gebruikte browser of ondersteunende technologie. U kunt via deze kanalen ook om informatie of dienstverlening vragen.",
     "office": "Neem vóór uw bezoek contact op met het kantoor voor gecontroleerde informatie over toegang tot het gebouw, parkeren, liften of andere voorzieningen.",
     "reviewTitle": "Status van de beoordeling",
-    "review": "Bijgewerkt op 2 oktober 2026. Automatische controles en controles van toetsenbordbediening, focus, contrast, mobiele indeling en zoom zijn uitgevoerd. Ons doel is niveau AA van de Israëlische norm 5568. Deze controles stellen geen volledige conformiteit vast; verdere handmatige beoordeling met ondersteunende technologieën is nodig.",
+    "review": "Bijgewerkt op 6 oktober 2026. Automatische controles en controles van toetsenbordbediening, focus, contrast, mobiele indeling en zoom zijn uitgevoerd. Ons doel is niveau AA van de Israëlische norm 5568. Deze controles stellen geen volledige conformiteit vast; verdere handmatige beoordeling met ondersteunende technologieën is nodig.",
     "newsweekAlt": "Newsweek-cover met Moria Rodrig",
-    "deskAlt": "Moria Rodrig aan haar bureau"
+    "deskAlt": "Moria Rodrig aan haar bureau",
+    "menu": {
+      "open": "Toegankelijkheidsmenu openen",
+      "title": "Toegankelijkheidsinstellingen",
+      "close": "Toegankelijkheidsmenu sluiten",
+      "intro": "Pas de weergave aan uw behoeften aan. Navigeer met het toetsenbord en sluit met Escape.",
+      "textSize": "Tekstgrootte",
+      "increase": "Tekst vergroten",
+      "decrease": "Tekst verkleinen",
+      "contrast": "Hoog contrast",
+      "reduceMotion": "Animaties stoppen",
+      "underlineLinks": "Links onderstrepen",
+      "readableFont": "Leesbaar lettertype",
+      "textSpacing": "Tekstafstand",
+      "grayscale": "Grijstinten",
+      "reset": "Alle instellingen herstellen",
+      "saved": "Voorkeuren worden in deze browser opgeslagen wanneer opslag beschikbaar is."
+    }
   }
 }

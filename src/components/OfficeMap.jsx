@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { motionDisabled } from "../utils/accessibilityPreferences";
 import mapboxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 
@@ -13,7 +14,7 @@ function OfficeMap({ lat, lng, label }) {
 
     mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_TOKEN;
     const touchDevice = window.matchMedia("(hover: none) and (pointer: coarse)").matches;
-    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const reducedMotion = motionDisabled();
 
     map.current = new mapboxgl.Map({
       container: mapContainer.current,
@@ -43,12 +44,15 @@ function OfficeMap({ lat, lng, label }) {
       map.current.flyTo({
         center: [lng, lat],
         zoom: 17.6,
-        animate: !touchDevice && !reducedMotion,
-        essential: !touchDevice && !reducedMotion,
+        animate: !touchDevice && !reducedMotion && !motionDisabled(),
+        essential: !touchDevice && !reducedMotion && !motionDisabled(),
       });
     });
 
+    const stopMotion = () => { if (motionDisabled()) map.current?.stop(); };
+    window.addEventListener("accessibilitychange", stopMotion);
     return () => {
+      window.removeEventListener("accessibilitychange", stopMotion);
       resizeObserver?.disconnect();
       markerRef.current?.remove();
       map.current?.remove();
@@ -64,8 +68,8 @@ function OfficeMap({ lat, lng, label }) {
     map.current.flyTo({
       center: [lng, lat],
       zoom: 17.6,
-      animate: !window.matchMedia("(hover: none) and (pointer: coarse), (prefers-reduced-motion: reduce)").matches,
-      essential: !window.matchMedia("(hover: none) and (pointer: coarse), (prefers-reduced-motion: reduce)").matches,
+      animate: !motionDisabled() && !window.matchMedia("(hover: none) and (pointer: coarse)").matches,
+      essential: !motionDisabled() && !window.matchMedia("(hover: none) and (pointer: coarse)").matches,
     });
   }, [lat, lng]);
 

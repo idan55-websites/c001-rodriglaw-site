@@ -1,4 +1,4 @@
-import OfficeMap from "../components/OfficeMap";
+import OfficeMap from "../components/DeferredOfficeMap";
 import { useTranslation } from "react-i18next";
 
 const Contact = () => {

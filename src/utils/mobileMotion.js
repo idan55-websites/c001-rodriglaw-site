@@ -1,3 +1,5 @@
+import { motionDisabled } from "./accessibilityPreferences";
+
 // Safari-friendly opacity/transform transitions, with content visible if motion is unavailable.
 export function setupMobileMotion(main) {
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -50,7 +52,7 @@ export function setupMobileMotion(main) {
   };
   const start = () => {
     stop();
-    if (reducedMotion.matches || typeof IntersectionObserver !== "function") return;
+    if (motionDisabled() || typeof IntersectionObserver !== "function") return;
     main.classList.add("mobile-motion-enabled");
     observer = new IntersectionObserver(entries => {
       let revealIndex = 0;
@@ -89,9 +91,11 @@ export function setupMobileMotion(main) {
     }
   };
   reducedMotion.addEventListener("change", start);
+  window.addEventListener("accessibilitychange", start);
   start();
   return () => {
     stop();
     reducedMotion.removeEventListener("change", start);
+    window.removeEventListener("accessibilitychange", start);
   };
 }
