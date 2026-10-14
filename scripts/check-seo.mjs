@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import { SITE_URL } from '../src/utils/seo.js';
 import { baseRoutes, getRouteInfo, languages, localizePath, publicRoutes } from '../src/utils/siteRoutes.js';
-import { businessNames, personNames } from '../src/utils/businessIdentity.js';
+import { businessNames, englishNames, hebrewNames, personNames } from '../src/utils/businessIdentity.js';
 
 const config = JSON.parse(await readFile(new URL('../vercel.json', import.meta.url), 'utf8'));
 const sitemap = await readFile(new URL('../dist/sitemap.xml', import.meta.url), 'utf8');
@@ -28,7 +28,10 @@ for (const route of publicRoutes) {
   for (const name of [...personNames, ...businessNames]) assert.ok(office.alternateName.includes(name), `Name ${route}: ${name}`);
   if (['/', '/about'].includes(basePath)) {
     const body = html.split('</head>')[1];
-    for (const name of personNames.slice(0, 8)) assert.ok(body.includes(name), `Visible bilingual name ${route}: ${name}`);
+    const localizedNames = language === 'he' ? hebrewNames : englishNames;
+    for (const name of localizedNames) assert.ok(body.includes(name), `Localized biography name ${route}: ${name}`);
+    assert.ok(!body.includes('name-reference-alternates'), `No standalone name list: ${route}`);
+    for (const names of [hebrewNames, englishNames]) assert.ok(!body.includes(names.join(' · ')), `No repeated name variants: ${route}`);
   }
   if (basePath === '/services') assert.equal(office.hasOfferCatalog.itemListElement.length, 2);
   assert.ok(!html.includes('seo.home.title'), `No untranslated SEO keys: ${route}`);

@@ -127,7 +127,7 @@ const Home = () => {
                 <div className="about-wrapper-flex">
                   <div className="about-richtext">
                     <p>{t("home.aboutSection.p1")}</p>
-                    <NameReference bilingual />
+                    <NameReference />
                     <p>{t("home.aboutSection.p2")}</p>
                     <p>{t("home.aboutSection.p3")}</p>
                     <div className="about-language-cert">
