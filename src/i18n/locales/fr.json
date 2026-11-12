@@ -1,6 +1,6 @@
 {
   "brand": {
-    "name": "Moria Rodrig - Law Office and Notary"
+    "name": "Moria Rodrig Hadad - Law Office and Notary"
   },
   "nav": {
     "home": "Accueil",
@@ -11,14 +11,14 @@
     "language": "Langue"
   },
   "footer": {
-    "rights": "© Moria Rodrig - Cabinet juridique et notariat. Tous droits réservés.",
+    "rights": "© Moria Rodrig Hadad - Cabinet juridique et notariat. Tous droits réservés.",
     "developer": "Développé par Idan Hadad",
     "privacy": "Politique de confidentialité"
   },
   "home": {
     "heroEyebrow": "Cabinet d’avocate et notaire",
-    "heroTitle": "Cabinet d’avocate et notaire - Moria Rodrig",
-    "heroIntro": "Bienvenue au cabinet de Me. Moria Rodrig — avocate et notaire trilingue offrant des services juridiques et notariés en Israël et à l'étranger.",
+    "heroTitle": "Cabinet d’avocate et notaire - Moria Rodrig Hadad",
+    "heroIntro": "Bienvenue au cabinet de Me. Moria Rodrig Hadad — avocate et notaire trilingue offrant des services juridiques et notariés en Israël et à l'étranger.",
     "heroBody": "Le cabinet se concentre sur les transactions immobilières, la représentation de promoteurs et de particuliers, les testaments et procurations durables, l’enregistrement et l’accompagnement des entreprises, ainsi qu’un large éventail de services notariés.",
     "heroCta": "Prendre rendez-vous",
     "servicesTitle": "Nos services",
@@ -111,10 +111,10 @@
       "payments": "Plusieurs modes de paiement possibles",
       "hours": "Horaires élargis possibles sur rendez-vous"
     },
-    "heroImageAlt": "Portrait de Me Moria Rodrig",
+    "heroImageAlt": "Portrait de Me Moria Rodrig Hadad",
     "aboutSection": {
       "title": "À propos",
-      "p1": "Me Moria Rodrig fournit des services juridiques et notariés rigoureux, précis et accessibles, avec une communication claire et un suivi personnel pour chaque dossier.",
+      "p1": "Me Moria Rodrig Hadad fournit des services juridiques et notariés rigoureux, précis et accessibles, avec une communication claire et un suivi personnel pour chaque dossier.",
       "p2": "Parmi les clients du cabinet figurent des promoteurs immobiliers, des résidents d’Israël ainsi que des clients à l’étranger ayant besoin d’un traitement juridique précis.",
       "p3": "Le cabinet travaille dans plusieurs langues afin que chaque client reçoive explications et documents dans la langue qui lui convient le mieux.",
       "p4": "Me Moria est autorisée par l’Ambassade de Belgique à effectuer des traductions officielles.",
@@ -145,11 +145,10 @@
     "title": "Moria Rodrig Hadad – Avocate et notaire",
     "p1": "Le cabinet offre des services juridiques et notariés avec un accent particulier sur la précision, l’accessibilité et la clarté des explications à chaque étape.",
     "p2": "Chaque dossier est géré avec une planification rigoureuse, une documentation soignée et un accompagnement jusqu’à son aboutissement.",
-    "p3": "Me Moria Rodrig, avocate et notaire, dispose d’une expérience professionnelle de longue date en droit immobilier et en droit civil-commercial. Au fil des années, elle a acquis une expertise pratique reconnue dans l’accompagnement de transactions immobilières complexes, en apportant des solutions juridiques précises et adaptées aux besoins de chaque client.\n\nSon cabinet assure un accompagnement juridique complet des opérations immobilières, depuis les vérifications préalables, en passant par la négociation et la rédaction contractuelle, jusqu’à l’achèvement de l’enregistrement auprès du registre foncier.\n\nMe Rodrig possède une compétence particulière dans le suivi des résidents étrangers et accompagne régulièrement des clients d’Israël et de l’international en matière immobilière, dans la régularisation de documents notariés et dans des procédures transfrontalières, grâce à une pratique multilingue et un service rigoureux, y compris à distance lorsque nécessaire.\n\nPar ailleurs, son cabinet intervient en matière de testaments, de procurations durables, de contrats commerciaux et de services notariés conformément aux dispositions applicables, avec une exigence constante de professionnalisme, de disponibilité et d’accompagnement personnalisé.\n\nAu-delà de son activité professionnelle, Me Rodrig est engagée dans la vie publique. Elle préside l’Association des ressortissants belges en Israël et agit également comme représentante municipale au sein du Forum des épouses de réservistes, illustrant son attachement à la communauté et au renforcement de la résilience sociale.\n\nMe Rodrig défend une approche qui associe précision juridique, vision stratégique et relation humaine de proximité, et accompagne ses clients avec clarté et transparence jusqu’à l’obtention du meilleur résultat possible.",
-    "name": "Me Moria Rodrig",
+    "p3": "Me Moria Rodrig Hadad, avocate et notaire, dispose d’une expérience professionnelle de longue date en droit immobilier et en droit civil-commercial. Au fil des années, elle a acquis une expertise pratique reconnue dans l’accompagnement de transactions immobilières complexes, en apportant des solutions juridiques précises et adaptées aux besoins de chaque client.\n\nSon cabinet assure un accompagnement juridique complet des opérations immobilières, depuis les vérifications préalables, en passant par la négociation et la rédaction contractuelle, jusqu’à l’achèvement de l’enregistrement auprès du registre foncier.\n\nMe Moria Rodrig Hadad possède une compétence particulière dans le suivi des résidents étrangers et accompagne régulièrement des clients d’Israël et de l’international en matière immobilière, dans la régularisation de documents notariés et dans des procédures transfrontalières, grâce à une pratique multilingue et un service rigoureux, y compris à distance lorsque nécessaire.\n\nPar ailleurs, son cabinet intervient en matière de testaments, de procurations durables, de contrats commerciaux et de services notariés conformément aux dispositions applicables, avec une exigence constante de professionnalisme, de disponibilité et d’accompagnement personnalisé.\n\nAu-delà de son activité professionnelle, Me Moria Rodrig Hadad est engagée dans la vie publique. Elle préside l’Association des ressortissants belges en Israël et agit également comme représentante municipale au sein du Forum des épouses de réservistes, illustrant son attachement à la communauté et au renforcement de la résilience sociale.\n\nMe Moria Rodrig Hadad défend une approche qui associe précision juridique, vision stratégique et relation humaine de proximité, et accompagne ses clients avec clarté et transparence jusqu’à l’obtention du meilleur résultat possible.",
+    "name": "Me Moria Rodrig Hadad",
     "role": "Avocate et notaire",
-    "pressTitle": "Dans la presse",
-    "nameReference": "Moria Rodrig, avocate et notaire, est également connue sous les noms de Moria Hadad, Moria Rodrig Hadad et Moria Hadad Rodrig. Ces noms désignent la même avocate et notaire et son cabinet à Petah Tikva."
+    "pressTitle": "Dans la presse"
   },
   "book": {
     "eyebrow": "Réservation",
@@ -207,7 +206,7 @@
       "copies": "Copies certifiées conformes de documents officiels",
       "confirmations": "Attestations notariales pour usage local et international"
     },
-    "intro": "Moria Rodrig, avocate et notaire à Petah Tikva, propose des traductions et certifications notariales en hébreu, anglais, français et néerlandais, ainsi qu’un accompagnement en immobilier, testaments et mandats de protection."
+    "intro": "Moria Rodrig Hadad, avocate et notaire à Petah Tikva, propose des traductions et certifications notariales en hébreu, anglais, français et néerlandais, ainsi qu’un accompagnement en immobilier, testaments et mandats de protection."
   },
   "contact": {
     "eyebrow": "Contact",
@@ -224,17 +223,17 @@
   },
   "connected": {
     "title": "Google Calendar connecté avec succès",
-    "body": "La prise de rendez-vous est désormais active pour Moria Rodrig - Cabinet juridique et notariat.",
+    "body": "La prise de rendez-vous est désormais active pour Moria Rodrig Hadad - Cabinet juridique et notariat.",
     "cta": "Aller à la réservation"
   },
   "privacy": {
     "eyebrow": "Juridique",
     "title": "Politique de confidentialité",
-    "intro": "Cette politique concerne ce site et les demandes adressées à Moria Rodrig Law Office & Notary, responsable du traitement des informations personnelles. La réservation en ligne et le formulaire de contact sont actuellement désactivés.",
+    "intro": "Cette politique concerne ce site et les demandes adressées à Moria Rodrig Hadad Law Office & Notary, responsable du traitement des informations personnelles. La réservation en ligne et le formulaire de contact sont actuellement désactivés.",
     "sections": {
       "scope": {
         "title": "Champ d’application",
-        "body": "Cette politique concerne ce site et les demandes adressées à Moria Rodrig Law Office & Notary, responsable du traitement des informations personnelles. La réservation en ligne et le formulaire de contact sont actuellement désactivés."
+        "body": "Cette politique concerne ce site et les demandes adressées à Moria Rodrig Hadad Law Office & Notary, responsable du traitement des informations personnelles. La réservation en ligne et le formulaire de contact sont actuellement désactivés."
       },
       "data": {
         "title": "Informations recueillies",
@@ -317,8 +316,8 @@
     "office": "Pour des informations vérifiées sur l’accès aux locaux, le stationnement, les ascenseurs ou d’autres aménagements, contactez le cabinet avant votre visite.",
     "reviewTitle": "État de la vérification",
     "review": "Mise à jour le 6 octobre 2026. Des vérifications automatiques et des contrôles du clavier, du focus, des contrastes, de la présentation mobile et du zoom ont été réalisés. Nous visons le niveau AA de la norme israélienne 5568. Ces contrôles n’établissent pas une conformité complète ; une évaluation manuelle supplémentaire avec des technologies d’assistance reste nécessaire.",
-    "newsweekAlt": "Couverture de Newsweek avec Moria Rodrig",
-    "deskAlt": "Moria Rodrig à son bureau",
+    "newsweekAlt": "Couverture de Newsweek avec Moria Rodrig Hadad",
+    "deskAlt": "Moria Rodrig Hadad à son bureau",
     "menu": {
       "open": "Ouvrir le menu d’accessibilité",
       "title": "Réglages d’accessibilité",
@@ -339,20 +338,20 @@
   },
   "seo": {
     "home": {
-      "title": "Moria Rodrig | Avocate et notaire à Petah Tikva",
-      "description": "Moria Rodrig, avocate et notaire à Petah Tikva, Israël. Immobilier, testaments, mandats de protection et traductions notariales en hébreu, anglais, français et néerlandais."
+      "title": "Moria Rodrig Hadad | Avocate et notaire à Petah Tikva",
+      "description": "Moria Rodrig Hadad, avocate et notaire à Petah Tikva, Israël. Immobilier, testaments, mandats de protection et traductions notariales en hébreu, anglais, français et néerlandais."
     },
     "about": {
       "title": "Moria Rodrig Hadad | Avocate et notaire à Petah Tikva",
-      "description": "Moria Rodrig, également connue comme Moria Hadad, Moria Rodrig Hadad et Moria Hadad Rodrig : avocate et notaire à Petah Tikva, au service d’une clientèle multilingue."
+      "description": "Découvrez Moria Rodrig Hadad, avocate et notaire à Petah Tikva, au service d’une clientèle multilingue en droit immobilier et civil-commercial."
     },
     "services": {
-      "title": "Services notariaux et juridiques à Petah Tikva | Moria Rodrig",
-      "description": "Traductions notariales, procurations et copies certifiées à Petah Tikva. Moria Rodrig vous accompagne également en immobilier, testaments et mandats de protection."
+      "title": "Services notariaux et juridiques à Petah Tikva | Moria Rodrig Hadad",
+      "description": "Traductions notariales, procurations et copies certifiées à Petah Tikva. Moria Rodrig Hadad vous accompagne également en immobilier, testaments et mandats de protection."
     },
     "contact": {
-      "title": "Contacter Moria Rodrig | Avocate et notaire à Petah Tikva",
-      "description": "Cabinet Moria Rodrig, Hasivim 49, Petah Tikva, Israël. Téléphone : +972-54-622-5654. Contact par courriel ou WhatsApp pour convenir d’un rendez-vous."
+      "title": "Contacter Moria Rodrig Hadad | Avocate et notaire à Petah Tikva",
+      "description": "Cabinet Moria Rodrig Hadad, Hasivim 49, Petah Tikva, Israël. Téléphone : +972-54-622-5654. Contact par courriel ou WhatsApp pour convenir d’un rendez-vous."
     }
   }
 }

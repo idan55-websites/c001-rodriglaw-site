@@ -1,0 +1,772 @@
+{
+  "checked_at_utc": "2026-10-29T22:24:13.422601+00:00",
+  "site": "https://www.rodriglaw.com",
+  "sitemap": {
+    "status": 200,
+    "url": "https://www.rodriglaw.com/sitemap.xml",
+    "url_count": 24
+  },
+  "robots_txt": "User-agent: *\nAllow: /\n\nSitemap: https://www.rodriglaw.com/sitemap.xml\n",
+  "technical_pass_count": 24,
+  "pages": [
+    {
+      "url": "https://www.rodriglaw.com/",
+      "issues": [],
+      "status": 200,
+      "final_url": "https://www.rodriglaw.com/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "מוריה רודריג | עו״ד ונוטריון בפתח תקווה",
+      "language": "he",
+      "description": "מוריה רודריג, עורכת דין ונוטריון בפתח תקווה. נדל״ן, צוואות, ייפוי כוח מתמשך, תרגומים ואישורים נוטריוניים בעברית, באנגלית, בצרפתית ובהולנדית.",
+      "canonical": [
+        "https://www.rodriglaw.com/"
+      ],
+      "robots": "index, follow, max-image-preview:large",
+      "x_robots_tag": null,
+      "robots_txt_allows": true,
+      "hreflang": {
+        "he": "https://www.rodriglaw.com/",
+        "en": "https://www.rodriglaw.com/en",
+        "fr": "https://www.rodriglaw.com/fr",
+        "nl": "https://www.rodriglaw.com/nl",
+        "x-default": "https://www.rodriglaw.com/"
+      },
+      "favicon": [
+        "https://www.rodriglaw.com/favicon-192.png"
+      ],
+      "h1_count": 1,
+      "static_body_characters": 2664,
+      "structured_data_blocks": 1,
+      "google_index_status": "Indexed"
+    },
+    {
+      "url": "https://www.rodriglaw.com/about",
+      "issues": [],
+      "status": 200,
+      "final_url": "https://www.rodriglaw.com/about",
+      "content_type": "text/html; charset=utf-8",
+      "title": "מוריה רודריג חדד | עורכת דין ונוטריון בפתח תקווה",
+      "language": "he",
+      "description": "הכירו את עו״ד ונוטריון מוריה רודריג, המוכרת גם כמוריה חדד, מוריה רודריג חדד ומוריה חדד רודריג. ניסיון בנדל״ן ובמשפט אזרחי־מסחרי ושירות רב־לשוני.",
+      "canonical": [
+        "https://www.rodriglaw.com/about"
+      ],
+      "robots": "index, follow, max-image-preview:large",
+      "x_robots_tag": null,
+      "robots_txt_allows": true,
+      "hreflang": {
+        "he": "https://www.rodriglaw.com/about",
+        "en": "https://www.rodriglaw.com/en/about",
+        "fr": "https://www.rodriglaw.com/fr/about",
+        "nl": "https://www.rodriglaw.com/nl/about",
+        "x-default": "https://www.rodriglaw.com/about"
+      },
+      "favicon": [
+        "https://www.rodriglaw.com/favicon-192.png"
+      ],
+      "h1_count": 1,
+      "static_body_characters": 2390,
+      "structured_data_blocks": 1,
+      "google_index_status": "Indexed"
+    },
+    {
+      "url": "https://www.rodriglaw.com/services",
+      "issues": [],
+      "status": 200,
+      "final_url": "https://www.rodriglaw.com/services",
+      "content_type": "text/html; charset=utf-8",
+      "title": "נוטריון ושירותים משפטיים בפתח תקווה | מוריה רודריג",
+      "language": "he",
+      "description": "שירותי נוטריון בפתח תקווה: תרגומים נוטריוניים, ייפויי כוח ואישור העתק נאמן למקור. מוריה רודריג מעניקה גם ליווי נדל״ן, עריכת צוואות וייפוי כוח מתמשך.",
+      "canonical": [
+        "https://www.rodriglaw.com/services"
+      ],
+      "robots": "index, follow, max-image-preview:large",
+      "x_robots_tag": null,
+      "robots_txt_allows": true,
+      "hreflang": {
+        "he": "https://www.rodriglaw.com/services",
+        "en": "https://www.rodriglaw.com/en/services",
+        "fr": "https://www.rodriglaw.com/fr/services",
+        "nl": "https://www.rodriglaw.com/nl/services",
+        "x-default": "https://www.rodriglaw.com/services"
+      },
+      "favicon": [
+        "https://www.rodriglaw.com/favicon-192.png"
+      ],
+      "h1_count": 1,
+      "static_body_characters": 1405,
+      "structured_data_blocks": 1,
+      "google_index_status": "Indexed"
+    },
+    {
+      "url": "https://www.rodriglaw.com/contact",
+      "issues": [],
+      "status": 200,
+      "final_url": "https://www.rodriglaw.com/contact",
+      "content_type": "text/html; charset=utf-8",
+      "title": "יצירת קשר עם מוריה רודריג | עו״ד ונוטריון בפתח תקווה",
+      "language": "he",
+      "description": "צרו קשר עם משרד עו״ד ונוטריון מוריה רודריג, הסיבים 49, פתח תקווה. טלפון: 054-622-5654. פניות בטלפון, בדוא״ל או בוואטסאפ ותיאום פגישה מראש.",
+      "canonical": [
+        "https://www.rodriglaw.com/contact"
+      ],
+      "robots": "index, follow, max-image-preview:large",
+      "x_robots_tag": null,
+      "robots_txt_allows": true,
+      "hreflang": {
+        "he": "https://www.rodriglaw.com/contact",
+        "en": "https://www.rodriglaw.com/en/contact",
+        "fr": "https://www.rodriglaw.com/fr/contact",
+        "nl": "https://www.rodriglaw.com/nl/contact",
+        "x-default": "https://www.rodriglaw.com/contact"
+      },
+      "favicon": [
+        "https://www.rodriglaw.com/favicon-192.png"
+      ],
+      "h1_count": 1,
+      "static_body_characters": 981,
+      "structured_data_blocks": 1,
+      "google_index_status": "Not indexed"
+    },
+    {
+      "url": "https://www.rodriglaw.com/privacy-policy",
+      "issues": [],
+      "status": 200,
+      "final_url": "https://www.rodriglaw.com/privacy-policy",
+      "content_type": "text/html; charset=utf-8",
+      "title": "מדיניות פרטיות | מוריה רודריג – משרד עורכי דין ונוטריון",
+      "language": "he",
+      "description": "מדיניות זו נוגעת לאתר ולפניות למוריה רודריג, משרד עורכי דין ונוטריון, בעל השליטה במידע האישי. הזמנת פגישות מקוונת וטופס יצירת הקשר אינם פעילים כעת. מוריה רודריג – משרד עורכי דין ונוטריון",
+      "canonical": [
+        "https://www.rodriglaw.com/privacy-policy"
+      ],
+      "robots": "index, follow, max-image-preview:large",
+      "x_robots_tag": null,
+      "robots_txt_allows": true,
+      "hreflang": {
+        "he": "https://www.rodriglaw.com/privacy-policy",
+        "en": "https://www.rodriglaw.com/en/privacy-policy",
+        "fr": "https://www.rodriglaw.com/fr/privacy-policy",
+        "nl": "https://www.rodriglaw.com/nl/privacy-policy",
+        "x-default": "https://www.rodriglaw.com/privacy-policy"
+      },
+      "favicon": [
+        "https://www.rodriglaw.com/favicon-192.png"
+      ],
+      "h1_count": 1,
+      "static_body_characters": 4098,
+      "structured_data_blocks": 1,
+      "google_index_status": "Not indexed"
+    },
+    {
+      "url": "https://www.rodriglaw.com/accessibility",
+      "issues": [],
+      "status": 200,
+      "final_url": "https://www.rodriglaw.com/accessibility",
+      "content_type": "text/html; charset=utf-8",
+      "title": "הצהרת נגישות | מוריה רודריג – משרד עורכי דין ונוטריון",
+      "language": "he",
+      "description": "אנו פועלים כדי לאפשר שימוש באתר גם לאנשים עם מוגבלות. הצהרה זו מפרטת את התאמות הנגישות שבוצעו ואת המגבלות הקיימות. מוריה רודריג – משרד עורכי דין ונוטריון",
+      "canonical": [
+        "https://www.rodriglaw.com/accessibility"
+      ],
+      "robots": "index, follow, max-image-preview:large",
+      "x_robots_tag": null,
+      "robots_txt_allows": true,
+      "hreflang": {
+        "he": "https://www.rodriglaw.com/accessibility",
+        "en": "https://www.rodriglaw.com/en/accessibility",
+        "fr": "https://www.rodriglaw.com/fr/accessibility",
+        "nl": "https://www.rodriglaw.com/nl/accessibility",
+        "x-default": "https://www.rodriglaw.com/accessibility"
+      },
+      "favicon": [
+        "https://www.rodriglaw.com/favicon-192.png"
+      ],
+      "h1_count": 1,
+      "static_body_characters": 2473,
+      "structured_data_blocks": 1,
+      "google_index_status": "Not indexed"
+    },
+    {
+      "url": "https://www.rodriglaw.com/en",
+      "issues": [],
+      "status": 200,
+      "final_url": "https://www.rodriglaw.com/en",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Moria Rodrig | Law and Notary in Petah Tikva",
+      "language": "en",
+      "description": "Moria Rodrig, lawyer and notary in Petah Tikva, Israel. Real estate, wills, enduring powers of attorney and notarial translations in Hebrew, English, French and Dutch.",
+      "canonical": [
+        "https://www.rodriglaw.com/en"
+      ],
+      "robots": "index, follow, max-image-preview:large",
+      "x_robots_tag": null,
+      "robots_txt_allows": true,
+      "hreflang": {
+        "he": "https://www.rodriglaw.com/",
+        "en": "https://www.rodriglaw.com/en",
+        "fr": "https://www.rodriglaw.com/fr",
+        "nl": "https://www.rodriglaw.com/nl",
+        "x-default": "https://www.rodriglaw.com/"
+      },
+      "favicon": [
+        "https://www.rodriglaw.com/favicon-192.png"
+      ],
+      "h1_count": 1,
+      "static_body_characters": 3323,
+      "structured_data_blocks": 1,
+      "google_index_status": "Indexed"
+    },
+    {
+      "url": "https://www.rodriglaw.com/en/about",
+      "issues": [],
+      "status": 200,
+      "final_url": "https://www.rodriglaw.com/en/about",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Moria Rodrig Hadad | Lawyer and Notary in Petah Tikva",
+      "language": "en",
+      "description": "Meet Moria Rodrig, also known as Moria Hadad, Moria Rodrig Hadad and Moria Hadad Rodrig. Lawyer and notary in Petah Tikva offering multilingual legal services.",
+      "canonical": [
+        "https://www.rodriglaw.com/en/about"
+      ],
+      "robots": "index, follow, max-image-preview:large",
+      "x_robots_tag": null,
+      "robots_txt_allows": true,
+      "hreflang": {
+        "he": "https://www.rodriglaw.com/about",
+        "en": "https://www.rodriglaw.com/en/about",
+        "fr": "https://www.rodriglaw.com/fr/about",
+        "nl": "https://www.rodriglaw.com/nl/about",
+        "x-default": "https://www.rodriglaw.com/about"
+      },
+      "favicon": [
+        "https://www.rodriglaw.com/favicon-192.png"
+      ],
+      "h1_count": 1,
+      "static_body_characters": 3088,
+      "structured_data_blocks": 1,
+      "google_index_status": "Indexed"
+    },
+    {
+      "url": "https://www.rodriglaw.com/en/services",
+      "issues": [],
+      "status": 200,
+      "final_url": "https://www.rodriglaw.com/en/services",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Notary and Legal Services in Petah Tikva | Moria Rodrig",
+      "language": "en",
+      "description": "Notarial translations, powers of attorney and certified document copies in Petah Tikva. Moria Rodrig also advises on real estate, wills and enduring powers of attorney.",
+      "canonical": [
+        "https://www.rodriglaw.com/en/services"
+      ],
+      "robots": "index, follow, max-image-preview:large",
+      "x_robots_tag": null,
+      "robots_txt_allows": true,
+      "hreflang": {
+        "he": "https://www.rodriglaw.com/services",
+        "en": "https://www.rodriglaw.com/en/services",
+        "fr": "https://www.rodriglaw.com/fr/services",
+        "nl": "https://www.rodriglaw.com/nl/services",
+        "x-default": "https://www.rodriglaw.com/services"
+      },
+      "favicon": [
+        "https://www.rodriglaw.com/favicon-192.png"
+      ],
+      "h1_count": 1,
+      "static_body_characters": 1679,
+      "structured_data_blocks": 1,
+      "google_index_status": "Indexed"
+    },
+    {
+      "url": "https://www.rodriglaw.com/en/contact",
+      "issues": [],
+      "status": 200,
+      "final_url": "https://www.rodriglaw.com/en/contact",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Contact Moria Rodrig | Lawyer and Notary in Petah Tikva",
+      "language": "en",
+      "description": "Contact Moria Rodrig Law and Notary at Hasivim 49, Petah Tikva, Israel. Call +972-54-622-5654 or reach the office by email or WhatsApp to arrange an appointment.",
+      "canonical": [
+        "https://www.rodriglaw.com/en/contact"
+      ],
+      "robots": "index, follow, max-image-preview:large",
+      "x_robots_tag": null,
+      "robots_txt_allows": true,
+      "hreflang": {
+        "he": "https://www.rodriglaw.com/contact",
+        "en": "https://www.rodriglaw.com/en/contact",
+        "fr": "https://www.rodriglaw.com/fr/contact",
+        "nl": "https://www.rodriglaw.com/nl/contact",
+        "x-default": "https://www.rodriglaw.com/contact"
+      },
+      "favicon": [
+        "https://www.rodriglaw.com/favicon-192.png"
+      ],
+      "h1_count": 1,
+      "static_body_characters": 1065,
+      "structured_data_blocks": 1,
+      "google_index_status": "Indexed"
+    },
+    {
+      "url": "https://www.rodriglaw.com/en/privacy-policy",
+      "issues": [],
+      "status": 200,
+      "final_url": "https://www.rodriglaw.com/en/privacy-policy",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Privacy Policy | Moria Rodrig - Law Office and Notary",
+      "language": "en",
+      "description": "This policy concerns this website and enquiries to Moria Rodrig Law Office & Notary, the controller of the personal information. Online booking and the contact form are currently disabled. Moria Rodrig - Law Office and Notary",
+      "canonical": [
+        "https://www.rodriglaw.com/en/privacy-policy"
+      ],
+      "robots": "index, follow, max-image-preview:large",
+      "x_robots_tag": null,
+      "robots_txt_allows": true,
+      "hreflang": {
+        "he": "https://www.rodriglaw.com/privacy-policy",
+        "en": "https://www.rodriglaw.com/en/privacy-policy",
+        "fr": "https://www.rodriglaw.com/fr/privacy-policy",
+        "nl": "https://www.rodriglaw.com/nl/privacy-policy",
+        "x-default": "https://www.rodriglaw.com/privacy-policy"
+      },
+      "favicon": [
+        "https://www.rodriglaw.com/favicon-192.png"
+      ],
+      "h1_count": 1,
+      "static_body_characters": 5072,
+      "structured_data_blocks": 1,
+      "google_index_status": "Indexed"
+    },
+    {
+      "url": "https://www.rodriglaw.com/en/accessibility",
+      "issues": [],
+      "status": 200,
+      "final_url": "https://www.rodriglaw.com/en/accessibility",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Accessibility statement | Moria Rodrig - Law Office and Notary",
+      "language": "en",
+      "description": "We work to make this website usable for people with disabilities. This statement describes the accessibility adjustments made and the current limitations. Moria Rodrig - Law Office and Notary",
+      "canonical": [
+        "https://www.rodriglaw.com/en/accessibility"
+      ],
+      "robots": "index, follow, max-image-preview:large",
+      "x_robots_tag": null,
+      "robots_txt_allows": true,
+      "hreflang": {
+        "he": "https://www.rodriglaw.com/accessibility",
+        "en": "https://www.rodriglaw.com/en/accessibility",
+        "fr": "https://www.rodriglaw.com/fr/accessibility",
+        "nl": "https://www.rodriglaw.com/nl/accessibility",
+        "x-default": "https://www.rodriglaw.com/accessibility"
+      },
+      "favicon": [
+        "https://www.rodriglaw.com/favicon-192.png"
+      ],
+      "h1_count": 1,
+      "static_body_characters": 2997,
+      "structured_data_blocks": 1,
+      "google_index_status": "Indexed"
+    },
+    {
+      "url": "https://www.rodriglaw.com/fr",
+      "issues": [],
+      "status": 200,
+      "final_url": "https://www.rodriglaw.com/fr",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Moria Rodrig | Avocate et notaire à Petah Tikva",
+      "language": "fr",
+      "description": "Moria Rodrig, avocate et notaire à Petah Tikva, Israël. Immobilier, testaments, mandats de protection et traductions notariales en hébreu, anglais, français et néerlandais.",
+      "canonical": [
+        "https://www.rodriglaw.com/fr"
+      ],
+      "robots": "index, follow, max-image-preview:large",
+      "x_robots_tag": null,
+      "robots_txt_allows": true,
+      "hreflang": {
+        "he": "https://www.rodriglaw.com/",
+        "en": "https://www.rodriglaw.com/en",
+        "fr": "https://www.rodriglaw.com/fr",
+        "nl": "https://www.rodriglaw.com/nl",
+        "x-default": "https://www.rodriglaw.com/"
+      },
+      "favicon": [
+        "https://www.rodriglaw.com/favicon-192.png"
+      ],
+      "h1_count": 1,
+      "static_body_characters": 3786,
+      "structured_data_blocks": 1,
+      "google_index_status": "Not indexed"
+    },
+    {
+      "url": "https://www.rodriglaw.com/fr/about",
+      "issues": [],
+      "status": 200,
+      "final_url": "https://www.rodriglaw.com/fr/about",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Moria Rodrig Hadad | Avocate et notaire à Petah Tikva",
+      "language": "fr",
+      "description": "Moria Rodrig, également connue comme Moria Hadad, Moria Rodrig Hadad et Moria Hadad Rodrig : avocate et notaire à Petah Tikva, au service d’une clientèle multilingue.",
+      "canonical": [
+        "https://www.rodriglaw.com/fr/about"
+      ],
+      "robots": "index, follow, max-image-preview:large",
+      "x_robots_tag": null,
+      "robots_txt_allows": true,
+      "hreflang": {
+        "he": "https://www.rodriglaw.com/about",
+        "en": "https://www.rodriglaw.com/en/about",
+        "fr": "https://www.rodriglaw.com/fr/about",
+        "nl": "https://www.rodriglaw.com/nl/about",
+        "x-default": "https://www.rodriglaw.com/about"
+      },
+      "favicon": [
+        "https://www.rodriglaw.com/favicon-192.png"
+      ],
+      "h1_count": 1,
+      "static_body_characters": 3586,
+      "structured_data_blocks": 1,
+      "google_index_status": "Indexed"
+    },
+    {
+      "url": "https://www.rodriglaw.com/fr/services",
+      "issues": [],
+      "status": 200,
+      "final_url": "https://www.rodriglaw.com/fr/services",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Services notariaux et juridiques à Petah Tikva | Moria Rodrig",
+      "language": "fr",
+      "description": "Traductions notariales, procurations et copies certifiées à Petah Tikva. Moria Rodrig vous accompagne également en immobilier, testaments et mandats de protection.",
+      "canonical": [
+        "https://www.rodriglaw.com/fr/services"
+      ],
+      "robots": "index, follow, max-image-preview:large",
+      "x_robots_tag": null,
+      "robots_txt_allows": true,
+      "hreflang": {
+        "he": "https://www.rodriglaw.com/services",
+        "en": "https://www.rodriglaw.com/en/services",
+        "fr": "https://www.rodriglaw.com/fr/services",
+        "nl": "https://www.rodriglaw.com/nl/services",
+        "x-default": "https://www.rodriglaw.com/services"
+      },
+      "favicon": [
+        "https://www.rodriglaw.com/favicon-192.png"
+      ],
+      "h1_count": 1,
+      "static_body_characters": 1873,
+      "structured_data_blocks": 1,
+      "google_index_status": "Indexed"
+    },
+    {
+      "url": "https://www.rodriglaw.com/fr/contact",
+      "issues": [],
+      "status": 200,
+      "final_url": "https://www.rodriglaw.com/fr/contact",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Contacter Moria Rodrig | Avocate et notaire à Petah Tikva",
+      "language": "fr",
+      "description": "Cabinet Moria Rodrig, Hasivim 49, Petah Tikva, Israël. Téléphone : +972-54-622-5654. Contact par courriel ou WhatsApp pour convenir d’un rendez-vous.",
+      "canonical": [
+        "https://www.rodriglaw.com/fr/contact"
+      ],
+      "robots": "index, follow, max-image-preview:large",
+      "x_robots_tag": null,
+      "robots_txt_allows": true,
+      "hreflang": {
+        "he": "https://www.rodriglaw.com/contact",
+        "en": "https://www.rodriglaw.com/en/contact",
+        "fr": "https://www.rodriglaw.com/fr/contact",
+        "nl": "https://www.rodriglaw.com/nl/contact",
+        "x-default": "https://www.rodriglaw.com/contact"
+      },
+      "favicon": [
+        "https://www.rodriglaw.com/favicon-192.png"
+      ],
+      "h1_count": 1,
+      "static_body_characters": 1250,
+      "structured_data_blocks": 1,
+      "google_index_status": "Indexed"
+    },
+    {
+      "url": "https://www.rodriglaw.com/fr/privacy-policy",
+      "issues": [],
+      "status": 200,
+      "final_url": "https://www.rodriglaw.com/fr/privacy-policy",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Politique de confidentialité | Moria Rodrig - Law Office and Notary",
+      "language": "fr",
+      "description": "Cette politique concerne ce site et les demandes adressées à Moria Rodrig Law Office & Notary, responsable du traitement des informations personnelles. La réservation en ligne et le formulaire de contact sont actuellement désactivés. Moria Rodrig - Law Office and Notary",
+      "canonical": [
+        "https://www.rodriglaw.com/fr/privacy-policy"
+      ],
+      "robots": "index, follow, max-image-preview:large",
+      "x_robots_tag": null,
+      "robots_txt_allows": true,
+      "hreflang": {
+        "he": "https://www.rodriglaw.com/privacy-policy",
+        "en": "https://www.rodriglaw.com/en/privacy-policy",
+        "fr": "https://www.rodriglaw.com/fr/privacy-policy",
+        "nl": "https://www.rodriglaw.com/nl/privacy-policy",
+        "x-default": "https://www.rodriglaw.com/privacy-policy"
+      },
+      "favicon": [
+        "https://www.rodriglaw.com/favicon-192.png"
+      ],
+      "h1_count": 1,
+      "static_body_characters": 5838,
+      "structured_data_blocks": 1,
+      "google_index_status": "Indexed"
+    },
+    {
+      "url": "https://www.rodriglaw.com/fr/accessibility",
+      "issues": [],
+      "status": 200,
+      "final_url": "https://www.rodriglaw.com/fr/accessibility",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Déclaration d’accessibilité | Moria Rodrig - Law Office and Notary",
+      "language": "fr",
+      "description": "Nous travaillons à rendre ce site utilisable par les personnes en situation de handicap. Cette déclaration décrit les adaptations réalisées et les limites actuelles. Moria Rodrig - Law Office and Notary",
+      "canonical": [
+        "https://www.rodriglaw.com/fr/accessibility"
+      ],
+      "robots": "index, follow, max-image-preview:large",
+      "x_robots_tag": null,
+      "robots_txt_allows": true,
+      "hreflang": {
+        "he": "https://www.rodriglaw.com/accessibility",
+        "en": "https://www.rodriglaw.com/en/accessibility",
+        "fr": "https://www.rodriglaw.com/fr/accessibility",
+        "nl": "https://www.rodriglaw.com/nl/accessibility",
+        "x-default": "https://www.rodriglaw.com/accessibility"
+      },
+      "favicon": [
+        "https://www.rodriglaw.com/favicon-192.png"
+      ],
+      "h1_count": 1,
+      "static_body_characters": 3470,
+      "structured_data_blocks": 1,
+      "google_index_status": "Indexed"
+    },
+    {
+      "url": "https://www.rodriglaw.com/nl",
+      "issues": [],
+      "status": 200,
+      "final_url": "https://www.rodriglaw.com/nl",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Moria Rodrig | Advocaat en notaris in Petah Tikva",
+      "language": "nl",
+      "description": "Moria Rodrig, advocaat en notaris in Petah Tikva, Israël. Vastgoed, testamenten, duurzame volmachten en notariële vertalingen in Hebreeuws, Engels, Frans en Nederlands.",
+      "canonical": [
+        "https://www.rodriglaw.com/nl"
+      ],
+      "robots": "index, follow, max-image-preview:large",
+      "x_robots_tag": null,
+      "robots_txt_allows": true,
+      "hreflang": {
+        "he": "https://www.rodriglaw.com/",
+        "en": "https://www.rodriglaw.com/en",
+        "fr": "https://www.rodriglaw.com/fr",
+        "nl": "https://www.rodriglaw.com/nl",
+        "x-default": "https://www.rodriglaw.com/"
+      },
+      "favicon": [
+        "https://www.rodriglaw.com/favicon-192.png"
+      ],
+      "h1_count": 1,
+      "static_body_characters": 3706,
+      "structured_data_blocks": 1,
+      "google_index_status": "Not indexed"
+    },
+    {
+      "url": "https://www.rodriglaw.com/nl/about",
+      "issues": [],
+      "status": 200,
+      "final_url": "https://www.rodriglaw.com/nl/about",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Moria Rodrig Hadad | Advocaat en notaris in Petah Tikva",
+      "language": "nl",
+      "description": "Moria Rodrig, ook bekend als Moria Hadad, Moria Rodrig Hadad en Moria Hadad Rodrig. Advocaat en notaris in Petah Tikva met meertalige juridische dienstverlening.",
+      "canonical": [
+        "https://www.rodriglaw.com/nl/about"
+      ],
+      "robots": "index, follow, max-image-preview:large",
+      "x_robots_tag": null,
+      "robots_txt_allows": true,
+      "hreflang": {
+        "he": "https://www.rodriglaw.com/about",
+        "en": "https://www.rodriglaw.com/en/about",
+        "fr": "https://www.rodriglaw.com/fr/about",
+        "nl": "https://www.rodriglaw.com/nl/about",
+        "x-default": "https://www.rodriglaw.com/about"
+      },
+      "favicon": [
+        "https://www.rodriglaw.com/favicon-192.png"
+      ],
+      "h1_count": 1,
+      "static_body_characters": 3348,
+      "structured_data_blocks": 1,
+      "google_index_status": "Indexed"
+    },
+    {
+      "url": "https://www.rodriglaw.com/nl/services",
+      "issues": [],
+      "status": 200,
+      "final_url": "https://www.rodriglaw.com/nl/services",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Notariële en juridische diensten in Petah Tikva | Moria Rodrig",
+      "language": "nl",
+      "description": "Notariële vertalingen, volmachten en gewaarmerkte kopieën in Petah Tikva. Moria Rodrig begeleidt ook vastgoedtransacties, testamenten en duurzame volmachten.",
+      "canonical": [
+        "https://www.rodriglaw.com/nl/services"
+      ],
+      "robots": "index, follow, max-image-preview:large",
+      "x_robots_tag": null,
+      "robots_txt_allows": true,
+      "hreflang": {
+        "he": "https://www.rodriglaw.com/services",
+        "en": "https://www.rodriglaw.com/en/services",
+        "fr": "https://www.rodriglaw.com/fr/services",
+        "nl": "https://www.rodriglaw.com/nl/services",
+        "x-default": "https://www.rodriglaw.com/services"
+      },
+      "favicon": [
+        "https://www.rodriglaw.com/favicon-192.png"
+      ],
+      "h1_count": 1,
+      "static_body_characters": 1823,
+      "structured_data_blocks": 1,
+      "google_index_status": "Indexed"
+    },
+    {
+      "url": "https://www.rodriglaw.com/nl/contact",
+      "issues": [],
+      "status": 200,
+      "final_url": "https://www.rodriglaw.com/nl/contact",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Contact met Moria Rodrig | Advocaat en notaris in Petah Tikva",
+      "language": "nl",
+      "description": "Kantoor Moria Rodrig, Hasivim 49, Petah Tikva, Israël. Bel +972-54-622-5654 of neem contact op via e-mail of WhatsApp om een afspraak te maken.",
+      "canonical": [
+        "https://www.rodriglaw.com/nl/contact"
+      ],
+      "robots": "index, follow, max-image-preview:large",
+      "x_robots_tag": null,
+      "robots_txt_allows": true,
+      "hreflang": {
+        "he": "https://www.rodriglaw.com/contact",
+        "en": "https://www.rodriglaw.com/en/contact",
+        "fr": "https://www.rodriglaw.com/fr/contact",
+        "nl": "https://www.rodriglaw.com/nl/contact",
+        "x-default": "https://www.rodriglaw.com/contact"
+      },
+      "favicon": [
+        "https://www.rodriglaw.com/favicon-192.png"
+      ],
+      "h1_count": 1,
+      "static_body_characters": 1181,
+      "structured_data_blocks": 1,
+      "google_index_status": "Indexed"
+    },
+    {
+      "url": "https://www.rodriglaw.com/nl/privacy-policy",
+      "issues": [],
+      "status": 200,
+      "final_url": "https://www.rodriglaw.com/nl/privacy-policy",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Privacybeleid | Moria Rodrig - Law Office and Notary",
+      "language": "nl",
+      "description": "Dit beleid betreft deze website en vragen aan Moria Rodrig Law Office & Notary, de verantwoordelijke voor de persoonsgegevens. Online afspraken en het contactformulier zijn momenteel uitgeschakeld. Moria Rodrig - Law Office and Notary",
+      "canonical": [
+        "https://www.rodriglaw.com/nl/privacy-policy"
+      ],
+      "robots": "index, follow, max-image-preview:large",
+      "x_robots_tag": null,
+      "robots_txt_allows": true,
+      "hreflang": {
+        "he": "https://www.rodriglaw.com/privacy-policy",
+        "en": "https://www.rodriglaw.com/en/privacy-policy",
+        "fr": "https://www.rodriglaw.com/fr/privacy-policy",
+        "nl": "https://www.rodriglaw.com/nl/privacy-policy",
+        "x-default": "https://www.rodriglaw.com/privacy-policy"
+      },
+      "favicon": [
+        "https://www.rodriglaw.com/favicon-192.png"
+      ],
+      "h1_count": 1,
+      "static_body_characters": 5317,
+      "structured_data_blocks": 1,
+      "google_index_status": "Indexed"
+    },
+    {
+      "url": "https://www.rodriglaw.com/nl/accessibility",
+      "issues": [],
+      "status": 200,
+      "final_url": "https://www.rodriglaw.com/nl/accessibility",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Toegankelijkheids­verklaring | Moria Rodrig - Law Office and Notary",
+      "language": "nl",
+      "description": "Wij werken eraan deze website bruikbaar te maken voor mensen met een beperking. Deze verklaring beschrijft de aanpassingen en de huidige beperkingen. Moria Rodrig - Law Office and Notary",
+      "canonical": [
+        "https://www.rodriglaw.com/nl/accessibility"
+      ],
+      "robots": "index, follow, max-image-preview:large",
+      "x_robots_tag": null,
+      "robots_txt_allows": true,
+      "hreflang": {
+        "he": "https://www.rodriglaw.com/accessibility",
+        "en": "https://www.rodriglaw.com/en/accessibility",
+        "fr": "https://www.rodriglaw.com/fr/accessibility",
+        "nl": "https://www.rodriglaw.com/nl/accessibility",
+        "x-default": "https://www.rodriglaw.com/accessibility"
+      },
+      "favicon": [
+        "https://www.rodriglaw.com/favicon-192.png"
+      ],
+      "h1_count": 1,
+      "static_body_characters": 3332,
+      "structured_data_blocks": 1,
+      "google_index_status": "Indexed"
+    }
+  ],
+  "favicon_checks": [
+    {
+      "url": "https://www.rodriglaw.com/",
+      "user_agent": "Googlebot",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "robots_txt_allows": true,
+      "note": "User-agent simulation only; does not establish real Google crawler access."
+    },
+    {
+      "url": "https://www.rodriglaw.com/favicon-192.png",
+      "user_agent": "Googlebot-Image",
+      "status": 200,
+      "content_type": "image/png",
+      "robots_txt_allows": true,
+      "note": "User-agent simulation only; does not establish real Google crawler access.",
+      "dimensions": [
+        192,
+        192
+      ]
+    },
+    {
+      "url": "https://www.rodriglaw.com/favicon.ico",
+      "user_agent": "Googlebot-Image",
+      "status": 200,
+      "content_type": "image/vnd.microsoft.icon",
+      "robots_txt_allows": true,
+      "note": "User-agent simulation only; does not establish real Google crawler access."
+    }
+  ],
+  "limits": "Technical eligibility is not proof of Google indexing or ranking. Search Console inspection results are recorded separately.",
+  "search_console_summary": {
+    "checked_on": "2026-10-30",
+    "inspected_urls": 24,
+    "indexed": 19,
+    "not_indexed": 5,
+    "sitemap_status": "Success",
+    "sitemap_discovered_pages": 24
+  }
+}

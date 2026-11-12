@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-30",
+  "property": "sc-domain:rodriglaw.com",
+  "ownership": "Existing signed-in property; sitemap submission permitted. No DNS or account permissions changed.",
+  "sitemap_submission": {
+    "url": "https://www.rodriglaw.com/sitemap.xml",
+    "status": "Success",
+    "discovered_pages": 24,
+    "submitted_on": "2026-10-30",
+    "last_read_on": "2026-10-30",
+    "screenshot": "sitemap-success.png"
+  },
+  "individual_url_inspection": {
+    "checked": 24,
+    "indexed": 19,
+    "not_indexed": 5,
+    "evidence": "search-console-inspections.json"
+  },
+  "homepage_recrawl_request": {
+    "url": "https://www.rodriglaw.com/",
+    "attempts": 2,
+    "status": "Failed; no queue confirmation",
+    "error": "Google reported it could not connect to reCAPTCHA and could not submit the indexing request. Reloading and retrying produced the same error.",
+    "screenshot": "recrawl-error.png",
+    "next_step": "Owner should reload Search Console and request homepage indexing manually when reCAPTCHA works."
+  },
+  "other_individual_indexing_requests": {
+    "submitted": 0,
+    "next_step": "Use the manual for the five non-indexed URLs. All 24 are covered by the successfully submitted sitemap."
+  },
+  "site_changes": "No website runtime code changed; no deployment required."
+}

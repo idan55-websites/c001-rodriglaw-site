@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import { SITE_URL } from '../src/utils/seo.js';
 import { baseRoutes, getRouteInfo, languages, localizePath, publicRoutes } from '../src/utils/siteRoutes.js';
-import { businessNames, englishNames, hebrewNames, personNames } from '../src/utils/businessIdentity.js';
+import { businessNames, englishName, hebrewName } from '../src/utils/businessIdentity.js';
 
 const config = JSON.parse(await readFile(new URL('../vercel.json', import.meta.url), 'utf8'));
 const sitemap = await readFile(new URL('../dist/sitemap.xml', import.meta.url), 'utf8');
@@ -25,13 +25,15 @@ for (const route of publicRoutes) {
   if (route !== '/') assert.ok(config.rewrites.some(rewrite => rewrite.source === route && rewrite.destination === `${route}/index.html`), `Production route: ${route}`);
   const schema = JSON.parse(html.match(/<script id="site-structured-data" type="application\/ld\+json">([\s\S]*?)<\/script>/)[1]);
   const office = schema['@graph'].find(node => node['@type'] === 'LegalService');
-  for (const name of [...personNames, ...businessNames]) assert.ok(office.alternateName.includes(name), `Name ${route}: ${name}`);
+  const expectedName = language === 'he' ? hebrewName : englishName;
+  const person = schema['@graph'].find(node => node['@type'] === 'Person');
+  assert.equal(person.name, expectedName, `Full person name: ${route}`);
+  for (const name of businessNames) assert.ok([office.name, ...office.alternateName].includes(name), `Office name ${route}: ${name}`);
+  assert.ok(!/(?:Moria Rodrig(?! Hadad)|Moria Hadad|מוריה רודריג(?! חדד)|מוריה חדד)/.test(html), `No old name variants: ${route}`);
+  assert.ok(!html.includes('name-reference'), `No alternate-name paragraph: ${route}`);
   if (['/', '/about'].includes(basePath)) {
     const body = html.split('</head>')[1];
-    const localizedNames = language === 'he' ? hebrewNames : englishNames;
-    for (const name of localizedNames) assert.ok(body.includes(name), `Localized biography name ${route}: ${name}`);
-    assert.ok(!body.includes('name-reference-alternates'), `No standalone name list: ${route}`);
-    for (const names of [hebrewNames, englishNames]) assert.ok(!body.includes(names.join(' · ')), `No repeated name variants: ${route}`);
+    assert.ok(body.includes(expectedName), `Localized biography name: ${route}`);
   }
   if (basePath === '/services') assert.equal(office.hasOfferCatalog.itemListElement.length, 2);
   assert.ok(!html.includes('seo.home.title'), `No untranslated SEO keys: ${route}`);
@@ -39,4 +41,4 @@ for (const route of publicRoutes) {
 assert.equal(localizePath('/en/about#contacts', 'he'), '/about#contacts');
 assert.equal(localizePath('/#contacts', 'he'), '/#contacts');
 assert.equal(localizePath('/fr/privacy-policy?source=footer#cookies', 'en'), '/en/privacy-policy?source=footer#cookies');
-console.log(`Verified ${publicRoutes.length} static pages: languages, canonicals, reciprocal hreflang, sitemap, route rewrites and name variants.`);
+console.log(`Verified ${publicRoutes.length} static pages: languages, canonicals, reciprocal hreflang, sitemap, route rewrites and consistent full names.`);

@@ -1,0 +1,25 @@
+﻿url,language,google_index_status,google_reason_he,technical_checks,http_status,canonical,sitemap_included,individual_indexing_request,checked_on
+https://www.rodriglaw.com/,he,Indexed,,PASS,200,https://www.rodriglaw.com/,Yes,Failed twice: Google reCAPTCHA connection error,2026-10-30
+https://www.rodriglaw.com/about,he,Indexed,,PASS,200,https://www.rodriglaw.com/about,Yes,Not submitted in this session,2026-10-30
+https://www.rodriglaw.com/services,he,Indexed,,PASS,200,https://www.rodriglaw.com/services,Yes,Not submitted in this session,2026-10-30
+https://www.rodriglaw.com/contact,he,Not indexed,נסרק אך לא נכלל באינדקס,PASS,200,https://www.rodriglaw.com/contact,Yes,Not submitted in this session,2026-10-30
+https://www.rodriglaw.com/privacy-policy,he,Not indexed,נסרק אך לא נכלל באינדקס,PASS,200,https://www.rodriglaw.com/privacy-policy,Yes,Not submitted in this session,2026-10-30
+https://www.rodriglaw.com/accessibility,he,Not indexed,נסרק אך לא נכלל באינדקס,PASS,200,https://www.rodriglaw.com/accessibility,Yes,Not submitted in this session,2026-10-30
+https://www.rodriglaw.com/en,en,Indexed,,PASS,200,https://www.rodriglaw.com/en,Yes,Not submitted in this session,2026-10-30
+https://www.rodriglaw.com/en/about,en,Indexed,,PASS,200,https://www.rodriglaw.com/en/about,Yes,Not submitted in this session,2026-10-30
+https://www.rodriglaw.com/en/services,en,Indexed,,PASS,200,https://www.rodriglaw.com/en/services,Yes,Not submitted in this session,2026-10-30
+https://www.rodriglaw.com/en/contact,en,Indexed,,PASS,200,https://www.rodriglaw.com/en/contact,Yes,Not submitted in this session,2026-10-30
+https://www.rodriglaw.com/en/privacy-policy,en,Indexed,,PASS,200,https://www.rodriglaw.com/en/privacy-policy,Yes,Not submitted in this session,2026-10-30
+https://www.rodriglaw.com/en/accessibility,en,Indexed,,PASS,200,https://www.rodriglaw.com/en/accessibility,Yes,Not submitted in this session,2026-10-30
+https://www.rodriglaw.com/fr,fr,Not indexed,נסרק אך לא נכלל באינדקס,PASS,200,https://www.rodriglaw.com/fr,Yes,Not submitted in this session,2026-10-30
+https://www.rodriglaw.com/fr/about,fr,Indexed,,PASS,200,https://www.rodriglaw.com/fr/about,Yes,Not submitted in this session,2026-10-30
+https://www.rodriglaw.com/fr/services,fr,Indexed,,PASS,200,https://www.rodriglaw.com/fr/services,Yes,Not submitted in this session,2026-10-30
+https://www.rodriglaw.com/fr/contact,fr,Indexed,,PASS,200,https://www.rodriglaw.com/fr/contact,Yes,Not submitted in this session,2026-10-30
+https://www.rodriglaw.com/fr/privacy-policy,fr,Indexed,,PASS,200,https://www.rodriglaw.com/fr/privacy-policy,Yes,Not submitted in this session,2026-10-30
+https://www.rodriglaw.com/fr/accessibility,fr,Indexed,,PASS,200,https://www.rodriglaw.com/fr/accessibility,Yes,Not submitted in this session,2026-10-30
+https://www.rodriglaw.com/nl,nl,Not indexed,נסרק אך לא נכלל באינדקס,PASS,200,https://www.rodriglaw.com/nl,Yes,Not submitted in this session,2026-10-30
+https://www.rodriglaw.com/nl/about,nl,Indexed,,PASS,200,https://www.rodriglaw.com/nl/about,Yes,Not submitted in this session,2026-10-30
+https://www.rodriglaw.com/nl/services,nl,Indexed,,PASS,200,https://www.rodriglaw.com/nl/services,Yes,Not submitted in this session,2026-10-30
+https://www.rodriglaw.com/nl/contact,nl,Indexed,,PASS,200,https://www.rodriglaw.com/nl/contact,Yes,Not submitted in this session,2026-10-30
+https://www.rodriglaw.com/nl/privacy-policy,nl,Indexed,,PASS,200,https://www.rodriglaw.com/nl/privacy-policy,Yes,Not submitted in this session,2026-10-30
+https://www.rodriglaw.com/nl/accessibility,nl,Indexed,,PASS,200,https://www.rodriglaw.com/nl/accessibility,Yes,Not submitted in this session,2026-10-30

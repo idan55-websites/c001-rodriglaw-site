@@ -164,7 +164,7 @@ const Layout = () => {
                 <div className="logo-component">
                   <img
                     src="/WhatsApp Image 2026-02-26 at 11.13.13_199x120.jpeg"
-                    alt="Moria Rodrig - Law Office and Notary logo"
+                    alt="Moria Rodrig Hadad - Law Office and Notary logo"
                     className="logo-image"
                   />
                   <span className="logo-text">{t("brand.name")}</span>
@@ -236,7 +236,7 @@ const Layout = () => {
                   <div className="footer-logo-frame">
                     <img
                       src="/WhatsApp Image 2026-02-26 at 11.13.13_199x120.jpeg"
-                      alt="Moria Rodrig - Law Office and Notary logo"
+                      alt="Moria Rodrig Hadad - Law Office and Notary logo"
                       className="footer-logo"
                     />
                   </div>

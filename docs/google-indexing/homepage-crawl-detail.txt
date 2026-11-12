@@ -1,0 +1,53 @@
+
+  - generic: check_circle
+  - generic: כתובת האתר נמצאת ב-Google
+  - text: הכתובת יכולה להופיע בתוצאות חיפוש Google (אם אינה כפופה לפעולה ידנית או בקשת הסרה), עם כל השיפורים הרלוונטיים.
+  - link "למידע נוסף":
+    - /url: https://support.google.com/webmasters/answer/9012289#url_on_google
+  - button "להצגת הדף שנסרק":
+    - generic: להצגת הדף שנסרק
+  - generic: הדף השתנה?
+  - button "הגש בקשה ליצירת אינדקסשליחת בקשה נוספת":
+    - generic: הגש בקשה ליצירת אינדקס
+  - button "דפים שנוספו לאינדקס הדף נוסף לאינדקס" [expanded] [active]:
+    - generic: check_circle
+    - generic: דפים שנוספו לאינדקס
+    - generic: הדף נוסף לאינדקס
+    - generic: 
+  - generic: גילוי
+  - generic: Sitemaps
+  - generic: https://www.rodriglaw.com/sitemap.xml
+  - generic: דף מפנה
+  - generic: https://www.rodriglaw.com/en/accessibility
+  - generic: https://rodriglaw.com/
+  - generic: סריקה
+  - generic: סריקה אחרונה
+  - generic: 24 באוק׳ 2026, 9:54:20
+  - generic: נסרק בתור
+  - generic: Googlebot לסמארטפונים
+  - generic: מותר לבצע סריקה?
+  - generic: כן
+  - generic: אחזור דף
+  - generic: מצליח
+  - generic: מותר ליצור אינדקס?
+  - generic: כן
+  - generic: הוספה לאינדקס
+  - generic: קנונית על פי הצהרת המשתמש
+  - generic: https://www.rodriglaw.com/
+  - generic: קנונית לפי בחירת Google
+  - button "null":
+    - generic: 
+  - generic: כתובת האתר שנמצאת בבדיקה
+  - link "קישור לתיעוד נרחב יותר":
+    - /url: https://support.google.com/webmasters/answer/7440203#submitted_and_indexed
+    - generic: למידע נוסף
+  - link "פתיחת הדוח":
+    - /url: ./search-console/index/drilldown?resource_id=sc-domain%3Arodriglaw.com&item_key=CAMYASAB
+    - generic: פתיחת הדוח
+  - generic: שיפורים וחוויית השימוש
+  - link "HTTPS הדף מוצג באמצעות HTTPS":
+    - /url: ./search-console/inspect/https?resource_id=sc-domain%3Arodriglaw.com&id=lmaxgn9BcMmSViM5JlMRYA
+    - generic: check_circle
+    - generic: HTTPS
+    - generic: הדף מוצג באמצעות HTTPS
+    - generic: 

@@ -1,6 +1,6 @@
 # Moria Website
 
-Multilingual law firm website for Moria Rodrig. Online contact forms and appointment booking are currently disabled; visitors can contact the office by phone, email or WhatsApp.
+Multilingual law firm website for Moria Rodrig Hadad. Online contact forms and appointment booking are currently disabled; visitors can contact the office by phone, email or WhatsApp.
 Built with React, Vite, and Tailwind CSS, with an Express backend,
 PostgreSQL, and Google Calendar integration.
 
@@ -38,7 +38,7 @@ npm --prefix server run dev
 - `npm run build` — build the frontend and prerender all 24 public pages across Hebrew, English, French and Dutch, including SEO metadata, structured data, robots.txt and sitemap.xml.
 - `npm run preview` — preview the production build locally.
 - `npm run lint` — check frontend code with ESLint.
-- `npm run check:seo` — verify the built HTML, name variants, language annotations, sitemap and production route mappings (run after build).
+- `npm run check:seo` — verify the built HTML, consistent full names, language annotations, sitemap and production route mappings (run after build).
 
 Frontend code lives in `src/`; backend routes and database migrations live
 in `server/`.
@@ -66,6 +66,10 @@ whether, when and where to index/rank pages; neither rapid indexing nor a first
 position can be guaranteed. A verified Google Business Profile with consistent
 office name, address and phone can complement the website's local visibility.
 
+The [30 October 2026 Search Console manual and audit](docs/google-indexing/STEP-BY-STEP.md)
+include the submitted XML sitemap, individual index checks for all 24 URLs,
+favicon findings, and the remaining owner steps.
+
 The accessibility dialog supports keyboard navigation, high contrast, text
 sizes from 100–200%, reduced motion, link underlining, a readable font, text
 spacing and grayscale. Preferences are stored locally when storage is available.
@@ -74,9 +78,9 @@ An assistive-technology review and verified physical-office accessibility
 arrangements remain necessary before claiming full compliance with Israeli
 accessibility requirements. See `docs/seo-accessibility-update.md` for evidence.
 
-Name variants are maintained in `src/utils/businessIdentity.js`: Moria Rodrig,
-Moria Hadad, Moria Rodrig Hadad and Moria Hadad Rodrig, with their Hebrew forms.
-They are associated with the same person/office in structured data and explained
-in visible Home/About copy. Localized metadata lives under `seo` in each locale.
+The full name is maintained in `src/utils/businessIdentity.js`: מוריה רודריג חדד
+in Hebrew and Moria Rodrig Hadad in English, French and Dutch. Visible copy,
+metadata and structured data use this name consistently, without alternate-name
+lists or explanations. Localized metadata lives under `seo` in each locale.
 The Services page uses its visible service list as the source of the structured
 service catalog. Update names and services only with accurate owner-supplied data.

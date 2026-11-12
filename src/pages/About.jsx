@@ -1,5 +1,4 @@
 import { useTranslation } from "react-i18next";
-import NameReference from "../components/NameReference";
 
 const About = () => {
   const { t } = useTranslation();
@@ -41,7 +40,6 @@ const About = () => {
               <div className="space-y-3">
                 <p className="section-copy">{t("about.p1")}</p>
                 <p className="section-copy">{t("about.p2")}</p>
-                <NameReference />
                 <p className="section-copy about-long-bio">{t("about.p3")}</p>
               </div>
               <aside className="about-portrait-card">

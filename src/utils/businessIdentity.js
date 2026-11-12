@@ -1,12 +1,8 @@
-// Public name variants supplied by the site owner; the preferred brand stays Moria Rodrig.
-export const hebrewNames = ['מוריה רודריג', 'מוריה חדד', 'מוריה רודריג חדד', 'מוריה חדד רודריג'];
-export const englishNames = ['Moria Rodrig', 'Moria Hadad', 'Moria Rodrig Hadad', 'Moria Hadad Rodrig'];
-export const personNames = [
-  ...hebrewNames, ...englishNames,
-  'מוריה רודריג-חדד', 'מוריה חדד-רודריג', 'Moria Rodrig-Hadad', 'Moria Hadad-Rodrig',
-];
+// The owner's full name, in the two scripts used across the four site languages.
+export const hebrewName = 'מוריה רודריג חדד';
+export const englishName = 'Moria Rodrig Hadad';
+export const personNames = [hebrewName, englishName];
 export const businessNames = [
-  'Moria Rodrig - Law Office and Notary',
-  ...hebrewNames.map(name => `${name} עו"ד ונוטריון`),
-  ...englishNames.map(name => `${name} Law and Notary`),
+  `${hebrewName} – משרד עורכי דין ונוטריון`,
+  `${englishName} - Law Office and Notary`,
 ];

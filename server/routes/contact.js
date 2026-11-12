@@ -73,7 +73,7 @@ function buildConfirmationFooterHtml({ inlineLogo = false, logoUrl = "" }) {
   if (!src) return "";
   return `
     <div style="margin-top:20px;padding-top:16px;border-top:1px solid #e6e6e6;">
-      <img src="${src}" alt="Moria Rodrig - Law Office and Notary" width="140" style="display:block;max-width:140px;height:auto;" />
+      <img src="${src}" alt="Moria Rodrig Hadad - Law Office and Notary" width="140" style="display:block;max-width:140px;height:auto;" />
     </div>
   `;
 }
